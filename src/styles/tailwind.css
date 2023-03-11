@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply bg-WineBack Smooth text-white font-pop scrollbar-hide scroll-smooth;
+}
+
+
+.MainWrapper {
+  @apply flex flex-col-reverse items-center justify-evenly p-8 BoxFull MainWrapperDesktop
+}
+
+.MainWrapperDesktop {
+  @apply md:p-4 lg:flex-col-reverse xl:flex-row
+}
+
+.ClearDrop {
+  @apply backdrop-blur-sm hover:backdrop-blur-sm;
+}
+
+.Clear {
+  @apply blur-sm;
+}
+
+/* Customs */
+
+.SideBar {
+  @apply Hover Round  h-full w-screen  p-8 Shadow text-3xl HoverPush;
+}
+
+
+.Focus {
+  @apply Hover transform active:scale-110 Smooth cursor-pointer;
+}
+
+.HoverPush {
+  @apply Hover transform hover:scale-95 Smooth cursor-pointer;
+}
+
+/* Structure */
+
+.MARK {
+  @apply Hover rounded-2xl border-2 border-slate-400;
+}
+
+.Hover {
+  @apply hover:border-x-sky-200 active:border-y-pink-200 Smooth;
+}
+
+.BoxFull {
+  @apply h-full w-full;
+}
+
+.BoxScreen {
+  @apply h-screen w-screen;
+}
+
+.BoxFit {
+  @apply h-fit w-fit;
+}
+
+.Round {
+  @apply rounded-2xl;
+}
+
+.FlexCenter {
+  @apply flex items-center justify-center;
+}
+
+.FlexCenterCol {
+  @apply flex flex-col items-center ;
+}
+
+/* Styles */
+
+.Shade {
+  @apply shadow-white drop-shadow-md;
+}
+
+.Rshade {
+  @apply rounded-3xl shadow-white drop-shadow-xl;
+}
+
+.Shadow {
+  @apply shadow-2xl shadow-black;
+}
+
+.ShadowWhite {
+  @apply shadow-2xl shadow-white;
+}
+
+.wBorder {
+  @apply border-2 border-white;
+}
+
+.Smooth {
+  @apply duration-75 ease-linear;
+}
+
+.Smoother {
+  @apply duration-150 delay-75 ease-linear;
+}
+
+.Bounce {
+  @apply cursor-pointer hover:animate-bounce Smoother hover:drop-shadow-xl hover:text-white hover:shadow-zinc-900;
+}
+
+.Spin {
+  @apply cursor-none hover:animate-spin Smoother hover:drop-shadow-xl hover:shadow-zinc-900;
+}
+
+.NameShadow {
+  @apply shadow-black drop-shadow-md hover:text-sky-500;
+}
+
+.Glass {
+  @apply Shadow GlassMD;
+}
+
+.GlassMD {
+  @apply md:min-h-fit md:max-w-2xl;
+}
+
+/* Nav */
+
+.Nav {
+  @apply backdrop-blur-lg max-h-fit w-screen;
+}
+
+.NavItem {
+  @apply Round cursor-pointer hover:bg-gray-800;
+}
+
+.NavItemMD {
+  @apply md:p-2 md:mx-8 ;
+}
+
+li {
+  @apply list-none;
+}
+
