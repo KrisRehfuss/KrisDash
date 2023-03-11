@@ -20,6 +20,9 @@ module.exports = {
         Lgray: "hsl(212, 45%, 89%)",
 
         WineBack: "#0f1732",
+        LeftG: "#0f2735",
+        MidP: '#202148',
+        RightG: "#0e380e",
       },
       fontFamily: {
         inter: ["inter", "serif"],

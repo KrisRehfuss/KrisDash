@@ -18,10 +18,10 @@ function Nav() {
         Wine<span className="ml-1 text-indigo-500"> Match </span>
       </div>
 
-      <div className="FlexCenter  text-2xl mr-4 text-gray-400 BoxFit space-x-4 ">
+      <div className="FlexCenter  text-2xl mr-4 text-gray-500 BoxFit space-x-4 ">
         <AiOutlineStar className="NavItem" />
         <BsSun className="NavItem" />
-        <GiHamburgerMenu className='NavItem' />
+        <GiHamburgerMenu  />
       </div>
     </div>
   );
