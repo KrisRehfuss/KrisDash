@@ -14,7 +14,7 @@ function Nav() {
       {/* Logo */}
 
       <div className="FlexCenter cursor-pointer ml-4 text-center text-gray-300 font-bold text-xl">
-        <Image className="mr-1 w-16" src={M} alt="M Logo" />
+        <Image className="md:ml-[260px] mr-1 w-16" src={M} alt="M Logo" />
         Wine<span className="ml-1 text-indigo-500"> Match </span>
       </div>
 
