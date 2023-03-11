@@ -30,13 +30,13 @@ export default function Home() {
               The most extensive source of wines, spumanti and champagnes.
             </p>
 
-            <div className=" FlexCenter items-center w-full px-64 space-x-7">
+            <div className=" md:flex-row flex items-center flex-col w-fit ">
 
               <button className="md:w-3/6 md:px-1 w-full py-2 p-2 Shadow rounded-3xl font-semibold text-xl text-gray-200 bg-indigo-700 ">
                 Explore All
               </button>
 
-              <button className="md:w-11/12 md:mx-4 md:p-2 md:my-0 flex items-center w-full mt-3 p-3 px-4 Shadow rounded-3xl text-left font-extralight text-sm text-gray-400 bg-gray-700 bg-opacity-50 ">
+              <button className=" md:w-11/12 md:mx-4 md:p-2 md:my-0 flex items-center w-full mt-3 p-3 px-4 Shadow rounded-3xl text-left font-extralight text-sm text-gray-400 bg-gray-700 bg-opacity-50 ">
                 <BiSearch className="text-2xl mr-1 text-indigo-800" />
                 Search for product, producer, region...
               </button>
