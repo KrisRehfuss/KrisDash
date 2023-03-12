@@ -4,7 +4,7 @@ import { BsSun } from "react-icons/bs";
 import { BiSearch } from "react-icons/bi";
 import { RxHamburgerMenu } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
-import M from "../../public/engine.png";
+import M from "../../public/Engine.png";
 
 function Nav() {
   return (
