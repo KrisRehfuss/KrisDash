@@ -30,7 +30,7 @@ export default function Home() {
 
             {/* Caption */}
             <p className=" my-5 mb-5 leading-7 text-base text-gray-400 font-semibold text-center">
-              Moving from audio engineering to web development.
+              Moving from audio engineering to web development, bringing a novel perspective blooming with creativity.
             </p>
 
             <div className=" md:flex-row flex items-center flex-col w-fit ">

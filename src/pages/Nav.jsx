@@ -5,7 +5,7 @@ import { BsSun } from "react-icons/bs";
 import { BiSearch } from "react-icons/bi";
 import { RxHamburgerMenu } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
-import M from "../../public/drawing2.svg";
+import M from "../../public/engine.png";
 
 function Nav() {
   return (
@@ -14,14 +14,14 @@ function Nav() {
     <div className="Nav shadow-2xl shadow-Redd ">
 
       {/* Logo */}
-      <div className="FlexCenter ml-4 h-full m-0   text-center text-gray-300 font-bold text-xl">
-        <Image className="lg:ml-[260px] mr-1 w-16 lg:m-0" src={M} alt="M Logo" />
-        Kris<span className="text-indigo-500">Engine </span>
+      <div className=" FlexCenter ml-4 h-full m-0   text-center text-gray-300 font-bold text-xl">
+        <Image className=" mr-3 w-12" src={M} alt="M Logo" />
+        Kris<span className="ml-1 text-Purpp"> Rehfuss </span>
       </div>
 
       {/* Search Bar */}
-      <div className="hidden lg:flex items-center justify-center lg:justify-start  Round h-full">
-        <input className=" ClearDrop lg:w-3/4 w-1/4 Shadow bg-WineBack ring-2 ring-slate-500 rounded-full p-2 text-sm font-light  text-white px-4" type="text" />
+      <div className="hidden lg:flex items-center justify-center Round h-full">
+        <input className=" ClearDrop lg:w-3/4 w-1/4 Shadow bg-Logo bg-opacity-60  focus:border-0 rounded-full p-2 text-sm font-light  text-white px-4" type="text" />
         <BiSearch className="h-8 w-8 p-2 mx-4 cursor-pointer rounded-full bg-Purpp" />
 
       </div>
