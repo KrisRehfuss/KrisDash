@@ -26,8 +26,9 @@ module.exports = {
 
         Redd: "#e74175",
         Bluee: "#1a0b52",
-        Purpp: "#85177a",
+        Purpp: "#5e0e8c",
         Logo: "#b86bac",
+        Plum: "#8a3468",
       },
       fontFamily: {
         inter: ["inter", "serif"],

@@ -13,9 +13,10 @@
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
     "react": "18.2.0",
-    "react-charts": "^3.0.0-beta.54",
+    "react-charts": "^0.0.1",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
+    "sharp": "^0.31.3",
     "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {

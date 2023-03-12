@@ -114,7 +114,7 @@ body {
 }
 
 .NameShadow {
-  @apply shadow-black drop-shadow-md hover:text-sky-500;
+  @apply shadow-black drop-shadow-md hover:text-Purpp;
 }
 
 .Glass {
