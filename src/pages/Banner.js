@@ -6,7 +6,7 @@ function Banner() {
     <div className="relative -z-10 top-0 w-full lg:h-96 h-60 ">
       <Image
       src={BannerImage}
-      className="border-b-2 border-Redd"
+      className="border-Redd"
       layout='fill'
       objectFit='cover'
       alt='#'

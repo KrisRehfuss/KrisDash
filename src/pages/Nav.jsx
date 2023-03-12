@@ -21,8 +21,8 @@ function Nav() {
 
       {/* Search Bar */}
       <div className="hidden lg:flex items-center justify-center lg:justify-start  Round h-full">
-        <BiSearch className="h-8 w-8 p-2 mx-4 rounded-full bg-Purpp" />
         <input className=" ClearDrop lg:w-3/4 w-1/4 Shadow bg-WineBack ring-2 ring-slate-500 rounded-full p-2 text-sm font-light  text-white px-4" type="text" />
+        <BiSearch className="h-8 w-8 p-2 mx-4 cursor-pointer rounded-full bg-Purpp" />
 
       </div>
 

@@ -128,7 +128,7 @@ body {
 /* Nav */
 
 .Nav {
-  @apply NavMD flex backdrop-blur-lg sticky top-0 z-50 border-b-2 border-Redd justify-between items-center h-20 max-h-fit w-screen;
+  @apply NavMD flex backdrop-blur-lg sticky top-0 z-50 border-Redd justify-between items-center h-20 max-h-fit w-screen;
 }
 
 .NavMD {
