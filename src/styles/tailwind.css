@@ -6,7 +6,7 @@
 
 
 body {
-  @apply bg-WineBack Smooth text-white font-pop scrollbar-hide scroll-smooth;
+  @apply bg-coal Smooth text-white font-pop scrollbar-hide scroll-smooth;
 }
 
 
@@ -128,7 +128,11 @@ body {
 /* Nav */
 
 .Nav {
-  @apply backdrop-blur-lg max-h-fit w-screen;
+  @apply NavMD flex backdrop-blur-lg sticky top-0 z-50 border-b-2 border-Redd justify-between items-center h-20 max-h-fit w-screen;
+}
+
+.NavMD {
+  @apply  lg:grid grid-cols-3 lg:mx-auto
 }
 
 .NavItem {
@@ -136,7 +140,7 @@ body {
 }
 
 .NavItemMD {
-  @apply md:p-2 md:mx-8 ;
+  @apply md:p-2 md:mx-auto ;
 }
 
 li {

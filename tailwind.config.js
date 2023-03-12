@@ -21,8 +21,12 @@ module.exports = {
 
         WineBack: "#0f1732",
         LeftG: "#0f2735",
-        MidP: '#202148',
+        MidP: "#202148",
         RightG: "#0e380e",
+
+        Redd: "#e74175",
+        Bluee: "#1a0b52",
+        Purpp: "#85177a",
       },
       fontFamily: {
         inter: ["inter", "serif"],
