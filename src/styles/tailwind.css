@@ -41,6 +41,10 @@ body {
   @apply text-xl border-b pb-2 border-DarkG text-LiteG NameShadow font-normal
 }
 
+.Section {
+  @apply w-full h-fit p-3
+}
+
 /* Customs - End */
 
 

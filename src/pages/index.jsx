@@ -10,14 +10,12 @@ import Skills from "./Skills";
 import Footer from "./Footer";
 import JS from "../../public/JS.png";
 import TS from "../../public/TS.png";
-import Tailwind from '../../public/tail.png'
-import Git from '../../public/git.png'
-import React from '../../public/react.png'
-import OpenAI from '../../public/openai.png'
-import Next from '../../public/next-js.svg'
+import Tailwind from "../../public/tail.png";
+import Git from "../../public/git.png";
+import React from "../../public/react.png";
+import OpenAI from "../../public/openai.png";
+import Next from "../../public/next-js.svg";
 import Video from "./Video";
-
-
 
 export default function Home() {
   return (
@@ -50,7 +48,7 @@ export default function Home() {
 
             {/* Current Skill Tree */}
             <div className=" BoxFull mx-4 p-4 mt-6 mb-24">
-              <div className="w-full h-fit p-3 ">
+              <div className="Section ">
                 <h1 className="CaptionBlock">Skill Tree</h1>
                 <div className="BoxFull pt-4 lg:grid grid-cols-2 gap-x-2">
                   <Skills logo={Next} name="Next.js" color="bg-gray-400" />
@@ -61,7 +59,38 @@ export default function Home() {
                   <Skills logo={OpenAI} name="OpenAI" color="bg-OpenAI" />
                 </div>
               </div>
-              <div className="mt-4 w-full-h-fit p-3">
+
+             {/* Live Sites */}
+              <div className="Section">
+                <h1 className="CaptionBlock">Live Sites</h1>
+
+                 {/* Prompt Engine */}
+                <div className="BoxFull flex rounded-2xl text-gray-400 font-light Shadow bg-DarkG items-center w-full mb-2 p-2 mt-4 hover:ring-2 hover:ring-Redd Smooth">
+                  <div className="Round Shadow p-2 mx-2 bg-OpenAI">
+                     <Image
+                    src={OpenAI}
+                    className='w-8'
+                    // layout='fill'
+                    // objectFit='cover'
+                    alt='#'
+                    />
+                  </div>
+                  {/* Prompt Engine Link */}
+                  <a className="w-full  text-gray-300" href="https://prompt-engine.vercel.app/">Prompt <span className="text-violet-500">Engine</span>
+                    <p className='text-sm text-gray-500 '>
+                      Created a site with a dynamic and creative layout that utilizes the OpenAI API to let the user tweak a few metrics to get a specific response.
+                    </p>
+                  </a>
+                </div>
+
+                
+              </div>
+
+              
+
+
+
+              <div className="Section mt-4">
                 <h1 className="CaptionBlock"> Recent Compositions</h1>
                 <Video />
               </div>
