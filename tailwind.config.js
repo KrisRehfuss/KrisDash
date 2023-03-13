@@ -25,6 +25,14 @@ module.exports = {
         RightG: "#0e380e",
 
         Redd: "#e74175",
+        Smokey: "#090C02",
+        Ash: "#BBC5AA",
+        Tan: '#DDE2C6',
+        Onyx: '#403F4C',
+        Uranian: '#A5D8FF',
+        Aero: '#05B2DC',
+
+
         Bluee: "#1a0b52",
         Purpp: "#5e0e8c",
         Logo: "#b86bac",
@@ -35,6 +43,7 @@ module.exports = {
         OpenAI: "#444654",
         Git: "#2c2320",
         LiteG: "#414141",
+
       },
       fontFamily: {
         inter: ["inter", "serif"],

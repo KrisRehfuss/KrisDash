@@ -31,7 +31,7 @@ export default function Home() {
         <Banner />
 
         {/* Wrapper Start */}
-        <div className=" FlexCenterCol mt-4 font-pop BoxScreen">
+        <div className=" FlexCenterCol mt-4 font-pop BoxFull">
           <div className=" md:max-w-5xl FlexCenterCol p-2  h-fit min-h-fit w-full">
             {/* Header */}
             <h1 className="mt-4 md:text-5xl NameShadow cursor-text text-gray-300 text-4xl font-extrabold text-center">
@@ -42,24 +42,14 @@ export default function Home() {
             {/* Caption */}
             <p className=" my-5 mb-5 leading-7 text-base text-gray-400 font-semibold text-center">
               Phasing from Audio Engineer to React Developer, bringing a novel
-              perspective blooming with creativity.
+              perspective blooming with creativity & efficiency.
             </p>
 
-            {/* Explore All */}
-            <div className="hidden md:flex-row flex items-center flex-col w-fit ">
-              <button className="md:w-3/6 md:px-1 w-full py-2 p-2 Shadow rounded-3xl font-semibold text-xl text-gray-200 bg-Bluee ">
-                Explore All
-              </button>
-
-              <button className="ExploreAll">
-                <BiSearch className="text-2xl mr-1 text-Purpp" />
-                Search for product, producer, region...
-              </button>
-            </div>
+          
 
             {/* Current Skill Tree */}
-            <div className="h-screen w-full mx-4 p-4 mt-6">
-              <div className=" w-full h-fit p-3">
+            <div className="BoxFull mx-4 p-4 mt-6 mb-24">
+              <div className="w-full h-fit p-3 ">
                 <h1 className="text-xl border-b pb-2 border-DarkG text-LiteG NameShadow font-normal">
                   Skill Tree
                 </h1>
@@ -73,8 +63,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            {/* <SearchBar /> */}
+            <SearchBar />
           </div>
         </div>
       </main>
