@@ -42,7 +42,7 @@ body {
 }
 
 .Section {
-  @apply w-full h-fit p-3
+  @apply w-full h-fit p-3 mb-4
 }
 
 .Footer {

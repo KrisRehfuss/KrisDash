@@ -93,7 +93,7 @@ export default function Home() {
 
 
               <div className="Section mt-4">
-                <h1 className="CaptionBlock text-right text-Redd"> Recent Compositions</h1>
+                <h1 className="CaptionBlock text-Redd"> Recent Compositions</h1>
                 <Video />
               </div>
             </div>
