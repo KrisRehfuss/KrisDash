@@ -32,6 +32,12 @@ body {
   @apply md:w-11/12 md:mx-4 my-0 flex items-center w-full mt-3 p-3 px-4 Shadow rounded-3xl text-left font-extralight text-sm text-gray-400 bg-gray-700 bg-opacity-50 ;
 }
 
+.SkillTree {
+  @apply flex rounded-lg text-gray-400 font-light Shadow bg-DarkG items-center w-full mb-2 p-2 hover:bg-Redd hover:text-black hover:font-normal
+}
+
+/* Customs - End */
+
 
 .Focus {
   @apply Hover transform active:scale-110 Smooth cursor-pointer;
@@ -114,7 +120,7 @@ body {
 }
 
 .NameShadow {
-  @apply shadow-black drop-shadow-md hover:text-Purpp;
+  @apply shadow-black drop-shadow-md hover:text-Redd;
 }
 
 .Glass {
