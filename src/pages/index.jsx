@@ -36,24 +36,20 @@ export default function Home() {
           <div className=" md:max-w-5xl FlexCenterCol p-2  h-fit min-h-fit w-full">
             {/* Header */}
             <h1 className="mt-4 md:text-5xl NameShadow cursor-text text-gray-300 text-4xl font-extrabold text-center">
-              Rapidly <span className="text-Redd">optimizing </span>every step
+              Rapidly <span className="text-Aero">optimizing </span>every step
               of development.
             </h1>
 
             {/* Caption */}
             <p className=" my-5 mb-5 leading-7 text-base text-gray-400 font-semibold text-center">
               Phasing from Audio Engineer to React Developer, bringing a novel
-              perspective blooming with creativity & efficiency.
+              perspective blooming with efficiency & creativity.
             </p>
 
-          
-
             {/* Current Skill Tree */}
-            <div className=" BoxFull mx-4 p-4 mt-6 mb-24">
+            <div className=" BoxFull mx-4 p-4 mt-2 mb-24">
               <div className="w-full h-fit p-3 ">
-                <h1 className="CaptionBlock">
-                  Skill Tree
-                </h1>
+                <h1 className="CaptionBlock">Skill Tree</h1>
                 <div className="BoxFull pt-4 lg:grid grid-cols-2 gap-x-2">
                   <Skills logo={Next} name="Next.js" color="bg-gray-400" />
                   <Skills logo={React} name="React.js" color="bg-React" />
@@ -64,11 +60,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-4 w-full-h-fit p-3">
-                <h1 className="CaptionBlock"> Recent Compositions
-                </h1>
+                <h1 className="CaptionBlock"> Recent Compositions</h1>
                 <Video />
               </div>
-  
             </div>
             <SearchBar />
           </div>
