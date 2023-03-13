@@ -37,10 +37,7 @@ export default function Home() {
         <div className=" FlexCenterCol mt-4 font-pop BoxFull">
           <div className=" md:max-w-5xl FlexCenterCol p-2  h-fit min-h-fit w-full">
             {/* Header */}
-            <Header
-            style = 'Header'
-             />
-            
+            <Header style="Header" />
 
             {/* Caption */}
             <p className=" my-5 mb-5 leading-7 text-base text-gray-400 font-semibold text-center">
@@ -62,35 +59,37 @@ export default function Home() {
                 </div>
               </div>
 
-             {/* Live Sites */}
+              {/* Live Sites */}
               <div className="Section">
-                <h1 className="CaptionBlock text-left text-white">Live Sites</h1>
+                <h1 className="CaptionBlock text-left text-white">
+                  Live Sites
+                </h1>
 
-                 {/* Prompt Engine */}
+                {/* Prompt Engine */}
                 <div className="BoxFull flex rounded-2xl text-gray-400 font-light Shadow bg-DarkG items-center w-full mb-2 p-2 mt-4 hover:ring-2 hover:ring-Redd Smooth">
                   <div className="Round Shadow p-2 mx-2 bg-OpenAI">
-                     <Image
-                    src={OpenAI}
-                    className='w-8'
-                    // layout='fill'
-                    // objectFit='cover'
-                    alt='#'
+                    <Image
+                      src={OpenAI}
+                      className="w-8"
+                      // layout='fill'
+                      // objectFit='cover'
+                      alt="#"
                     />
                   </div>
                   {/* Prompt Engine Link */}
-                  <a className="w-full  text-gray-300" href="https://prompt-engine.vercel.app/">Prompt <span className="text-violet-500">Engine</span>
-                    <p className='text-sm text-gray-500 '>
-                      Created a site with a dynamic and creative layout that utilizes the OpenAI API to let the user tweak a few metrics to get a specific response.
+                  <a
+                    className="w-full  text-gray-300"
+                    href="https://prompt-engine.vercel.app/"
+                  >
+                    Prompt <span className="text-violet-500">Engine</span>
+                    <p className="text-sm text-gray-500 ">
+                      Created a site with a dynamic and creative layout that
+                      utilizes the OpenAI API to let the user tweak a few
+                      metrics to get a specific response.
                     </p>
                   </a>
                 </div>
-
-                
               </div>
-
-              
-
-
 
               <div className="Section mt-4">
                 <h1 className="CaptionBlock text-Redd"> Recent Compositions</h1>
