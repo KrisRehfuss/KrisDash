@@ -14,6 +14,7 @@ import Git from '../../public/git.png'
 import React from '../../public/react.png'
 import OpenAI from '../../public/openai.png'
 import Next from '../../public/next-js.svg'
+import Video from "./Video";
 
 
 export default function Home() {
@@ -48,9 +49,9 @@ export default function Home() {
           
 
             {/* Current Skill Tree */}
-            <div className="BoxFull mx-4 p-4 mt-6 mb-24">
+            <div className=" BoxFull mx-4 p-4 mt-6 mb-24">
               <div className="w-full h-fit p-3 ">
-                <h1 className="text-xl border-b pb-2 border-DarkG text-LiteG NameShadow font-normal">
+                <h1 className="CaptionBlock">
                   Skill Tree
                 </h1>
                 <div className="BoxFull pt-4 lg:grid grid-cols-2 gap-x-2">
@@ -62,6 +63,12 @@ export default function Home() {
                   <Skills logo={OpenAI} name="OpenAI" color="bg-OpenAI" />
                 </div>
               </div>
+              <div className="mt-4 w-full-h-fit p-3">
+                <h1 className="CaptionBlock"> Recent Compositions
+                </h1>
+                <Video />
+              </div>
+  
             </div>
             <SearchBar />
           </div>

@@ -34,7 +34,11 @@ body {
 }
 
 .SkillTree {
-  @apply flex rounded-lg text-gray-400 font-light Shadow bg-DarkG items-center w-full mb-2 p-2 hover:bg-Aero hover:text-Onyx hover:font-normal
+  @apply flex rounded-lg text-gray-400 font-light Shadow bg-DarkG items-center w-full mb-2 p-2 hover:bg-Aero hover:text-white hover:font-normal
+}
+
+.CaptionBlock {
+  @apply text-xl border-b pb-2 border-DarkG text-LiteG NameShadow font-normal
 }
 
 /* Customs - End */
@@ -100,7 +104,7 @@ body {
   @apply shadow-2xl shadow-white;
 }
 
-.ShadowOnxy {
+.ShadowOnyx {
   @apply shadow-2xl rounded-2xl shadow-Onyx
 }
 
