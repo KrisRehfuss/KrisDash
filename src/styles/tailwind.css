@@ -28,8 +28,8 @@ body {
 
 /* Customs */
 
-.SideBar {
-  @apply Hover Round  h-full w-screen  p-8 Shadow text-3xl HoverPush;
+.ExploreAll {
+  @apply md:w-11/12 md:mx-4 my-0 flex items-center w-full mt-3 p-3 px-4 Shadow rounded-3xl text-left font-extralight text-sm text-gray-400 bg-gray-700 bg-opacity-50 ;
 }
 
 
@@ -147,3 +147,6 @@ li {
   @apply list-none;
 }
 
+.Search {
+  @apply sticky bottom-0 z-50
+}

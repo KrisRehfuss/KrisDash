@@ -29,6 +29,12 @@ module.exports = {
         Purpp: "#5e0e8c",
         Logo: "#b86bac",
         Plum: "#8a3468",
+        DarkG: "#202020",
+        TS: "#222b35",
+        React: "#28373b",
+        OpenAI: "#444654",
+        Git: "#2c2320",
+        LiteG: "#414141",
       },
       fontFamily: {
         inter: ["inter", "serif"],

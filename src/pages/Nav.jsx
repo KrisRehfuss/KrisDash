@@ -20,10 +20,10 @@ function Nav() {
       {/* Search Bar */}
       <div className="hidden lg:flex items-center justify-center Round h-full">
         <input
-          className="focus:outline-0 ClearDrop lg:w-3/4 w-1/4 Shadow bg-Logo bg-opacity-60 rounded-full p-2 text-sm font-light  text-white px-4"
+          className="hidden focus:outline-0 ClearDrop lg:w-3/4 w-1/4 Shadow bg-Logo bg-opacity-60 rounded-full p-2 text-sm font-light  text-white px-4"
           type="text"
         />
-        <BiSearch className="h-8 w-8 p-2 mx-4 cursor-pointer rounded-full bg-Purpp" />
+        <BiSearch className="hidden h-8 w-8 p-2 mx-4 cursor-pointer rounded-full bg-Purpp" />
       </div>
 
       {/* Icons */}
