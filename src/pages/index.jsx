@@ -7,6 +7,7 @@ import Nav from "./Nav";
 import Banner from "./Banner";
 import SearchBar from "./SearchBar";
 import Skills from "./Skills";
+import Footer from "./Footer";
 import JS from "../../public/JS.png";
 import TS from "../../public/TS.png";
 import Tailwind from '../../public/tail.png'
@@ -15,6 +16,7 @@ import React from '../../public/react.png'
 import OpenAI from '../../public/openai.png'
 import Next from '../../public/next-js.svg'
 import Video from "./Video";
+
 
 
 export default function Home() {
@@ -46,14 +48,10 @@ export default function Home() {
               perspective blooming with creativity & efficiency.
             </p>
 
-          
-
             {/* Current Skill Tree */}
             <div className=" BoxFull mx-4 p-4 mt-6 mb-24">
               <div className="w-full h-fit p-3 ">
-                <h1 className="CaptionBlock">
-                  Skill Tree
-                </h1>
+                <h1 className="CaptionBlock">Skill Tree</h1>
                 <div className="BoxFull pt-4 lg:grid grid-cols-2 gap-x-2">
                   <Skills logo={Next} name="Next.js" color="bg-gray-400" />
                   <Skills logo={React} name="React.js" color="bg-React" />
@@ -64,13 +62,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-4 w-full-h-fit p-3">
-                <h1 className="CaptionBlock"> Recent Compositions
-                </h1>
+                <h1 className="CaptionBlock"> Recent Compositions</h1>
                 <Video />
               </div>
-  
             </div>
-            <SearchBar />
+            <Footer />
+            {/* <SearchBar /> */}
           </div>
         </div>
       </main>
