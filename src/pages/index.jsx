@@ -5,6 +5,8 @@ import Image from "next/image";
 import Nav from "./Nav";
 // import Axis from "./Axis";
 import Banner from "./Banner";
+import Header from "./Header";
+import Top from "./Top";
 import SearchBar from "./SearchBar";
 import Skills from "./Skills";
 import Footer from "./Footer";
@@ -35,10 +37,10 @@ export default function Home() {
         <div className=" FlexCenterCol mt-4 font-pop BoxFull">
           <div className=" md:max-w-5xl FlexCenterCol p-2  h-fit min-h-fit w-full">
             {/* Header */}
-            <h1 className="mt-4 md:text-5xl NameShadow cursor-text text-gray-300 text-4xl font-extrabold text-center">
-              Rapidly <span className="text-Redd">optimizing </span>every step
-              of development.
-            </h1>
+            <Header
+            style = 'Header'
+             />
+            
 
             {/* Caption */}
             <p className=" my-5 mb-5 leading-7 text-base text-gray-400 font-semibold text-center">
@@ -49,7 +51,7 @@ export default function Home() {
             {/* Current Skill Tree */}
             <div className=" BoxFull mx-4 p-4 mt-6 mb-24">
               <div className="Section ">
-                <h1 className="CaptionBlock">Skill Tree</h1>
+                <h1 className="CaptionBlock text-Aero">Skill Tree</h1>
                 <div className="BoxFull pt-4 lg:grid grid-cols-2 gap-x-2">
                   <Skills logo={Next} name="Next.js" color="bg-gray-400" />
                   <Skills logo={React} name="React.js" color="bg-React" />
@@ -62,7 +64,7 @@ export default function Home() {
 
              {/* Live Sites */}
               <div className="Section">
-                <h1 className="CaptionBlock">Live Sites</h1>
+                <h1 className="CaptionBlock text-center text-Aero">Live Sites</h1>
 
                  {/* Prompt Engine */}
                 <div className="BoxFull flex rounded-2xl text-gray-400 font-light Shadow bg-DarkG items-center w-full mb-2 p-2 mt-4 hover:ring-2 hover:ring-Redd Smooth">
@@ -91,7 +93,7 @@ export default function Home() {
 
 
               <div className="Section mt-4">
-                <h1 className="CaptionBlock"> Recent Compositions</h1>
+                <h1 className="CaptionBlock text-right text-Redd"> Recent Compositions</h1>
                 <Video />
               </div>
             </div>

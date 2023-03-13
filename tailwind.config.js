@@ -31,6 +31,7 @@ module.exports = {
         Onyx: '#403F4C',
         Uranian: '#A5D8FF',
         Aero: '#05B2DC',
+        Apricot: '#FFD6BA',
 
 
         Bluee: "#1a0b52",

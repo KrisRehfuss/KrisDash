@@ -38,11 +38,19 @@ body {
 }
 
 .CaptionBlock {
-  @apply text-xl border-b pb-2 border-DarkG text-LiteG NameShadow font-normal
+  @apply text-xl border-b pb-2 border-DarkG  NameShadow font-normal
 }
 
 .Section {
   @apply w-full h-fit p-3
+}
+
+.Footer {
+  @apply bottom-0 w-fit h-fit p-4 font-light lg:text-base text-center text-sm FlexCenter border-t
+}
+
+.Header {
+  @apply mt-4 md:text-5xl NameShadow hover:text-Aero cursor-text text-gray-300 text-4xl font-extrabold text-center
 }
 
 /* Customs - End */
@@ -133,7 +141,7 @@ body {
 }
 
 .NameShadow {
-  @apply shadow-black drop-shadow-md hover:text-Aero ;
+  @apply shadow-black drop-shadow-md  ;
 }
 
 .Glass {
