@@ -51,7 +51,7 @@ export default function Home() {
             {/* Current Skill Tree */}
             <div className=" BoxFull mx-4 p-4 mt-6 mb-24">
               <div className="Section ">
-                <h1 className="CaptionBlock text-Aero">Skill Tree</h1>
+                <h1 className="CaptionBlock text-white">Skill Tree</h1>
                 <div className="BoxFull pt-4 lg:grid grid-cols-2 gap-x-2">
                   <Skills logo={Next} name="Next.js" color="bg-gray-400" />
                   <Skills logo={React} name="React.js" color="bg-React" />
@@ -64,7 +64,7 @@ export default function Home() {
 
              {/* Live Sites */}
               <div className="Section">
-                <h1 className="CaptionBlock text-center text-Aero">Live Sites</h1>
+                <h1 className="CaptionBlock text-left text-white">Live Sites</h1>
 
                  {/* Prompt Engine */}
                 <div className="BoxFull flex rounded-2xl text-gray-400 font-light Shadow bg-DarkG items-center w-full mb-2 p-2 mt-4 hover:ring-2 hover:ring-Redd Smooth">
