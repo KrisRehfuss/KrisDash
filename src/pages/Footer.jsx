@@ -5,7 +5,7 @@ import Top from "./Top";
 function Footer() {
   return (
     <div>
-      <Top text="This site was developed from scratch by Kris Rehfuss using Next.js, Tailwind, and Vercel for deployment"/>
+      <Top text="This site was developed from scratch by Kris Rehfuss"/>
     </div>
   );
 }
