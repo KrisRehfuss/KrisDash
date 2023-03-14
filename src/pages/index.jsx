@@ -78,7 +78,7 @@ export default function Home() {
                   </div>
                   {/* Prompt Engine Link */}
                   <a
-                    className="w-full  text-gray-300"
+                    className="w-full text-gray-300"
                     href="https://prompt-engine.vercel.app/"
                   >
                     Prompt <span className="text-violet-500">Engine</span>
