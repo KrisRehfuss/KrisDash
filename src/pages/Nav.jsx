@@ -39,7 +39,8 @@ function Nav() {
 
 
         <div className=" NavItem p-2">
-          <BsSun className='hover:animate-spin hover:text-yellow-500' />
+          
+          <a href="https://neoweather.vercel.app"><BsSun className='hover:animate-spin hover:text-yellow-500' /></a>
         </div>
 
         <div className="mt-1 p-2 Round cursor-pointer hover:text-Aero">
