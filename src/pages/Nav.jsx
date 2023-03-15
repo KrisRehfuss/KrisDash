@@ -4,6 +4,9 @@ import { BsSun } from "react-icons/bs";
 import { BiSearch } from "react-icons/bi";
 import { RxHamburgerMenu } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { BsChatLeft } from "react-icons/bs";
+import { AiOutlineHome } from "react-icons/ai";
+
 import M from "../../public/Engine.png";
 
 function Nav() {
@@ -12,7 +15,7 @@ function Nav() {
 
     <div className="Nav shadow-2xl shadow-Redd ">
       {/* Logo */}
-      <div className="NameShadow FlexCenter ml-4 h-full m-0   text-center text-gray-300 font-bold text-xl">
+      <div className="NameShadow FlexCenter ml-4 h-full m-0 text-center text-gray-300 font-bold text-xl">
         <Image className=" mr-3 w-12" src={M} alt="M Logo" />
         Kris<span className="ml-1 text-Plum"> Rehfuss </span>
       </div>
@@ -29,14 +32,21 @@ function Nav() {
       {/* Icons */}
       <div className="FlexCenter h-full  text-2xl mr-4 text-Redd  space-x-4 ">
         <div className=" NavItem p-2">
-          <AiOutlineStar />
+          <a href='https://www.neodrream.com' alt='home'><AiOutlineHome /> </a>
+          
         </div>
+
+
+
         <div className=" NavItem p-2">
-          <BsSun />
+          <BsSun className='hover:animate-spin hover:text-yellow-500' />
         </div>
-        <div className=" NavItem p-2">
-          <GiHamburgerMenu />
+
+        <div className="mt-1 p-2 Round cursor-pointer hover:text-Aero">
+          <a href='https://chat.openai.com/chat' alt='OpenAI'><BsChatLeft className='w-5 ' /></a>
+          
         </div>
+
       </div>
     </div>
   );

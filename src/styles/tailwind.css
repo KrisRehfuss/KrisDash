@@ -45,6 +45,10 @@ body {
   @apply w-full h-fit p-3 mb-4
 }
 
+.LiveSites {
+  @apply BoxFull flex rounded-2xl text-gray-400 font-light Shadow bg-DarkG items-center w-full mb-2 p-4 mt-4 hover:shadow-black hover:shadow-lg hover:scale-95 active:scale-90 transition transform duration-100
+}
+
 .Footer {
   @apply bottom-0 w-fit h-fit p-4 font-light lg:text-base text-center text-sm FlexCenter border-t
 }
