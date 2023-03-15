@@ -94,7 +94,7 @@
                         </div>
                         <a
                           className="w-full text-gray-300"
-                          href="https://prompt-engine.vercel.app/"
+                          href="https://neoweather.vercel.app"
                         >
                           <span className="text-Aero">Weather</span> App
                           <p className="text-sm text-gray-500 ">
