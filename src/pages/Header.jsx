@@ -3,8 +3,7 @@ import React from "react";
 function Header({ style }) {
   return (
     <div className={style}>
-      Rapidly <span className="text-Redd">optimizing </span>every step of
-      development.
+      Welcome to my <span className="text-Redd">personal dashboard </span>
     </div>
   );
 }
