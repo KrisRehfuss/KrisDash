@@ -45,7 +45,7 @@
 
                   {/* Caption */}
                   <p className=" my-5 mb-5 leading-7 text-base text-gray-400 font-semibold text-center">
-                    Hello, my name is Kristopher and I&apos;m a passionate & creative software developer that loves to optimize everything.
+                    Hello, my name is Kristopher and I&apos;m a passionate software developer that values creativity and optimization.
                   </p>
 
                   {/* Section */}
