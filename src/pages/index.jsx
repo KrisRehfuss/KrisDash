@@ -45,7 +45,8 @@
 
                   {/* Caption */}
                   <p className=" my-5 mb-5 leading-7 text-base text-gray-400 font-semibold text-center">
-                    Hello, my name is Kristopher and I&apos;m a passionate software developer that values creativity and optimization.
+                    Hello, my name is Kristopher and I&apos;m a passionate
+                    software developer that values creativity and optimization.
                   </p>
 
                   {/* Section */}
@@ -92,7 +93,7 @@
                         </div>
                         <a
                           className="w-full text-gray-300"
-                          href="https://neoweather.vercel.app"
+                          href="https://www.thesunsarc.com"
                         >
                           <span className="text-Aero">Weather</span> App
                           <p className="text-sm text-gray-500 ">
