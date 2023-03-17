@@ -42,18 +42,18 @@
 
               {/* Wrapper Start */}
               <div className=" FlexCenterCol mt-4 font-pop BoxFull">
-                <div className=" md:max-w-5xl FlexCenterCol p-2  h-fit min-h-fit w-full">
+                <div className=" md:max-w-5xl FlexCenterCol p-2  h-fit min-h-fit w-6/12">
                   {/* Header */}
                   <Header style="Header" />
 
                   {/* Caption */}
-                  <p className=" my-5 mb-5 p-4 leading-7 text-base text-gray-400 font-semibold text-center">
+                  <p className="my-5 mb-5 p-4 lg:text-xl lg:px-12 leading-7 text-base text-gray-400 font-semibold text-center">
                     Hello, my name is Kristopher and I&apos;m a passionate
                     software developer that values creativity and optimization.
                   </p>
 
                   {/* Section */}
-                  <div className=" BoxFull mx-4 p-4 mt-6 mb-12">
+                  <div className=" BoxFull mx-4 p-4 mt-6 mb-6">
                     {/* Live Sites */}
                     <div className="Section">
                       <h1 className="CaptionBlock text-left text-white">
@@ -98,8 +98,10 @@
                           className="w-full text-gray-300"
                           href="https://www.thesunsarc.com"
                         >
-                          <span className="text-Aero">The Sun&apos;s</span> Arc
-                          <p className="text-sm text-gray-500 ">
+                          <h3 className="font-normal">
+                            The <span className='BlueText'>Sun&apos;s Arc</span>
+                          </h3>
+                          <p className="text-sm text-gray-500  ">
                             Created a miniamlist weather app
                           </p>
                         </a>
@@ -122,29 +124,40 @@
                         />
                         <Skills logo={Git} name="Git" color="bg-Git" />
                         <Skills logo={TS} name="TypeScript" color="bg-TS" />
-                        <Skills logo={OpenAI} name="OpenAI" color="bg-OpenAI" />
+                        <Skills
+                          logo={OpenAI}
+                          name="OpenAI"
+                          color="bg-OpenAI"
+                        />
                       </div>
                     </div>
 
                     {/* Current Skill Tree */}
                     <div className="Section mt-4">
                       <h1 className="CaptionBlock ">Personal Works</h1>
+
+
                       <div className="FlexCenterCol BoxFull pt-4">
-                        <h1 className='text-3xl NameShadow font-normal text-center pt-6 pb-8 p-4'>
-                          <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>Prismatic // </span> <span className="font-thin">Subversion</span>
+                        <h1 className="text-2xl NameShadow font-normal pt-6 pb-8 p-4">
+                          <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+                            Prismatic //
+                          </span>
+                          <span className="font-thin text-lg"> Subversion</span>
                         </h1>
-                        <a href='https://open.spotify.com/artist/3je0rpoLMnH2doxB43msGn'> 
-                        <Image
-                         className='Round Shadow w-[600px] Push'
-                          src={SubV}
-                          // layout='fill'
-                          objectFit='cover'
-                          alt='#' />
-                          </a>
-                          <p className="text-base font-thin pt-8">Artwork by Joseph Harrel</p>
+                        <a href="https://open.spotify.com/artist/3je0rpoLMnH2doxB43msGn">
+                          <Image
+                            className="Round antialiased Shadow w-[300px] Push"
+                            src={Subversion}
+                            // layout='fill'
+                            objectFit="cover"
+                            alt="#"
+                          />
+                        </a>
+                        <p className="text-sm font-thin pt-8">
+                          Artwork by Joseph Harrel
+                        </p>
                       </div>
                       {/* <h1 className="CaptionBlock text-Redd"> Recent Compositions</h1> */}
-                      {/* <Video /> */}
                     </div>
                   </div>
                   <Footer />

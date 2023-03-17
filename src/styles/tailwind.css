@@ -31,9 +31,15 @@ body {
   @apply hover:scale-95 active:scale-90 transition transform duration-100 ease-linear
 }
 
-.TextGrade {
+.PinkText {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500
 }
+
+.BlueText {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-Aero to-Gold
+}
+
+
 
 /* Customs */
 
@@ -58,11 +64,11 @@ body {
 }
 
 .Footer {
-  @apply bottom-0 w-fit h-fit p-4 font-light lg:text-base text-center text-sm FlexCenter border-t
+  @apply bottom-0 w-fit h-fit p-4 font-light lg:text-base text-center text-xs FlexCenter border-t
 }
 
 .Header {
-  @apply mt-4 md:text-5xl NameShadow hover:text-Aero cursor-text TextGrade text-4xl font-extrabold text-center
+  @apply mt-4 lg:text-6xl md:p-8  w-fit NameShadow hover:text-Aero cursor-text PinkText text-4xl font-extrabold text-center Smoother
 }
 
 /* Customs - End */

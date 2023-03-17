@@ -32,6 +32,8 @@ module.exports = {
         Uranian: '#A5D8FF',
         Aero: '#05B2DC',
         Apricot: '#FFD6BA',
+        Gold: '#ffd347',
+        Intrins: '#8c4485',
 
 
         Bluee: "#1a0b52",

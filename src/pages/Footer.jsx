@@ -5,7 +5,7 @@ import Top from "./Top";
 function Footer() {
   return (
     <div>
-      <Top text="This site was developed from scratch by Kris Rehfuss and is getting regular updates"/>
+      <Top  text="This site was developed from scratch by Kris and is getting regular updates"/>
     </div>
   );
 }
