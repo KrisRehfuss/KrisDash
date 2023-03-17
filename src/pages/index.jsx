@@ -18,6 +18,9 @@
       import OpenAI from "../../public/openai.png";
       import Next from "../../public/next-js.svg";
       import sun from '../../public/sun.png';
+      import SubV from '../../public/SubV.jpg';
+      import Subversion from '../../public/Subversion.jpg';
+
       import Video from "./Video";
 
       export default function Home() {
@@ -44,13 +47,13 @@
                   <Header style="Header" />
 
                   {/* Caption */}
-                  <p className=" my-5 mb-5 leading-7 text-base text-gray-400 font-semibold text-center">
+                  <p className=" my-5 mb-5 p-4 leading-7 text-base text-gray-400 font-semibold text-center">
                     Hello, my name is Kristopher and I&apos;m a passionate
                     software developer that values creativity and optimization.
                   </p>
 
                   {/* Section */}
-                  <div className=" BoxFull mx-4 p-4 mt-6 mb-24">
+                  <div className=" BoxFull mx-4 p-4 mt-6 mb-12">
                     {/* Live Sites */}
                     <div className="Section">
                       <h1 className="CaptionBlock text-left text-white">
@@ -95,7 +98,7 @@
                           className="w-full text-gray-300"
                           href="https://www.thesunsarc.com"
                         >
-                          <span className="text-Aero">Weather</span> App
+                          <span className="text-Aero">The Sun&apos;s</span> Arc
                           <p className="text-sm text-gray-500 ">
                             Created a miniamlist weather app
                           </p>
@@ -125,6 +128,21 @@
 
                     {/* Current Skill Tree */}
                     <div className="Section mt-4">
+                      <h1 className="CaptionBlock ">Personal Works</h1>
+                      <div className="FlexCenterCol BoxFull pt-4">
+                        <h1 className='text-3xl NameShadow font-normal text-center pt-6 pb-8 p-4'>
+                          <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>Prismatic // </span> <span className="font-thin">Subversion</span>
+                        </h1>
+                        <a href='https://open.spotify.com/artist/3je0rpoLMnH2doxB43msGn'> 
+                        <Image
+                         className='Round Shadow w-[600px] Push'
+                          src={SubV}
+                          // layout='fill'
+                          objectFit='cover'
+                          alt='#' />
+                          </a>
+                          <p className="text-base font-thin pt-8">Artwork by Joseph Harrel</p>
+                      </div>
                       {/* <h1 className="CaptionBlock text-Redd"> Recent Compositions</h1> */}
                       {/* <Video /> */}
                     </div>

@@ -27,6 +27,14 @@ body {
   @apply blur-sm;
 }
 
+.Push {
+  @apply hover:scale-95 active:scale-90 transition transform duration-100 ease-linear
+}
+
+.TextGrade {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500
+}
+
 /* Customs */
 
 .ExploreAll {
@@ -54,7 +62,7 @@ body {
 }
 
 .Header {
-  @apply mt-4 md:text-5xl NameShadow hover:text-Aero cursor-text text-gray-300 text-4xl font-extrabold text-center
+  @apply mt-4 md:text-5xl NameShadow hover:text-Aero cursor-text TextGrade text-4xl font-extrabold text-center
 }
 
 /* Customs - End */
@@ -133,7 +141,7 @@ body {
 }
 
 .Smoother {
-  @apply duration-150 delay-75 ease-linear;
+  @apply duration-150  ease-linear;
 }
 
 .Bounce {

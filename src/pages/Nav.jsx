@@ -32,22 +32,22 @@ function Nav() {
       {/* Icons */}
       <div className="FlexCenter h-full  text-2xl mr-4 text-Redd  space-x-4 ">
         <div className=" NavItem p-2">
-          <a href='https://www.neodrream.com' alt='home'><AiOutlineHome /> </a>
-          
+          <a href="https://www.krisrehfuss.com" alt="home">
+            <AiOutlineHome />{" "}
+          </a>
         </div>
 
-
-
         <div className=" NavItem p-2">
-          
-          <a href="https://neoweather.vercel.app"><BsSun className='hover:animate-spin hover:text-yellow-500' /></a>
+          <a href="https://www.thesunsarc.com">
+            <BsSun className="hover:animate-spin hover:text-yellow-500" />
+          </a>
         </div>
 
         <div className="mt-1 p-2 Round cursor-pointer hover:text-Aero">
-          <a href='https://chat.openai.com/chat' alt='OpenAI'><BsChatLeft className='w-5 ' /></a>
-          
+          <a href="https://chat.openai.com/chat" alt="OpenAI">
+            <BsChatLeft className="w-5 " />
+          </a>
         </div>
-
       </div>
     </div>
   );
