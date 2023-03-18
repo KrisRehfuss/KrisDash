@@ -154,7 +154,7 @@
                             alt="Prismatic - Subversion EP"
                           />
                         </a>
-                        <p className="text-sm font-thin pt-8">
+                        <p className="text-sm text-coal font-thin pt-8">
                           Artwork by Joseph Harrel
                         </p>
                       </div>

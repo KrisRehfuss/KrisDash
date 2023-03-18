@@ -60,7 +60,7 @@ body {
 }
 
 .LiveSites {
-  @apply BoxFull flex rounded-2xl text-gray-300 font-light Shadow bg-DarG items-center w-full mb-2 p-4 mt-4 hover:shadow-black hover:shadow-lg hover:scale-95 active:scale-90 transition transform duration-100
+  @apply BoxFull flex rounded-2xl text-gray-300 font-light Shadow bg-DarkG items-center w-full mb-2 p-4 mt-4 hover:shadow-black hover:shadow-lg hover:scale-95 active:scale-90 transition transform duration-100
 }
 
 .Footer {
