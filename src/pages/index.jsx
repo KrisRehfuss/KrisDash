@@ -56,7 +56,7 @@
                   <div className=" BoxFull mx-4 p-4 mt-6 mb-6">
                     {/* Live Sites */}
                     <div className="Section">
-                      <h1 className="CaptionBlock text-left text-white">
+                      <h1 className="CaptionBlock text-left text-coal">
                         Live Sites
                       </h1>
 
@@ -109,7 +109,7 @@
                     </div>
 
                     <div className="Section ">
-                      <h1 className="CaptionBlock text-white">Skill Tree</h1>
+                      <h1 className="CaptionBlock text-coal">Skill Tree</h1>
                       <div className="BoxFull pt-4 lg:grid grid-cols-2 gap-x-2">
                         <Skills
                           logo={Next}
@@ -130,7 +130,7 @@
 
                     {/* Current Skill Tree */}
                     <div className="Section mt-4">
-                      <h1 className="CaptionBlock ">Personal Works</h1>
+                      <h1 className="CaptionBlock text-coal">Personal Works</h1>
 
                       <div className="FlexCenterCol BoxFull pt-4">
                         <h1 className="text-2xl NameShadow font-normal pt-6 pb-8 p-4">

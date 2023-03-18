@@ -7,7 +7,7 @@
 
 
 body {
-  @apply bg-coal Smooth text-white font-pop antialiased scrollbar-hide scroll-smooth;
+  @apply bg-whiteish Smooth text-white font-pop antialiased scrollbar-hide scroll-smooth;
 }
 
 
@@ -64,7 +64,7 @@ body {
 }
 
 .Footer {
-  @apply bottom-0 w-fit h-fit p-4 font-light lg:text-base text-center text-xs FlexCenter border-t
+  @apply text-coal bottom-0 w-fit h-fit p-4 font-light lg:text-base text-center text-xs FlexCenter border-t
 }
 
 .Header {

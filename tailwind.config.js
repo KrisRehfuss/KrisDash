@@ -18,6 +18,7 @@ module.exports = {
         pri: "#8e949e",
         whyte: "hsl(0, 0%, 100%)",
         Lgray: "hsl(212, 45%, 89%)",
+        whiteish: '#fef0ed',
 
         WineBack: "#0f1732",
         LeftG: "#0f2735",
