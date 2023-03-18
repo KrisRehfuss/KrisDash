@@ -99,7 +99,7 @@
                           href="https://www.thesunsarc.com"
                         >
                           <h3 className="font-normal">
-                            The <span className='BlueText'>Sun&apos;s Arc</span>
+                            The <span className="PrismaticText">Sun&apos;s Arc</span>
                           </h3>
                           <p className="text-sm text-gray-500  ">
                             Created a miniamlist weather app
@@ -124,18 +124,13 @@
                         />
                         <Skills logo={Git} name="Git" color="bg-Git" />
                         <Skills logo={TS} name="TypeScript" color="bg-TS" />
-                        <Skills
-                          logo={OpenAI}
-                          name="OpenAI"
-                          color="bg-OpenAI"
-                        />
+                        <Skills logo={OpenAI} name="OpenAI" color="bg-OpenAI" />
                       </div>
                     </div>
 
                     {/* Current Skill Tree */}
                     <div className="Section mt-4">
                       <h1 className="CaptionBlock ">Personal Works</h1>
-
 
                       <div className="FlexCenterCol BoxFull pt-4">
                         <h1 className="text-2xl NameShadow font-normal pt-6 pb-8 p-4">
@@ -144,13 +139,13 @@
                           </span>
                           <span className="font-thin text-lg"> Subversion</span>
                         </h1>
-                        <a href="https://open.spotify.com/artist/3je0rpoLMnH2doxB43msGn">
+                        <a href="https://prismaticband.com">
                           <Image
                             className="Round antialiased Shadow w-[300px] Push"
                             src={Subversion}
                             // layout='fill'
                             objectFit="cover"
-                            alt="#"
+                            alt="Prismatic - Subversion EP"
                           />
                         </a>
                         <p className="text-sm font-thin pt-8">

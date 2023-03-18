@@ -116,6 +116,14 @@ body {
   @apply flex flex-col items-center ;
 }
 
+.PrismaticText {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-Pinq to-Q 
+}
+
+.SubversionText {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-Splatter to-Pinq
+}
+
 /* Styles */
 
 .Shade {
