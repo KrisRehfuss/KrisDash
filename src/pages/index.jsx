@@ -44,16 +44,16 @@
               <div className=" FlexCenterCol mt-4 font-pop BoxFull">
                 <div className=" md:max-w-5xl FlexCenterCol p-2  h-fit min-h-fit w-fit lg:w-6/12">
                   {/* Header */}
-                  <Header style="Header" />
+                  <Header style="Header antialiased" />
 
                   {/* Caption */}
-                  <p className="my-5 mb-5 p-4 lg:text-xl lg:px-12 leading-7 text-base text-gray-400 font-semibold text-center">
+                  <p className="my-5 mb-3 p-4 lg:text-xl lg:px-12 leading-7 text-base text-gray-400 font-semibold text-center">
                     Hello, my name is Kristopher and I&apos;m a passionate
                     software developer that values creativity and optimization.
                   </p>
 
                   {/* Section */}
-                  <div className=" BoxFull mx-4 p-4 mt-6 mb-6">
+                  <div className=" BoxFull mx-4 px-4 mt-2 mb-6">
                     {/* Live Sites */}
                     <div className="Section">
                       <h1 className="CaptionBlock text-left text-coal">
@@ -137,7 +137,7 @@
                           <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
                             Prismatic //
                           </span>
-                          <span className="font-thin text-lg"> Subversion</span>
+                          <span className="font-base text-coal text-lg"> Subversion</span>
                         </h1>
                         <a href="https://prismaticband.com">
                           <Image

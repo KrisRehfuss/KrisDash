@@ -68,7 +68,7 @@ body {
 }
 
 .Header {
-  @apply mt-4 lg:text-6xl md:p-8  w-fit NameShadow hover:text-Aero cursor-text PinkText text-4xl font-extrabold text-center Smoother
+  @apply mt-4 lg:text-6xl md:px-8  w-fit NameShadow hover:text-Aero cursor-text PinkText text-4xl font-extrabold text-center Smoother
 }
 
 /* Customs - End */
