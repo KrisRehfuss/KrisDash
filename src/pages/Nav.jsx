@@ -17,7 +17,7 @@ function Nav() {
       {/* Logo */}
       <div className="NameShadow FlexCenter ml-4 h-full m-0 text-center text-coal font-bold text-xl">
         <Image className=" mr-3 w-12" src={M} alt="M Logo" />
-        Kris<span className="ml-1 text-Redd"> Rehfuss </span>
+        Kris<span className="ml-1 text-Sub"> Rehfuss </span>
       </div>
 
       {/* Search Bar */}

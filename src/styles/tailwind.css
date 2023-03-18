@@ -48,7 +48,7 @@ body {
 }
 
 .SkillTree {
-  @apply flex rounded-lg text-gray-400 font-light Shadow bg-DarkG items-center w-full mb-2 p-2 hover:bg-Aero hover:text-white hover:font-normal
+  @apply flex rounded-lg text-gray-300 font-light Shadow bg-slate-700 items-center w-full mb-2 p-2 hover:bg-Aero hover:text-white hover:font-normal
 }
 
 .CaptionBlock {
@@ -60,7 +60,7 @@ body {
 }
 
 .LiveSites {
-  @apply BoxFull flex rounded-2xl text-gray-400 font-light Shadow bg-DarkG items-center w-full mb-2 p-4 mt-4 hover:shadow-black hover:shadow-lg hover:scale-95 active:scale-90 transition transform duration-100
+  @apply BoxFull flex rounded-2xl text-gray-300 font-light Shadow bg-coal items-center w-full mb-2 p-4 mt-4 hover:shadow-black hover:shadow-lg hover:scale-95 active:scale-90 transition transform duration-100
 }
 
 .Footer {

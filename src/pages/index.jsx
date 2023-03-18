@@ -47,7 +47,7 @@
                   <Header style="Header antialiased" />
 
                   {/* Caption */}
-                  <p className="my-5 mb-3 p-4 lg:text-xl lg:px-12 leading-7 text-base text-gray-400 font-semibold text-center">
+                  <p className="my-5 mb-3 p-4 lg:text-xl lg:px-12 leading-7 text-base text-coal/70 font-semibold text-center">
                     Hello, my name is Kristopher and I&apos;m a passionate
                     software developer that values creativity and optimization.
                   </p>
@@ -72,11 +72,11 @@
                           />
                         </div>
                         <a
-                          className="w-full text-gray-300"
+                          className="w-full text-gray-200"
                           href="https://prompt-engine.vercel.app/"
                         >
                           Prompt <span className="text-violet-500">Engine</span>
-                          <p className="text-sm text-gray-500 ">
+                          <p className="text-sm text-gray-400 ">
                             Created a prompt engine with a dynamic layout using
                             ChatGPT&apos;s API and Tailwind
                           </p>
@@ -95,13 +95,13 @@
                           />
                         </div>
                         <a
-                          className="w-full text-gray-300"
+                          className="w-full text-gray-200"
                           href="https://www.thesunsarc.com"
                         >
                           <h3 className="font-normal">
                             The <span className="PrismaticText">Sun&apos;s Arc</span>
                           </h3>
-                          <p className="text-sm text-gray-500  ">
+                          <p className="text-sm text-gray-400  ">
                             Created a miniamlist weather app
                           </p>
                         </a>
