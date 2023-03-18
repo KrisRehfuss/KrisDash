@@ -99,7 +99,10 @@
                           href="https://www.thesunsarc.com"
                         >
                           <h3 className="font-normal">
-                            The <span className="PrismaticText">Sun&apos;s Arc</span>
+                            The{" "}
+                            <span className="PrismaticText">
+                              Sun&apos;s Arc
+                            </span>
                           </h3>
                           <p className="text-sm text-gray-400  ">
                             Created a miniamlist weather app
@@ -137,9 +140,12 @@
                           <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
                             Prismatic //
                           </span>
-                          <span className="font-base text-coal text-lg"> Subversion</span>
+                          <span className="font-base text-coal text-lg">
+                            {" "}
+                            Subversion
+                          </span>
                         </h1>
-                        <a href="https://prismaticband.com">
+                        <a href="https://https://open.spotify.com/track/4z2nNF1C276f8Egzu7kB86.com">
                           <Image
                             className="Round antialiased Shadow w-[300px] Push"
                             src={Subversion}
