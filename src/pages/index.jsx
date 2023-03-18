@@ -145,16 +145,16 @@
                             Subversion
                           </span>
                         </h1>
-                        <a href="https://https://open.spotify.com/track/4z2nNF1C276f8Egzu7kB86.com">
+                        <a href="https://open.spotify.com/track/4z2nNF1C276f8Egzu7kB86">
                           <Image
-                            className="Round antialiased Shadow w-[300px] Push"
+                            className="Round antialiased shadow-2xl shadow-coal hover:shadow-Intrins w-[300px] Push"
                             src={Subversion}
                             // layout='fill'
                             objectFit="cover"
                             alt="Prismatic - Subversion EP"
                           />
                         </a>
-                        <p className="text-sm text-coal font-thin pt-8">
+                        <p className="text-sm text-coal/60 font-normal pt-8">
                           Artwork by Joseph Harrel
                         </p>
                       </div>

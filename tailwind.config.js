@@ -24,6 +24,7 @@ module.exports = {
         LeftG: "#0f2735",
         MidP: "#202148",
         RightG: "#0e380e",
+        DarkG: '#202020',
 
         Redd: "#e74175",
         Smokey: "#090C02",
@@ -49,7 +50,6 @@ module.exports = {
         Purpp: "#5e0e8c",
         Logo: "#b86bac",
         Plum: "#8a3468",
-        DarkG: "#202020",
         TS: "#222b35",
         React: "#28373b",
         OpenAI: "#444654",
