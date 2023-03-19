@@ -46,7 +46,7 @@
 
               {/* Wrapper Start */}
               <div className=" FlexCenterCol mt-4 font-pop BoxFull">
-                <div className="md:max-w-5xl FlexCenterCol p-2  h-fit min-h-fit w-fit lg:w-6/12">
+                <div className="md:max-w-5xl FlexCenterCol p-2  h-fit min-h-fit w-fit lg:w-8/12">
                   {/* Header */}
                   <Header style="Header antialiased" />
 
