@@ -27,10 +27,6 @@ body {
   @apply blur-sm;
 }
 
-.Push {
-  @apply hover:scale-95 active:scale-90 transition transform duration-300 ease-linear
-}
-
 .GentlePush {
   @apply hover:scale-95 active:scale-90 transition transform duration-300 ease-in-out
 }
@@ -90,11 +86,11 @@ body {
 }
 
 .Push {
-  @apply hover:scale-95 active:scale-90 transition transform duration-100 ease-linear
+  @apply hover:scale-95 active:scale-100 transition transform duration-300 ease-in-out
 }
 
 .Pull {
-  @apply hover:z-50 hover:shadow-2xl hover:scale-110 active:scale-95 transition transform duration-100 ease-out
+  @apply hover:z-50 hover:shadow-2xl hover:scale-105 active:scale-95 transition transform duration-100 ease-out
 }
 
 /* Structure */

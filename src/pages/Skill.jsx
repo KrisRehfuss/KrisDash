@@ -15,12 +15,13 @@ function Skill({ name, logo, audio }) {
 
   return (
     <div
-      className="md:w-full h-fit w-fit flex text-xs items-center bg-coal/80 text-gray-300 p-2 mb-2 rounded-md grow Pull shadow-md  md:h-auto shadow-Pinq"
-      onMouseEnter={playNote}
+      className="md:w-full h-fit w-fit flex text-xs items-center bg-coal/80 active:bg-Pinq/80 text-gray-300 p-2 mb-2 rounded-md grow Pull shadow-md  md:h-auto shadow-Pinq"
+      onClick={playNote}
     >
       <Image src={logo} className="w-4" alt="#" />
       <div className="ml-1 ">{name}</div>
-      <audio ref={audioRef} src={audio}></audio>    </div>
+      <audio ref={audioRef} src={audio}></audio>{" "}
+    </div>
   );
 }
 
