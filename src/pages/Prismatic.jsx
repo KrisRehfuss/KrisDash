@@ -12,7 +12,9 @@ function Prismatic({ audio }) {
     }
   };
 
-  const isMobileDevice = /Mobi/i.test(navigator.userAgent);
+  // Checks if we're in a browser
+  const isBrowser = typeof window !== "undefined";
+  const isMobileDevice = isBrowser && /Mobi/i.test(navigator.userAgent);
 
   const handleEvent = isMobileDevice
     ? { onClick: playNote }
