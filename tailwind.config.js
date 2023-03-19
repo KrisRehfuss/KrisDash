@@ -24,7 +24,7 @@ module.exports = {
         LeftG: "#0f2735",
         MidP: "#202148",
         RightG: "#0e380e",
-        DarkG: '#202020',
+        DarkG: "#202020",
 
         Redd: "#e74175",
         Smokey: "#090C02",
@@ -36,6 +36,14 @@ module.exports = {
         Apricot: "#FFD6BA",
         Gold: "#ffd347",
         Intrins: "#8c4485",
+        LiteBlue: "#c0defe",
+        CityBlu: "#4571d9",
+        LB: "#e2eefd",
+        Pinkk: "#fcb6d6",
+        IceBlue: "#b1b3c5",
+        BlueG: "#151f29",
+        Peri: "#9493a7",
+        Teel: "#6b9a94",
         Licorice: "#1F1300",
         Space: "#2D3047",
 

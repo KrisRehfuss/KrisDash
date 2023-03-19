@@ -4,7 +4,7 @@ function Top({ text }) {
   return (
     <div className="Footer hover:text-Apricot">
       <p>
-        <button className='text-sm'
+        <button className='text-xs'
           onMouseEnter={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           {text}

@@ -6,6 +6,7 @@
       // import Axis from "./Axis";
       import Banner from "./Banner";
       import Header from "./Header";
+      import SkillTree from "./SkillTree";
       import Top from "./Top";
       import SearchBar from "./SearchBar";
       import Skills from "./Skills";
@@ -18,17 +19,20 @@
       import OpenAI from "../../public/openai.png";
       import Next from "../../public/next-js.svg";
       import sun from '../../public/sun.png';
+      import Prismatic from "./Prismatic";
+      import Chord from "../../public/Piano/Chord.mp3";
+      import Chord2 from "../../public/Piano/Chord-02.mp3";
+
       import SubV from '../../public/SubV.jpg';
       import Subversion from '../../public/Subversion.jpg';
 
-      import Video from "./Video";
 
       export default function Home() {
         return (
           <>
             <Head>
               <title>Kris Dashboard </title>
-              <meta name="description" content="Kris Dash" />
+              <meta name="description" content="Dashboard" />
               <meta
                 name="viewport"
                 content="width=device-width, initial-scale=1"
@@ -42,7 +46,7 @@
 
               {/* Wrapper Start */}
               <div className=" FlexCenterCol mt-4 font-pop BoxFull">
-                <div className=" md:max-w-5xl FlexCenterCol p-2  h-fit min-h-fit w-fit lg:w-6/12">
+                <div className="md:max-w-5xl FlexCenterCol p-2  h-fit min-h-fit w-fit lg:w-6/12">
                   {/* Header */}
                   <Header style="Header antialiased" />
 
@@ -111,9 +115,13 @@
                       </div>
                     </div>
 
-                    <div className="Section ">
-                      <h1 className="CaptionBlock text-coal">Skill Tree</h1>
-                      <div className="BoxFull pt-4 lg:grid grid-cols-2 gap-x-2">
+                    <div className="Section  ">
+                      <h1 className="CaptionBlock text-coal">My Skills</h1>
+                      <div className="BoxFull mt-8 relative text-coal px-1 ">
+
+                        <SkillTree />
+                      </div>
+                      {/* <div className="BoxFull pt-4 lg:grid grid-cols-2 gap-x-2">
                         <Skills
                           logo={Next}
                           name="Next.js"
@@ -128,7 +136,7 @@
                         <Skills logo={Git} name="Git" color="bg-Git" />
                         <Skills logo={TS} name="TypeScript" color="bg-TS" />
                         <Skills logo={OpenAI} name="OpenAI" color="bg-OpenAI" />
-                      </div>
+                      </div> */}
                     </div>
 
                     {/* Current Skill Tree */}
@@ -136,27 +144,9 @@
                       <h1 className="CaptionBlock text-coal">Personal Works</h1>
 
                       <div className="FlexCenterCol BoxFull pt-4">
-                        <h1 className="text-2xl NameShadow font-normal pt-6 pb-8 p-4">
-                          <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
-                            Prismatic //
-                          </span>
-                          <span className="font-base text-coal text-lg">
-                            {" "}
-                            Subversion
-                          </span>
-                        </h1>
-                        <a href="https://open.spotify.com/track/4z2nNF1C276f8Egzu7kB86">
-                          <Image
-                            className="Round antialiased shadow-2xl shadow-coal hover:shadow-Intrins w-[300px] Push"
-                            src={Subversion}
-                            // layout='fill'
-                            objectFit="cover"
-                            alt="Prismatic - Subversion EP"
-                          />
-                        </a>
-                        <p className="text-sm text-coal/60 font-normal pt-8">
-                          Artwork by Joseph Harrel
-                        </p>
+                          <Prismatic
+                          audio = {Chord2}
+                           />
                       </div>
                       {/* <h1 className="CaptionBlock text-Redd"> Recent Compositions</h1> */}
                     </div>

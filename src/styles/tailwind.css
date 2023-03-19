@@ -28,7 +28,11 @@ body {
 }
 
 .Push {
-  @apply hover:scale-95 active:scale-90 transition transform duration-100 ease-linear
+  @apply hover:scale-95 active:scale-90 transition transform duration-300 ease-linear
+}
+
+.GentlePush {
+  @apply hover:scale-95 active:scale-90 transition transform duration-300 ease-in-out
 }
 
 .PinkText {
@@ -48,8 +52,11 @@ body {
 }
 
 .SkillTree {
-  @apply flex rounded-lg text-gray-300 font-light Shadow bg-DarkG items-center w-full mb-2 p-2 hover:bg-Aero hover:text-white hover:font-normal
+  @apply flex rounded-lg text-gray-400 font-light Shadow items-center w-full mb-2 p-2 hover:bg-Aero hover:text-white hover:font-normal
+
 }
+
+
 
 .CaptionBlock {
   @apply text-xl border-b pb-2 border-DarkG  NameShadow font-normal
@@ -64,7 +71,7 @@ body {
 }
 
 .Footer {
-  @apply text-coal bottom-0 w-fit h-fit p-4 font-light lg:text-base text-center text-xs FlexCenter border-t
+  @apply text-coal bottom-0 w-fit h-fit p-4 font-light lg:text-sm text-center text-xs FlexCenter border-t
 }
 
 .Header {
@@ -80,6 +87,14 @@ body {
 
 .HoverPush {
   @apply Hover transform hover:scale-95 Smooth cursor-pointer;
+}
+
+.Push {
+  @apply hover:scale-95 active:scale-90 transition transform duration-100 ease-linear
+}
+
+.Pull {
+  @apply hover:z-50 hover:shadow-2xl hover:scale-110 active:scale-95 transition transform duration-100 ease-out
 }
 
 /* Structure */
