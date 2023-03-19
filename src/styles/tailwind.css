@@ -85,12 +85,16 @@ body {
   @apply Hover transform hover:scale-95 Smooth cursor-pointer;
 }
 
-.Push {
+.PushHover {
   @apply hover:scale-95 active:scale-100 transition transform duration-300 ease-in-out
 }
 
+.Push {
+  @apply active:scale-95 transition transform duration-150 ease-out
+}
+
 .Pull {
-  @apply hover:z-50 hover:shadow-2xl hover:scale-105 active:scale-95 transition transform duration-100 ease-out
+  @apply hover:z-50 hover:shadow-2xl hover:scale-105 transition transform duration-100 ease-out
 }
 
 /* Structure */
