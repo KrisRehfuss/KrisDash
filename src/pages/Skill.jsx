@@ -13,10 +13,16 @@ function Skill({ name, logo, audio }) {
     }
   };
 
+  const isMobileDevice = /Mobi/i.test(navigator.userAgent);
+
+  const handleEvent = isMobileDevice
+    ? { onClick: playNote }
+    : { onMouseEnter: playNote };
+
   return (
     <div
-      className="md:w-full h-fit w-fit grow Push flex text-xs items-center bg-coal/80 active:bg-Pinq/80 text-gray-300 p-2 mb-2 rounded-md shadow-md  md:h-auto shadow-Pinq"
-      onClick={playNote}
+      className="md:w-full Pull hover:cursor-help hover:shadow-CityBlu h-fit w-fit grow Push flex text-xs items-center bg-coal/80 active:bg-Pinq/80 text-gray-300 p-2 mb-2 rounded-md shadow-md  md:h-auto shadow-Pinq"
+      {...handleEvent}
     >
       <Image src={logo} className="w-4" alt="#" />
       <div className="ml-1 ">{name}</div>

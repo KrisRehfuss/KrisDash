@@ -94,7 +94,7 @@ body {
 }
 
 .Pull {
-  @apply hover:z-50 hover:shadow-2xl hover:scale-105 transition transform duration-100 ease-out
+  @apply hover:z-50 hover:shadow-2xl hover:scale-105 transition transform duration-100 ease-in-out
 }
 
 /* Structure */

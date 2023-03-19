@@ -3,14 +3,21 @@ import React, { useRef } from "react";
 import Subversion from "../../public/Subversion.jpg";
 
 function Prismatic({ audio }) {
-   const audioRef = useRef(null);
+  const audioRef = useRef(null);
 
   const playNote = () => {
     if (audioRef.current) {
       audioRef.current.currentTime = 0;
       audioRef.current.play();
     }
-   }
+  };
+
+  const isMobileDevice = /Mobi/i.test(navigator.userAgent);
+
+  const handleEvent = isMobileDevice
+    ? { onClick: playNote }
+    : { onMouseEnter: playNote };
+
   return (
     <div>
       <h1 className=" text-2xl text-center  NameShadow font-normal pt-6 pb-8 p-4">
@@ -19,7 +26,7 @@ function Prismatic({ audio }) {
         </span>
         <span className="font-base text-coal text-lg"> Subversion</span>
       </h1>
-      <div onClick={playNote}>
+      <div {...handleEvent}>
         <Image
           className="antialiased shadow-2xl shadow-coal hover:shadow-Intrins w-[300px] Pull Smoother"
           src={Subversion}
