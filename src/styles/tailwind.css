@@ -63,7 +63,7 @@ body {
 }
 
 .LiveSites {
-  @apply BoxFull flex rounded-2xl text-gray-300 font-light Shadow bg-coal/90 items-center w-full mb-2 p-4 mt-4 hover:shadow-black hover:shadow-lg hover:scale-95 active:scale-90 transition transform duration-100
+  @apply BoxFull flex rounded-2xl text-gray-300 font-light Shadow bg-coal/90 items-center w-full mb-2 p-3 mt-4 hover:shadow-black hover:shadow-lg hover:scale-95 active:scale-90 transition transform duration-100
 }
 
 .Footer {
@@ -71,7 +71,7 @@ body {
 }
 
 .Header {
-  @apply mt-4 xl:text-6xl lg:text-5xl md:px-8  w-fit NameShadow hover:text-Aero cursor-text PinkText text-4xl font-extrabold text-center Smoother
+  @apply mt-4 xl:text-6xl lg:text-5xl text-5xl  w-fit NameShadow hover:text-Aero cursor-text PinkText font-extrabold text-center Smoother
 }
 
 /* Customs - End */
@@ -94,7 +94,7 @@ body {
 }
 
 .Pull {
-  @apply hover:z-50 hover:shadow-2xl hover:scale-105 transition transform duration-100 ease-in-out
+  @apply sm:hover:z-50 sm:hover:shadow-2xl sm:hover:scale-105 sm:transition sm:transform sm:duration-100 sm:ease-in-out
 }
 
 /* Structure */

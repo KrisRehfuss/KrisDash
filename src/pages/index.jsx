@@ -46,7 +46,7 @@
 
               {/* Wrapper Start */}
               <div className=" FlexCenterCol mt-4 font-pop BoxFull">
-                <div className="md:max-w-5xl FlexCenterCol p-2  h-fit min-h-fit w-fit lg:w-8/12">
+                <div className="md:w-5xl FlexCenterCol p-2  h-fit min-h-fit w-fit lg:w-8/12">
                   {/* Header */}
                   <Header style="Header antialiased" />
 
@@ -60,16 +60,16 @@
                   <div className=" BoxFull mx-4 px-4 mt-2 mb-6">
                     {/* Live Sites */}
                     <div className="Section">
-                      <h1 className="CaptionBlock text-left text-coal">
+                      <h1 className="CaptionBlock lg:text-sm text-xs text-left text-coal">
                         Live Sites
                       </h1>
 
                       {/* Prompt Engine */}
                       <div className="LiveSites ">
-                        <div className="Round Shadow p-2 mr-4 bg-OpenAI">
+                        <div className="Round Shadow p-2 lg:mr-4 mr-2 bg-OpenAI">
                           <Image
                             src={OpenAI}
-                            className="w-8"
+                            className="lg:w-8 w-6"
                             // layout='fill'
                             // objectFit='cover'
                             alt="#"
@@ -80,7 +80,7 @@
                           href="https://prompt-engine.vercel.app/"
                         >
                           Prompt <span className="text-violet-500">Engine</span>
-                          <p className="text-sm text-gray-400 ">
+                          <p className="lg:text-sm text-xs text-gray-400 ">
                             Created a prompt engine with a dynamic layout using
                             ChatGPT&apos;s API and Tailwind
                           </p>
@@ -89,10 +89,10 @@
 
                       {/* Weather App */}
                       <div className="LiveSites ">
-                        <div className="Round Shadow p-2 mr-4 bg-sky-700">
+                        <div className="Round Shadow p-2 lg:mr-4 mr-2 bg-sky-700">
                           <Image
                             src={sun}
-                            className="w-8"
+                            className="lg:w-8 w-6"
                             // layout='fill'
                             // objectFit='cover'
                             alt="#"
@@ -108,7 +108,7 @@
                               Sun&apos;s Arc
                             </span>
                           </h3>
-                          <p className="text-sm text-gray-400  ">
+                          <p className="lg:text-sm text-xs text-gray-400  ">
                             Created a miniamlist weather app
                           </p>
                         </a>
