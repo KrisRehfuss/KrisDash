@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ["./index.html", "./src/**/*.{jsx,js}"],
   theme: {
     screens: {
@@ -25,6 +26,7 @@ module.exports = {
         MidP: "#202148",
         RightG: "#0e380e",
         DarkG: "#202020",
+        Ind: '#2a315a',
 
         Redd: "#e74175",
         Smokey: "#090C02",

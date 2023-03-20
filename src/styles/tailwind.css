@@ -7,13 +7,23 @@
 
 
 body {
-  @apply bg-whiteish Smooth text-white font-pop antialiased scrollbar-hide scroll-smooth;
+  @apply  Smoother text-white font-pop antialiased scrollbar-hide scroll-smooth;
+}
+
+.MAIN {
+  @apply bg-whiteish dark:bg-coal
 }
 
 
 .MainWrapper {
   @apply flex flex-col-reverse items-center justify-evenly p-8 BoxFull MainWrapperDesktop
 }
+
+.MainCard {
+  @apply  FlexCenterCol p-2 h-fit min-h-fit w-fit md:w-7/12 lg:w-8/12
+}
+
+
 
 .MainWrapperDesktop {
   @apply md:p-4 lg:flex-col-reverse xl:flex-row
@@ -55,7 +65,7 @@ body {
 
 
 .CaptionBlock {
-  @apply text-xl border-b pb-2 border-DarkG  NameShadow font-normal
+  @apply text-xl border-b pb-2 dark:border-gray-700 border-DarkG dark:text-whiteish NameShadow font-normal
 }
 
 .Section {
@@ -63,11 +73,11 @@ body {
 }
 
 .LiveSites {
-  @apply BoxFull flex rounded-2xl text-gray-300 font-light Shadow bg-coal/90 items-center w-full mb-2 p-3 mt-4 hover:shadow-black hover:shadow-lg hover:scale-95 active:scale-90 transition transform duration-100
+  @apply BoxFull flex rounded-2xl shadow-2xl shadow-black dark:shadow-slate-500 dark:shadow-lg dark:hover:shadow-2xl font-light Shadow dark:bg-whiteish/90  bg-coal/90 items-center w-full mb-2 p-3 mt-4 hover:shadow-black hover:shadow-lg hover:scale-95 active:scale-90 transition transform duration-100
 }
 
 .Footer {
-  @apply text-coal bottom-0 w-fit h-fit p-4 font-light lg:text-sm text-center text-xs FlexCenter border-t
+  @apply text-coal dark:text-whiteish bottom-0 w-fit h-fit p-4 font-light lg:text-sm text-center text-xs FlexCenter border-t
 }
 
 .Header {
@@ -95,6 +105,10 @@ body {
 
 .Pull {
   @apply sm:hover:z-50 sm:hover:shadow-2xl sm:hover:scale-105 sm:transition sm:transform sm:duration-100 sm:ease-in-out
+}
+
+.PullHard {
+  @apply sm:hover:z-50 sm:hover:shadow-2xl hover:scale-150 sm:transition sm:transform sm:duration-100 sm:ease-in-out
 }
 
 /* Structure */

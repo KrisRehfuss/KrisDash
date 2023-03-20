@@ -3,10 +3,13 @@
       import { BiSearch } from "react-icons/bi";
       import Image from "next/image";
       import Nav from "./Nav";
+      import React, { useRef, useState, useEffect } from "react";
       // import Axis from "./Axis";
       import Banner from "./Banner";
       import Header from "./Header";
       import SkillTree from "./SkillTree";
+      import { BsSun } from "react-icons/bs";
+      import { BsMoon } from "react-icons/bs";
       import Top from "./Top";
       import SearchBar from "./SearchBar";
       import Skills from "./Skills";
@@ -15,7 +18,7 @@
       import TS from "../../public/TS.png";
       import Tailwind from "../../public/tail.png";
       import Git from "../../public/git.png";
-      import React from "../../public/react.png";
+      import Reacts from "../../public/react.png";
       import OpenAI from "../../public/openai.png";
       import Next from "../../public/next-js.svg";
       import sun from '../../public/sun.png';
@@ -28,6 +31,31 @@
 
 
       export default function Home() {
+        
+        const [theme, setTheme] = useState(null)
+
+        useEffect(() => {
+          if (window.matchMedia('(prefers-color-scheme: dark)').
+          matches) {
+            setTheme('dark')
+          } else {
+            setTheme('light')
+          }
+        }, [])
+
+        const handleThemeSwitch = () => {
+          setTheme(theme === 'dark' ? 'light' : 'dark')
+        }
+
+        useEffect(() => {
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark') 
+          } else {
+            document.documentElement.classList.remove('dark') 
+          }
+        }, [theme])  
+
+
         return (
           <>
             <Head>
@@ -40,18 +68,26 @@
               <link rel="icon" href="/engine.png" />
             </Head>
 
-            <main>
+            <main className="MAIN Smoother">
               <Nav />
               <Banner />
 
+              <button
+                type="button"
+                onClick={handleThemeSwitch}
+                className="fixed p-2 z-10 PullHard bottom-10 right-10 border-2 dark:border-Pinkk border-CityBlu text-lg rounded-full"
+              >
+                {theme === "dark" ? BsSun : BsMoon}
+              </button>
+
               {/* Wrapper Start */}
               <div className=" FlexCenterCol mt-4 font-pop BoxFull">
-                <div className="md:w-5xl FlexCenterCol p-2  h-fit min-h-fit w-fit lg:w-8/12">
+                <div className="MainCard">
                   {/* Header */}
                   <Header style="Header antialiased" />
 
                   {/* Caption */}
-                  <p className="my-5 mb-3 p-4 lg:text-xl lg:px-12 leading-7 text-base text-coal/70 font-semibold text-center">
+                  <p className="my-5 mb-3 p-4 lg:text-xl lg:px-12 leading-7 text-base dark:text-whiteish text-coal/70 font-semibold text-center">
                     Hello, my name is Kristopher and I&apos;m a passionate
                     software developer that values creativity and optimization.
                   </p>
@@ -66,7 +102,7 @@
 
                       {/* Prompt Engine */}
                       <div className="LiveSites ">
-                        <div className="Round Shadow p-2 lg:mr-4 mr-2 bg-OpenAI">
+                        <div className="Round p-2 lg:mr-4 mr-2 bg-OpenAI">
                           <Image
                             src={OpenAI}
                             className="lg:w-8 w-6"
@@ -76,11 +112,11 @@
                           />
                         </div>
                         <a
-                          className="w-full text-gray-200"
+                          className="w-full dark:text-gray-700 text-gray-200"
                           href="https://prompt-engine.vercel.app/"
                         >
                           Prompt <span className="text-violet-500">Engine</span>
-                          <p className="lg:text-sm text-xs text-gray-400 ">
+                          <p className="lg:text-sm text-xs dark:text-gray-700 text-gray-400 ">
                             Created a prompt engine with a dynamic layout using
                             ChatGPT&apos;s API and Tailwind
                           </p>
@@ -99,7 +135,7 @@
                           />
                         </div>
                         <a
-                          className="w-full text-gray-200"
+                          className="w-full dark:text-gray-700 text-gray-200"
                           href="https://www.thesunsarc.com"
                         >
                           <h3 className="font-normal">
@@ -108,7 +144,7 @@
                               Sun&apos;s Arc
                             </span>
                           </h3>
-                          <p className="lg:text-sm text-xs text-gray-400  ">
+                          <p className="lg:text-sm text-xs text-gray-400 dark:text-gray-700 ">
                             Created a miniamlist weather app
                           </p>
                         </a>
@@ -118,7 +154,6 @@
                     <div className="Section  ">
                       <h1 className="CaptionBlock text-coal">My Skills</h1>
                       <div className="BoxFull mt-8 relative text-coal px-1 ">
-
                         <SkillTree />
                       </div>
                       {/* <div className="BoxFull pt-4 lg:grid grid-cols-2 gap-x-2">
@@ -144,9 +179,7 @@
                       <h1 className="CaptionBlock text-coal">Personal Works</h1>
 
                       <div className="FlexCenterCol BoxFull pt-4">
-                          <Prismatic
-                          audio = {Chord2}
-                           />
+                        <Prismatic audio={Chord2} />
                       </div>
                       {/* <h1 className="CaptionBlock text-Redd"> Recent Compositions</h1> */}
                     </div>

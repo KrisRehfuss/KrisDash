@@ -26,11 +26,11 @@ function Prismatic({ audio }) {
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
           Prismatic //
         </span>
-        <span className="font-base text-coal text-lg"> Subversion</span>
+        <span className="font-base text-coal dark:text-whiteish text-lg"> Subversion</span>
       </h1>
       <div {...handleEvent}>
         <Image
-          className="antialiased shadow-2xl shadow-coal hover:shadow-Intrins w-[300px] Pull Smoother"
+          className="antialiased shadow-2xl shadow-coal dark:shadow-Ind hover:shadow-Intrins w-[300px] Pull Smoother"
           src={Subversion}
           // layout='fill'
           objectFit="cover"

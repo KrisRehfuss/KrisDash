@@ -23,7 +23,7 @@ function Skill({ name, logo, audio }) {
 
   return (
     <div
-      className="md:w-full Pull hover:cursor-help hover:shadow-CityBlu h-fit w-fit grow Push flex text-xs items-center bg-coal/80 active:bg-Pinq/80 text-gray-300 p-2 mb-2 rounded-md shadow-md  md:h-auto shadow-Pinq"
+      className="md:w-full Pull hover:cursor-help hover:shadow-CityBlu h-fit w-fit grow Push flex text-xs items-center dark:bg-whiteish/90 dark:text-coal bg-coal/80 active:bg-Pinq/80 text-gray-300 p-2 mb-2 rounded-md shadow-md  md:h-auto shadow-Pinq"
       {...handleEvent}
     >
       <Image src={logo} className="w-4" alt="#" />

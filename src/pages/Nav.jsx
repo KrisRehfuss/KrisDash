@@ -13,9 +13,9 @@ function Nav() {
   return (
     // Nav Start
 
-    <div className="Nav antialiased shadow-2xl shadow-Redd ">
+    <div className="Nav z-50 antialiased shadow-2xl  dark:shadow-Redd ">
       {/* Logo */}
-      <div className="NameShadow FlexCenter ml-4 h-full m-0 text-center text-coal font-bold text-xl">
+      <div className="NameShadow FlexCenter ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold text-xl">
         <Image className=" mr-3 w-12" src={M} alt="M Logo" />
         Kris<span className="ml-1 text-Sub"> Rehfuss </span>
       </div>
