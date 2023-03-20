@@ -20,7 +20,7 @@ body {
 }
 
 .MainCard {
-  @apply  FlexCenterCol p-2 h-fit min-h-fit w-fit md:w-7/12 lg:w-8/12
+  @apply  FlexCenterCol p-2 h-fit min-h-fit w-fit md:w-7/12 lg:w-8/12 xl:w-6/12
 }
 
 
