@@ -11,7 +11,7 @@ body {
 }
 
 .MAIN {
-  @apply bg-whiteish dark:bg-coal overflow-hidden
+  @apply bg-whiteish dark:bg-coal
 }
 
 
