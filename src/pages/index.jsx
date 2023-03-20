@@ -129,7 +129,7 @@ export default function Home() {
             {/* Caption */}
             <p className="my-5 mb-3 p-4 lg:text-xl lg:px-12 leading-7 text-base dark:text-whiteish text-coal/70 font-semibold text-center">
               Hello, my name is Kristopher and I&apos;m a passionate
-              software & audio engineer that values creativity and optimization.
+              software engineer that values creativity and optimization.
             </p>
 
 
