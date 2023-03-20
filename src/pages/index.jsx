@@ -14,6 +14,7 @@ import Top from "./Top";
 import SearchBar from "./SearchBar";
 import Skills from "./Skills";
 import Footer from "./Footer";
+import LiveSites from './LiveSites.jsx'
 import JS from "../../public/JS.png";
 import TS from "../../public/TS.png";
 import Tailwind from "../../public/tail.png";
@@ -76,6 +77,7 @@ export default function Home() {
         <link rel="icon" href="/engine.png" />
       </Head>
 
+    {/* Wrapper Start */}
       <main>
 
         {/* Nav */}
@@ -104,7 +106,7 @@ export default function Home() {
             </div>
 
             <div className=" NavItem p-2">
-                <BsSun onClick={handleThemeSwitch} className="hover:animate-spin hover:text-yellow-500" />
+              <BsSun onClick={handleThemeSwitch} className="hover:animate-spin hover:text-yellow-500" />
             </div>
 
             <div className="mt-1 p-2 Round cursor-pointer hover:text-Aero">
@@ -113,22 +115,21 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </div>        
+        </div>
+
         <Banner />
 
-
-
-
-        {/* Wrapper Start */}
+        {/* Container */}
         <div className=" FlexCenterCol mt-4 font-pop BoxFull">
           <div className="MainCard">
+
             {/* Header */}
             <Header style="Header antialiased" />
 
             {/* Caption */}
             <p className="my-5 mb-3 p-4 lg:text-xl lg:px-12 leading-7 text-base dark:text-whiteish text-coal/70 font-semibold text-center">
               Hello, my name is Kristopher and I&apos;m a passionate
-              software developer that values creativity and optimization.
+              software & audio engineer that values creativity and optimization.
             </p>
 
 
@@ -136,92 +137,16 @@ export default function Home() {
             {/* Section */}
             <div className=" BoxFull mx-4 px-4 mt-2 mb-6">
               {/* Live Sites */}
-              <div className="Section">            
-              
-              <button
-                type="button"
-                onClick={handleThemeSwitch}
-                className="fixed right-20 ml-20 p-2 z-10 text-2xl rounded-full"
-              >
-                {/* {theme === "dark" ? sun : moon} */}
-              </button>
+              <LiveSites />
 
-                <h1 className="CaptionBlock lg:text-sm text-xs text-left text-coal">
-                  Live Sites
-                </h1>
 
-                {/* Prompt Engine */}
-                <div className="LiveSites ">
-                  <div className="Round p-2 lg:mr-4 mr-2 bg-OpenAI">
-                    <Image
-                      src={OpenAI}
-                      className="lg:w-8 w-6"
-                      // layout='fill'
-                      // objectFit='cover'
-                      alt="#"
-                    />
-                  </div>
-                  <a
-                    className="w-full dark:text-gray-700 text-gray-200"
-                    href="https://prompt-engine.vercel.app/"
-                  >
-                    Prompt <span className="text-violet-500">Engine</span>
-                    <p className="lg:text-sm text-xs dark:text-gray-700 text-gray-400 ">
-                      Created a prompt engine with a dynamic layout using
-                      ChatGPT&apos;s API and Tailwind
-                    </p>
-                  </a>
-                </div>
 
-                {/* Weather App */}
-                <div className="LiveSites ">
-                  <div className="Round Shadow p-2 lg:mr-4 mr-2 bg-sky-700">
-                    <Image
-                      src={sun}
-                      className="lg:w-8 w-6"
-                      // layout='fill'
-                      // objectFit='cover'
-                      alt="#"
-                    />
-                  </div>
-                  <a
-                    className="w-full dark:text-gray-700 text-gray-200"
-                    href="https://www.thesunsarc.com"
-                  >
-                    <h3 className="font-normal">
-                      The{" "}
-                      <span className="PrismaticText">
-                        Sun&apos;s Arc
-                      </span>
-                    </h3>
-                    <p className="lg:text-sm text-xs text-gray-400 dark:text-gray-700 ">
-                      Created a miniamlist weather app
-                    </p>
-                  </a>
-                </div>
-              </div>
-
-              <div className="Section  ">
+              {/* My Skills */}
+              <div className="Section">
                 <h1 className="CaptionBlock text-coal">My Skills</h1>
                 <div className="BoxFull mt-8 relative text-coal px-1 ">
                   <SkillTree />
                 </div>
-                {/* <div className="BoxFull pt-4 lg:grid grid-cols-2 gap-x-2">
-                        <Skills
-                          logo={Next}
-                          name="Next.js"
-                          color="bg-gray-400"
-                        />
-                        <Skills logo={React} name="React.js" color="bg-React" />
-                        <Skills
-                          logo={Tailwind}
-                          name="Tailwind"
-                          color="bg-gray-800"
-                        />
-                        <Skills logo={Git} name="Git" color="bg-Git" />
-                        <Skills logo={TS} name="TypeScript" color="bg-TS" />
-                        <Skills logo={OpenAI} name="OpenAI" color="bg-OpenAI" />
-                      </div> */}
               </div>
 
               {/* Current Skill Tree */}
@@ -233,6 +158,8 @@ export default function Home() {
                 </div>
                 {/* <h1 className="CaptionBlock text-Redd"> Recent Compositions</h1> */}
               </div>
+
+
             </div>
             <Footer />
             {/* <SearchBar /> */}

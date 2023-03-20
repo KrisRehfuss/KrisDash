@@ -22,13 +22,14 @@ function Prismatic({ audio }) {
 
   return (
     <div>
-      <h1 className=" text-2xl text-center  NameShadow font-normal pt-6 pb-8 p-4">
+      
+      <div {...handleEvent}>
+        <a href="https://prismatic.bandcamp.com/album/subversion"><h1 className=" text-2xl text-center  NameShadow font-normal pt-6 pb-8 p-4">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
           Prismatic //
         </span>
         <span className="font-base text-coal dark:text-whiteish text-lg"> Subversion</span>
-      </h1>
-      <div {...handleEvent}>
+      </h1></a>
         <Image
           className="antialiased shadow-2xl shadow-coal dark:shadow-Ind hover:shadow-Intrins w-[300px] Pull Smoother"
           src={Subversion}

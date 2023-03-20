@@ -49,6 +49,14 @@ body {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-Aero to-Gold
 }
 
+.CardGradient {
+  @apply bg-gradient-to-t from-LiteBlue via-Pinkk to-CityBlu
+}
+
+.CardText {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-coal via-Pinkk to-CityBlu
+}
+
 
 
 /* Customs */
@@ -61,6 +69,7 @@ body {
   @apply flex rounded-lg text-gray-400 font-light Shadow items-center w-full mb-2 p-2 hover:bg-Aero hover:text-white hover:font-normal
 
 }
+
 
 
 

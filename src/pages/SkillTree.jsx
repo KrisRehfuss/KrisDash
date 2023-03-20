@@ -34,7 +34,7 @@ import A12 from "../../public/Piano/Note-012.mp3";
 
 function SkillTree() {
   return (
-    <div className="flex flex-wrap md:h-fit md:w-full md:grid lg:grid-cols-2 xl:grid-cols-3 gap-x-2">
+    <div className="flex flex-wrap md:h-fit md:w-full md:grid xl:grid-cols-3 gap-x-2">
       <Skill name="React" logo={Reacts} audio={ A1 } />
       <Skill name="Tailwind" logo={Tailwind} audio={ A2 } />
       <Skill name="JavaScript" logo={JS} audio={ A3 } />
