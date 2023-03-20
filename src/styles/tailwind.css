@@ -50,11 +50,11 @@ body {
 }
 
 .CardGradient {
-  @apply bg-gradient-to-t from-LiteBlue via-Pinkk to-CityBlu
+  @apply bg-gradient-to-t from-LiteBlue via-Pinkk to-CityBlu 
 }
 
 .CardText {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-coal via-Pinkk to-CityBlu
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-CityBlu via-Pinkk to-CityBlu
 }
 
 

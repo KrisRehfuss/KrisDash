@@ -48,7 +48,7 @@ function LiveSites() {
          {/* Bio Card */}
          <div className="LiveSites ">
             <div className="Round Shadow lg:mr-4 mr-2 ">
-               <Image src={Anime} className="lg:w-12 rounded-full w-8" alt="#"/>
+               <Image src={Anime} className="lg:w-12 rounded-full w-10" alt="#"/>
             </div>
             <a className="w-full dark:text-gray-700 text-gray-200" href="https://biocard.vercel.app">
                <h3 className="font-normal">  <span className="CardText pr-12"> Social Network ID </span>
