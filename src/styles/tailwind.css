@@ -82,8 +82,8 @@ body {
   @apply w-full h-fit p-3 mb-4
 }
 
-.LiveSites {
-  @apply BoxFull flex rounded-2xl shadow-2xl shadow-black dark:shadow-slate-500 dark:shadow-lg dark:hover:shadow-2xl font-light Shadow dark:bg-whiteish/90  bg-coal/90 items-center w-full mb-2 p-3 mt-4 hover:shadow-black hover:shadow-lg hover:scale-95 active:scale-90 transition transform duration-100
+.Sites {
+  @apply BoxFull flex rounded-2xl shadow-2xl shadow-black dark:shadow-slate-500 dark:shadow-lg dark:hover:shadow-2xl font-light Shadow dark:bg-whiteish/90  bg-coal/90 items-center w-full mb-2 p-3 mt-2 hover:shadow-black hover:shadow-lg hover:scale-95 active:scale-90 transition transform duration-100
 }
 
 .Footer {

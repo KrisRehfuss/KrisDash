@@ -9,14 +9,20 @@ import Anime from '../../public/AVI.jpg'
 
 function LiveSites() {
    return (
-      <div className="Section">
-         {/* Live Sites */}
-         <h1 className="CaptionBlock lg:text-xl text-xs text-left text-coal">
+
+      // Main Container
+      <div className="w-full h-fit p-3 mb-4  ">
+
+         {/* Header */}
+         <h1 className="CaptionBlock lg:text-xl text-xs text-left mb-4 text-coal">
             Live Sites
          </h1>
 
+         {/* Site Container */}
+         <div className="flex flex-col items-center  Smoother">
+
          {/* Prompt Engine */}
-         <div className="LiveSites ">
+         <div className="Sites ">
             <div className="Round p-2 lg:mr-4 mr-2 bg-OpenAI">
                <Image src={OpenAI} className="lg:w-8 w-6" alt="#" />
             </div>
@@ -30,7 +36,7 @@ function LiveSites() {
          </div>
 
          {/* Weather App */}
-         <div className="LiveSites ">
+         <div className="Sites ">
             <div className="Round Shadow p-2 lg:mr-4 mr-2 bg-slate-700">
                <Image src={sun} className="lg:w-8 w-6" alt="#"/>
             </div>
@@ -46,7 +52,7 @@ function LiveSites() {
          
 
          {/* Bio Card */}
-         <div className="LiveSites ">
+            <div className="Sites ">
             <div className="Round Shadow lg:mr-4 mr-2 ">
                <Image src={Anime} className="lg:w-12 rounded-full w-10" alt="#"/>
             </div>
@@ -58,6 +64,11 @@ function LiveSites() {
                </p>
             </a>
          </div>
+         </div>
+      
+         
+
+
 
 
       </div>
