@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useRef } from "react";
 
 
-
+// Define the AudioPlayer Function
 function Skill({ name, logo, audio }) {
   const audioRef = useRef(null);
 

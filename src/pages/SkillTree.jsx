@@ -29,26 +29,32 @@ import A10 from "../../public/Piano/Note-010.mp3";
 import A11 from "../../public/Piano/Note-011.mp3";
 import A12 from "../../public/Piano/Note-012.mp3";
 
-
+const items = [
+  { name: 'React', logo: Reacts, audio: A1 },
+  { name: 'Tailwind', logo: Tailwind, audio: A2 },
+  { name: 'JavaScript', logo: JS, audio: A3 },
+  { name: 'Python', logo: Python, audio: A4 },
+  { name: 'OpenAI', logo: OpenAI, audio: A5 },
+  { name: 'Git', logo: Git, audio: A6 },
+  { name: 'Express', logo: Express, audio: A7 },
+  { name: 'Angular', logo: Angular, audio: A8 },
+  { name: 'Node', logo: Node, audio: A9 },
+  { name: 'Github', logo: Github, audio: A10 },
+  { name: 'Cloning', logo: Clone, audio: A11 },
+  { name: 'Drinking Coffee', logo: Coffee, audio: A12 },
+]
 
 
 function SkillTree() {
   return (
     <div className="flex flex-wrap md:h-fit md:w-full md:grid xl:grid-cols-3 gap-x-2">
-      <Skill name="React" logo={Reacts} audio={ A1 } />
-      <Skill name="Tailwind" logo={Tailwind} audio={ A2 } />
-      <Skill name="JavaScript" logo={JS} audio={ A3 } />
-      <Skill name="Python" logo={Python} audio={ A4 } />
-      <Skill name="OpenAI" logo={OpenAI} audio={ A5 } />
-      <Skill name="Git" logo={Git} audio={ A6 } />
-      <Skill name="Express" logo={Express} audio={ A7 } />
-      <Skill name="Angular" logo={Angular} audio={ A8 } />
-
-      <Skill name="Node" logo={Node} audio={ A9 } />
-      <Skill name="Github" logo={Github} audio={ A10 } />
-      {/* <Skill name="JQuery" logo={JQuery} /> */}
-      <Skill name="Cloning" logo={Clone} audio={ A11 } />
-      <Skill name="Drinking Coffee" logo={Coffee} audio={ A12 } />
+      {items.map((item) => (
+        <Skill
+          key={item.name}
+          name={item.name}
+          logo={item.logo}
+          audio={item.audio} />
+      ))}
     </div>
   );
 }
