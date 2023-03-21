@@ -46,6 +46,7 @@ body {
 }
 
 .BlueText {
+  
   @apply bg-clip-text text-transparent bg-gradient-to-r from-Aero to-Gold
 }
 

@@ -154,7 +154,7 @@ export default function Home() {
                 <h1 className="CaptionBlock text-coal">Personal Works</h1>
 
                 <div className="FlexCenterCol BoxFull pt-4">
-                  <Prismatic audio={Chord4} />
+                  <Prismatic audio={Chord} />
                 </div>
                 {/* <h1 className="CaptionBlock text-Redd"> Recent Compositions</h1> */}
               </div>
