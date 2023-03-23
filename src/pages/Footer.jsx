@@ -17,7 +17,7 @@ function Footer() {
 
         {/* Github */}
         <div className="Icons">
-          <a href="https://www.instagram.com/krismatic__/">
+          <a href="https://github.com/KrisRehfuss">
             <AiOutlineGithub />
           </a>
         </div>
