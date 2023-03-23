@@ -71,6 +71,10 @@ body {
 
 }
 
+.Icons {
+  @apply text-3xl text-Ind hover:text-Pinkk dark:text-Pinkk dark:hover:text-white Smooth w-fit h-fit p-2
+}
+
 
 
 

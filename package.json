@@ -12,7 +12,7 @@
     "@vercel/analytics": "^0.1.11",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
-    "next": "13.2.4",
+    "next": "^13.2.4",
     "next-videos": "1.4.1",
     "react": "18.2.0",
     "react-audio-player": "^0.17.0",

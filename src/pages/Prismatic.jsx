@@ -24,7 +24,7 @@ function Prismatic({ audio }) {
     <div>
       
       <div >
-        <a href="https://prismatic.bandcamp.com/album/subversion"><h1 className=" text-2xl text-center  NameShadow font-normal pt-6 pb-8 p-4">
+        <a href="https://prismatic.bandcamp.com/album/subversion"><h1 className=" text-2xl text-center  NameShadow font-normal pt-6 pb-6 p-4">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
           Prismatic //
         </span>
@@ -41,7 +41,7 @@ function Prismatic({ audio }) {
         
         
       </div>
-      <p className="text-sm  text-center  text-coal/0 font-normal pt-8">
+      <p className="text-sm  text-center  text-coal/0 font-normal pt-2">
         Artwork by Joseph Harrel
       </p>
     </div>
