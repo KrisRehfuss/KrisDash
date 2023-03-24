@@ -5,7 +5,7 @@ function Top({ text }) {
     <div className="Footer hover:text-Apricot">
       <p>
         <div className='text-xs'
-         
+         onMouseEnter={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           {text}
         </div>

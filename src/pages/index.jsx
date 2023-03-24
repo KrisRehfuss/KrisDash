@@ -81,7 +81,7 @@ export default function Home() {
       <main>
 
         {/* Nav */}
-        <div className="Nav z-50 antialiased shadow-2xl  dark:shadow-Redd ">
+        <div className="Nav z-50 antialiased shadow-2xl dark:shadow-Redd ">
           {/* Logo */}
           <a href="https://www.krisrehfuss.com" alt="home">
             <div className="NameShadow FlexCenter ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold text-xl">
@@ -101,16 +101,16 @@ export default function Home() {
           </div>
 
           {/* Icons */}
-          <div className="flex items-center justify-center text-2xl mr-4 text-Redd  space-x-4 ">
+          <div className="flex items-center justify-center text-2xl text-Redd  ">
 
 
             <div className=" NavItem p-2" onClick={handleThemeSwitch}>
               <BsSun className="hover:animate-spin hover:text-yellow-500" />
             </div>
 
-            <div className="p-2 lg:hidden Round cursor-pointer hover:text-Ind"
-              onMouseEnter={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-                <BsFillArrowUpSquareFill  />
+            <div className="p-2 lg:hidden Round cursor-pointer hover:text-Ind">
+              
+                {/* <BsFillArrowUpSquareFill  /> */}
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function Home() {
         <Banner />
 
         {/* Container */}
-        <div className=" FlexCenterCol mt-4 font-pop BoxFull">
+        <div className="FlexCenterCol mt-4 font-pop BoxFull">
           <div className="MainCard">
 
             {/* Header */}
@@ -133,7 +133,7 @@ export default function Home() {
 
 
             {/* Section */}
-            <div className=" BoxFull mx-4 px-4 mt-2 mb-6">
+            <div className="BoxFull mx-4 px-4 mt-2 mb-6">
               {/* Live Sites */}
               <LiveSites />
 
