@@ -103,10 +103,9 @@ export default function Home() {
           {/* Icons */}
           <div className="flex items-center justify-center text-2xl text-Redd  ">
 
-
-            <div className=" NavItem p-2" onClick={handleThemeSwitch}>
+            {/* <div className=" NavItem p-2" onClick={handleThemeSwitch}>
               <BsSun className="hover:animate-spin hover:text-yellow-500" />
-            </div>
+            </div> */}
 
             <div className="p-2 lg:hidden Round cursor-pointer hover:text-Ind">
               

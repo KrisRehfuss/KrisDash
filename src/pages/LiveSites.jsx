@@ -1,32 +1,72 @@
-import React from 'react'
+import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import sun from '../../public/sun.png';
 import OpenAI from "../../public/openai.png";
-import { BsFillArrowDownSquareFill } from "react-icons/bs"; 
+import { BsFillArrowDownSquareFill } from "react-icons/bs";
+import { BsSun } from "react-icons/bs";
 import Anime from '../../public/AVI.jpg'
 
 
 
 
 function LiveSites() {
+
+   const [theme, setTheme] = useState(null)
+
+   useEffect(() => {
+      if (window.matchMedia('(prefers-color-scheme: dark)').
+         matches) {
+         setTheme('dark')
+      } else {
+         setTheme('light')
+      }
+   }, [])
+
+   const handleThemeSwitch = () => {
+      setTheme(theme === 'dark' ? 'light' : 'dark')
+   }
+
+   useEffect(() => {
+      if (theme === 'dark') {
+         document.documentElement.classList.add('dark')
+      } else {
+         document.documentElement.classList.remove('dark')
+      }
+   }, [theme])
+
    return (
 
       // Main Container
       <div className="w-full h-fit p-3 mb-4 ">
 
          {/* Header */}
-         <div className=" CaptionBlock w-full h-full flex items-center justify-between lg:text-xl text-xs text-left mb-4 text-coal">
-            <div className=" ">
-               Live Sites
-            </div>
-            <div 
-            className='text-3xl hover:text-Redd dark:hover:text-CityBlu text-Ind dark:text-Intrins pr-2'
-            onMouseEnter={() => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })}>
+         <div className="text-xl border-b pb-2 dark:border-gray-700 border-DarkG dark:text-whiteish NameShadow font-normal w-full h-full flex items-center justify-between lg:text-xl text-left mb-4 text-coal">
 
-               <BsFillArrowDownSquareFill />
+            <div className="w-full h-fit flex items-center justify-between ">
+
+               <div className=" "> Live Sites </div>
+
+               <div className="FlexCenter w-fit h-fit">
+
+
+                  <div
+                     className='text-2xl hover:text-Redd dark:hover:text-CityBlu text-Ind dark:text-Intrins pr-4'
+                     onMouseEnter={() => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })}>
+                     <BsFillArrowDownSquareFill />
+
+                  </div>
+                  <div className=" NavItem pr-2" onClick={handleThemeSwitch}>
+                     <BsSun className="hover:animate-spin text-2xl text-Redd hover:text-yellow-500" />
+                  </div>
+
+
+               </div>
+
             </div>
 
-            
+
+
+
 
          </div>
 
