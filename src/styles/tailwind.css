@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 :root {
-  @apply h-full overflow-hidden
+  @apply h-full overflow-x-hidden
 }
 
 
@@ -228,7 +228,7 @@ body {
 /* Nav */
 
 .Nav {
-  @apply NavMD flex backdrop-blur-lg border border-t-0 rounded-lg lg:border-b-0 lg:sticky lg:top-0 lg:py-0 py-12 fixed bottom-0 left-0 z-50 border-Ind dark:border-Redd justify-evenly items-center h-20 max-h-fit w-screen;
+  @apply NavMD flex backdrop-blur-lg border border-t-0 rounded-lg lg:border-b-0 lg:sticky lg:top-0 lg:py-0 lg:px-0 px-8 fixed bottom-0 left-0 z-50 border-Ind dark:border-Redd justify-between items-center h-20 max-h-fit w-screen;
 }
 
 .NavMD {
