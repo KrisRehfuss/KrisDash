@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  @apply h-full overflow-hidden
+}
+
 
 body {
   @apply  Smoother text-white font-pop antialiased scrollbar-hide scroll-smooth;
@@ -224,7 +228,7 @@ body {
 /* Nav */
 
 .Nav {
-  @apply NavMD flex backdrop-blur-lg border-b-2 rounded-lg lg:border-b-0 lg:sticky lg:top-0 lg:py-0 py-8  fixed bottom-0 left-0 z-50 border-Ind dark:border-Redd justify-evenly items-center h-20 max-h-fit w-screen;
+  @apply NavMD flex backdrop-blur-lg border border-t-0 rounded-lg lg:border-b-0 lg:sticky lg:top-0 lg:py-0 py-12 fixed bottom-0 left-0 z-50 border-Ind dark:border-Redd justify-evenly items-center h-20 max-h-fit w-screen;
 }
 
 .NavMD {
