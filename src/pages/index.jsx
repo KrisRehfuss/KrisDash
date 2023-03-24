@@ -2,13 +2,13 @@ import Head from "next/head";
 import { AiOutlineStar } from "react-icons/ai";
 import { BiSearch } from "react-icons/bi";
 import Image from "next/image";
-import Nav from "./Nav";
 import React, { useRef, useState, useEffect } from "react";
 // import Axis from "./Axis";
 import Banner from "./Banner";
 import Header from "./Header";
 import SkillTree from "./SkillTree";
 import { BsSun } from "react-icons/bs";
+import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import { BsMoon } from "react-icons/bs";
 import Top from "./Top";
 import SearchBar from "./SearchBar";
@@ -74,7 +74,7 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1"
         />
-        <link rel="icon" href="/engine.png" />
+        <link rel="icon" href="/music.svg" />
       </Head>
 
     {/* Wrapper Start */}
@@ -83,10 +83,13 @@ export default function Home() {
         {/* Nav */}
         <div className="Nav z-50 antialiased shadow-2xl  dark:shadow-Redd ">
           {/* Logo */}
-          <div className="NameShadow FlexCenter ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold text-xl">
+          <a href="https://www.krisrehfuss.com" alt="home">
+            <div className="NameShadow FlexCenter ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold text-xl">
             <Image className=" mr-3 w-12" src={M} alt="M Logo" />
             Kris<span className="ml-1 text-Sub"> Rehfuss </span>
           </div>
+          </a>
+
 
           {/* Search Bar */}
           <div className=" lg:flex items-center justify-center Round h-full">
@@ -98,21 +101,16 @@ export default function Home() {
           </div>
 
           {/* Icons */}
-          <div className="FlexCenter h-full  text-2xl mr-4 text-Redd  space-x-4 ">
-            <div className=" NavItem p-2">
-              <a href="https://www.krisrehfuss.com" alt="home">
-                <AiOutlineHome />{" "}
-              </a>
+          <div className="flex items-center justify-center text-2xl mr-4 text-Redd  space-x-4 ">
+
+
+            <div className=" NavItem p-2" onClick={handleThemeSwitch}>
+              <BsSun className="hover:animate-spin hover:text-yellow-500" />
             </div>
 
-            <div className=" NavItem p-2">
-              <BsSun onClick={handleThemeSwitch} className="hover:animate-spin hover:text-yellow-500" />
-            </div>
-
-            <div className="mt-1 p-2 Round cursor-pointer hover:text-Aero">
-              <a href="https://chat.openai.com/chat" alt="OpenAI">
-                <BsChatLeft className="w-5 " />
-              </a>
+            <div className="p-2 lg:hidden Round cursor-pointer hover:text-Ind"
+              onMouseEnter={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+                <BsFillArrowUpSquareFill  />
             </div>
           </div>
         </div>

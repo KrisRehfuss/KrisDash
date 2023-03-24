@@ -224,7 +224,7 @@ body {
 /* Nav */
 
 .Nav {
-  @apply NavMD flex backdrop-blur-lg lg:sticky lg:top-0 fixed bottom-0 left-0 z-50 border-Redd justify-between items-center h-20 max-h-fit w-screen;
+  @apply NavMD flex backdrop-blur-lg border-b-2 rounded-lg lg:border-b-0 lg:sticky lg:top-0 lg:py-0 py-8  fixed bottom-0 left-0 z-50 border-Ind dark:border-Redd justify-evenly items-center h-20 max-h-fit w-screen;
 }
 
 .NavMD {
@@ -232,7 +232,7 @@ body {
 }
 
 .NavItem {
-  @apply Round cursor-pointer hover:bg-gray-800;
+  @apply Round cursor-pointer ;
 }
 
 .NavItemMD {

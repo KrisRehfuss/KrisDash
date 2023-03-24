@@ -20,7 +20,7 @@ function LiveSites() {
                Live Sites
             </div>
             <div 
-            className='text-3xl text-Ind dark:text-Intrins pr-2'
+            className='text-3xl hover:text-Redd dark:hover:text-CityBlu text-Ind dark:text-Intrins pr-2'
             onMouseEnter={() => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })}>
 
                <BsFillArrowDownSquareFill />
