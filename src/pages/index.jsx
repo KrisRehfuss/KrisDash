@@ -27,7 +27,6 @@ import Prismatic from "./Prismatic";
 import Chord from "../../public/Piano/Chord.mp3";
 import Chord2 from "../../public/Piano/Chord-02.mp3";
 import Chord3 from "../../public/Piano/Chord-03.mp3";
-import Chord4 from "../../public/Piano/Chord-04.mp3";
 import M from "../../public/Engine.png";
 import { RxHamburgerMenu } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
