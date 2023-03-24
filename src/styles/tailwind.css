@@ -91,7 +91,7 @@ body {
 }
 
 .Footer {
-  @apply text-coal dark:text-whiteish bottom-0 w-fit h-fit p-4 font-light lg:text-sm text-center text-xs FlexCenter border-t
+  @apply text-coal dark:text-whiteish lg:mb-0 mb-24 bottom-0 w-fit h-fit p-4 font-light lg:text-sm text-center text-xs FlexCenter border-t
 }
 
 .Header {
@@ -224,7 +224,7 @@ body {
 /* Nav */
 
 .Nav {
-  @apply NavMD flex backdrop-blur-lg sticky top-0 z-50 border-Redd justify-between items-center h-20 max-h-fit w-screen;
+  @apply NavMD flex backdrop-blur-lg lg:sticky lg:top-0 fixed bottom-0 left-0 z-50 border-Redd justify-between items-center h-20 max-h-fit w-screen;
 }
 
 .NavMD {
