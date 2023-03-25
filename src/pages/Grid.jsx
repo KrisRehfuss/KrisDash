@@ -55,14 +55,14 @@ export default function Home() {
 
 	const items = [
 		{ name: 'A', image: Art1 },
-		{ name: 'B', image: Time2 },
+		{ name: 'B', image: Art3 },
 		{ name: 'C', image: Art7 },
-		{ name: 'D', image: Time1 },
-		{ name: 'E', image: Art5 },
-		{ name: 'F', image: Time3 },
-		{ name: 'G', image: Art7 },
-		{ name: 'H', image: Time4 },
-		// { name: 'J', image: Art10},
+		{ name: 'D', image: Art8 },
+		{ name: 'E', image: Time1 },
+		{ name: 'F', image: Art7 },
+		{ name: 'G', image: Time3 },
+		{ name: 'H', image: Art9 },
+		{ name: 'J', image: Time2},
 		// { name: 'K', image: Art11},
 		// { name: 'L', image: Art12},
 	]
@@ -72,13 +72,13 @@ export default function Home() {
 	return (
 		<div>
 			<Head>
-				<title>Kris Dashboard </title>
+				<title>Dashboard</title>
 				<meta name="description" content="Dashboard" />
 				<meta
 					name="viewport"
 					content="width=device-width, initial-scale=1"
 				/>
-				<link rel="icon" href="/next-js.ico" />
+				<link rel="icon" href="/saturn2.ico" />
 			</Head>
 
 			{/* Wrapper Start */}
@@ -89,7 +89,7 @@ export default function Home() {
 
 					{/* Logo */}
 					<a href="https://www.krisrehfuss.com" alt="home">
-						<div className="NameShadow lg:text-xl  flex items-center justify-center lg:pl-24 ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold">
+						<div className="NameShadow text-xl flex items-center justify-center lg:pl-24 ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold">
 							{/* <Image className=" mr-3 w-12" src={M} alt="M Logo" /> */}
 							Kris<span className="ml-1 text-Sub"> Rehfuss </span>
 						</div>
@@ -98,8 +98,8 @@ export default function Home() {
 
 					{/* Links */}
 					<div className="lg:pr-48 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
-						<div className="Pull md:px-4 BoxFit"> <a href='https://www.krisrehfuss.com'> Home </a> </div>
-						<div className="Pull md:px-4 BoxFit"> <Link href='/Grid'> Gallery </Link> </div>
+						<div className="Pull md:px-4 active:text-Redd BoxFit"> <a href='https://www.krisrehfuss.com'> Home </a> </div>
+						<div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/Grid'> Gallery </Link> </div>
 						<div className="NavItem p-2 text-2xl text-Redd" onClick={handleThemeSwitch}>
 							<BsSun className="hover:animate-spin hover:text-yellow-500" />
 						</div>

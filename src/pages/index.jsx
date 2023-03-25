@@ -57,7 +57,7 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1"
         />
-        <link rel="icon" href="/next-js.svg" />
+        <link rel="icon" href="/saturn.ico" />
       </Head>
 
       <main className="MAIN Smoother">

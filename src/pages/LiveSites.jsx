@@ -73,6 +73,20 @@ function LiveSites() {
          {/* Site Container */}
          <div className="flex flex-col items-center  Smoother">
 
+            {/* Weather App */}
+            <div className="Sites ">
+               <div className="Round Shadow p-2 lg:mr-4 mr-2 dark:bg-coal">
+                  <Image src={sun} className="lg:w-8 w-6" alt="#" />
+               </div>
+               <a className="w-full dark:text-gray-700 text-gray-200" href="https://www.thesunsarc.com">
+                  <h3 className="font-normal"> The <span className="PrismaticText"> Sun&apos;s Arc </span>
+                  </h3>
+                  <p className="lg:text-sm text-xs text-gray-400 dark:text-gray-700 ">
+                     Created a miniamlist weather app
+                  </p>
+               </a>
+            </div>
+
             {/* Prompt Engine */}
             <div className="Sites ">
                <div className="Round p-2 lg:mr-4 mr-2 bg-OpenAI">
@@ -86,22 +100,6 @@ function LiveSites() {
                   </p>
                </a>
             </div>
-
-            {/* Weather App */}
-            <div className="Sites ">
-               <div className="Round Shadow p-2 lg:mr-4 mr-2 bg-slate-700">
-                  <Image src={sun} className="lg:w-8 w-6" alt="#" />
-               </div>
-               <a className="w-full dark:text-gray-700 text-gray-200" href="https://www.thesunsarc.com">
-                  <h3 className="font-normal"> The <span className="PrismaticText"> Sun&apos;s Arc </span>
-                  </h3>
-                  <p className="lg:text-sm text-xs text-gray-400 dark:text-gray-700 ">
-                     Created a miniamlist weather app
-                  </p>
-               </a>
-            </div>
-
-
 
             {/* Bio Card */}
             <div className="Sites ">
