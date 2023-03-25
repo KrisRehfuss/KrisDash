@@ -64,7 +64,7 @@ export default function Home() {
       <main>
 
         {/* Nav */}
-        <div className="Nav z-50 antialiased shadow-2xl dark:shadow-Redd ">
+        <div className="Nav NavMD z-50 antialiased shadow-2xl dark:shadow-Redd ">
 
           {/* Logo */}
           <a href="https://www.krisrehfuss.com" alt="home">
