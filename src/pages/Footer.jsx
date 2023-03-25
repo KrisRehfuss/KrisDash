@@ -15,17 +15,17 @@ function Footer() {
 
       <div className="flex items-center justify-evenly w-full h-fit p-2">
 
-        {/* Github */}
-        <div className="Icons">
-          <a href="https://github.com/KrisRehfuss">
-            <AiOutlineGithub />
-          </a>
-        </div>
-
         {/* LinkedIn */}
         <div className="Icons">
           <a href="https://www.linkedin.com/in/krisrehfuss/">
             <AiFillLinkedin />
+          </a>
+        </div>
+
+        {/* Github */}
+        <div className="Icons">
+          <a href="https://github.com/KrisRehfuss">
+            <AiOutlineGithub />
           </a>
         </div>
 

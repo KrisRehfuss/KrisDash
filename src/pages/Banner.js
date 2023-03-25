@@ -8,6 +8,7 @@ function Banner() {
         <Image
           src={BannerImage}
           className="border-Redd"
+          priority={true}
           layout="fill"
           objectFit="cover"
           alt="#"

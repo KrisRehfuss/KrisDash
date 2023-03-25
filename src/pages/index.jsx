@@ -83,7 +83,7 @@ export default function Home() {
         <div className="Nav z-50 antialiased shadow-2xl dark:shadow-Redd ">
           {/* Logo */}
           <a href="https://www.krisrehfuss.com" alt="home">
-            <div className="NameShadow FlexCenter ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold text-xl">
+            <div className="NameShadow flex items-center justify-center  lg:pl-24 ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold text-xl">
             <Image className=" mr-3 w-12" src={M} alt="M Logo" />
             Kris<span className="ml-1 text-Sub"> Rehfuss </span>
           </div>
@@ -100,15 +100,15 @@ export default function Home() {
           </div>
 
           {/* Icons */}
-          <div className="flex items-center justify-center text-2xl text-Redd  ">
+          <div className="flex items-center justify-center pr-24  text-2xl text-Redd  ">
 
-            {/* <div className=" NavItem p-2" onClick={handleThemeSwitch}>
+            <div className=" NavItem p-2" onClick={handleThemeSwitch}>
               <BsSun className="hover:animate-spin hover:text-yellow-500" />
-            </div> */}
+            </div>
 
             <div className="p-2 lg:hidden Round cursor-pointer hover:text-Ind">
               
-                {/* <BsFillArrowUpSquareFill  /> */}
+                <BsFillArrowUpSquareFill  />
             </div>
           </div>
         </div>
@@ -124,8 +124,7 @@ export default function Home() {
 
             {/* Caption */}
             <p className="my-5 mb-3 p-4 lg:text-xl lg:px-12 leading-7 text-base dark:text-whiteish text-coal/70 font-semibold text-center">
-              Hello, my name is Kristopher and I&apos;m a passionate
-              software engineer that values creativity and optimization.
+              Hello, my name is Kristopher and I&apos;m a passionate software engineer that values creativity and optimization.
             </p>
 
 
