@@ -1,41 +1,25 @@
 import Head from "next/head";
+import Link from 'next/link'
 import { AiOutlineStar } from "react-icons/ai";
 import { BiSearch } from "react-icons/bi";
 import Image from "next/image";
 import React, { useRef, useState, useEffect } from "react";
+import BannerImage from "../../public/Abstract2.jpg";
+
 // import Axis from "./Axis";
 import Banner from "./Banner";
 import Header from "./Header";
 import SkillTree from "./SkillTree";
 import { BsSun } from "react-icons/bs";
-import { BsFillArrowUpSquareFill } from "react-icons/bs";
-import { BsMoon } from "react-icons/bs";
-import Top from "./Top";
-import SearchBar from "./SearchBar";
-import Skills from "./Skills";
+import Menu from './Menu'
+
 import Footer from "./Footer";
 import LiveSites from './LiveSites.jsx'
-import JS from "../../public/JS.png";
-import TS from "../../public/TS.png";
-import Tailwind from "../../public/tail.png";
-import Git from "../../public/git.png";
-import Reacts from "../../public/react.png";
-import OpenAI from "../../public/openai.png";
-import Next from "../../public/next-js.svg";
-import sun from '../../public/sun.png';
 import Prismatic from "./Prismatic";
 import Chord from "../../public/Piano/Chord.mp3";
 import Chord2 from "../../public/Piano/Chord-02.mp3";
 import Chord3 from "../../public/Piano/Chord-03.mp3";
 import M from "../../public/Engine.png";
-import { RxHamburgerMenu } from "react-icons/ri";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { BsChatLeft } from "react-icons/bs";
-import { AiOutlineHome } from "react-icons/ai";
-
-import SubV from '../../public/SubV.jpg';
-import Subversion from '../../public/Subversion.jpg';
-
 
 export default function Home() {
 
@@ -81,9 +65,10 @@ export default function Home() {
 
         {/* Nav */}
         <div className="Nav z-50 antialiased shadow-2xl dark:shadow-Redd ">
+
           {/* Logo */}
           <a href="https://www.krisrehfuss.com" alt="home">
-            <div className="NameShadow flex items-center justify-center  lg:pl-24 ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold text-xl">
+            <div className="NameShadow flex items-center justify-center lg:pl-24 ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold text-xl">
             <Image className=" mr-3 w-12" src={M} alt="M Logo" />
             Kris<span className="ml-1 text-Sub"> Rehfuss </span>
           </div>
@@ -91,12 +76,14 @@ export default function Home() {
 
 
           {/* Search Bar */}
-          <div className=" lg:flex items-center justify-center Round h-full">
-            <input
-              className="hidden ClearDrop lg:w-3/4 w-1/4 Shadow bg-Logo bg-opacity-60 rounded-full p-2 text-sm font-light  text-white px-4"
-              type="text"
-            />
-            <BiSearch className="hidden h-8 w-8 p-2 mx-4 cursor-pointer rounded-full bg-Purpp" />
+          <div className=" flex gap-4 items-center justify-center Round h-full">
+            <div className="MARK Pull px-4 BoxFit"> <Link href='/Index'> Home </Link> </div>
+            <div className="MARK Pull px-4 BoxFit"> <Link href='/Grid'> Gallery </Link> </div>
+            <div className="MARK hidden px-4 BoxFit"> Test </div>
+            <div className="MARK hidden px-4 BoxFit"> Test </div>
+            
+
+
           </div>
 
           {/* Icons */}
@@ -106,21 +93,24 @@ export default function Home() {
               <BsSun className="hover:animate-spin hover:text-yellow-500" />
             </div>
 
-            <div className="p-2 lg:hidden Round cursor-pointer hover:text-Ind">
+            <div className="p-2 hidden Round cursor-pointer hover:text-Ind">
               
-                <BsFillArrowUpSquareFill  />
+                <Menu  />
             </div>
           </div>
         </div>
 
-        <Banner />
+        <Banner image={BannerImage}/>
 
         {/* Container */}
         <div className="FlexCenterCol mt-4 font-pop BoxFull">
           <div className="MainCard">
 
             {/* Header */}
-            <Header style="Header antialiased" />
+            <Header 
+            style="Header antialiased"
+            text='Welcome to my dashboard'
+             />
 
             {/* Caption */}
             <p className="my-5 mb-3 p-4 lg:text-xl lg:px-12 leading-7 text-base dark:text-whiteish text-coal/70 font-semibold text-center">

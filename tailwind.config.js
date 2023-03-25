@@ -1,7 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
-  content: ["./index.html", "./src/**/*.{jsx,js}"],
+  content: [
+    "./index.html",
+    "./pages/**/*.{ts,tsx}",
+     "./src/**/*.{jsx,js}",
+    "./public/**/*.html",
+    ],
   theme: {
     screens: {
       sm: "380px",
@@ -73,5 +78,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwind-scrollbar-hide")],
+  plugins: [
+    require("tailwind-scrollbar-hide"),
+    require("daisyui"),
+  ]
 };
