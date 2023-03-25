@@ -57,7 +57,7 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1"
         />
-        <link rel="icon" href="/music.svg" />
+        <link rel="icon" href="/next-js.svg" />
       </Head>
 
       <main className="MAIN Smoother">
@@ -67,8 +67,8 @@ export default function Home() {
 
           {/* Logo */}
           <a href="https://www.krisrehfuss.com" alt="home">
-            <div className="NameShadow flex items-center justify-center lg:pl-24 ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold text-xl">
-              <Image className=" mr-3 w-12" src={M} alt="M Logo" />
+            <div className="NameShadow lg:text-xl text-lg flex items-center justify-center lg:pl-48 ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold ">
+              {/* <Image className=" mr-3 w-12" src={M} alt="M Logo" /> */}
               Kris<span className="ml-1 text-Sub"> Rehfuss </span>
             </div>
           </a>
@@ -76,8 +76,8 @@ export default function Home() {
 
           {/* Links */}
           <div className="lg:pr-48 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
-            <div className="Pull md:px-4 BoxFit"> <a href='https://www.krisrehfuss.com'> Home </a> </div>
-            <div className="Pull md:px-4 BoxFit"> <Link href='/Grid'> Gallery </Link> </div>
+            <div className="Pull md:px-4 active:text-Redd BoxFit"> <a href='https://www.krisrehfuss.com'> Home </a> </div>
+            <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/Grid'> Gallery </Link> </div>
             <div className="NavItem p-2 text-2xl text-Redd" onClick={handleThemeSwitch}>
               <BsSun className="hover:animate-spin hover:text-yellow-500" />
             </div>

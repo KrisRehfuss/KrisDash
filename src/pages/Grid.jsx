@@ -16,6 +16,13 @@ import Art7 from "../../public/AI/Art7.png";
 import Art8 from "../../public/AI/Art8.png";
 import Art9 from "../../public/AI/Art9.png";
 
+import Time1 from "../../public/AI/Time.png";
+import Time2 from "../../public/AI/Time2.png";
+import Time3 from "../../public/AI/Time3.png";
+import Time4 from "../../public/AI/Time4.png";
+
+
+
 import React, { useRef, useState, useEffect } from "react";
 import { BsSun } from "react-icons/bs";
 import Banner from "./Banner";
@@ -49,14 +56,13 @@ export default function Home() {
 
 	const items = [
 		{ name: 'A', image: Art1 },
-		{ name: 'B', image: Art2 },
-		{ name: 'C', image: Art3 },
-		{ name: 'D', image: Art4 },
+		{ name: 'B', image: Time2 },
+		{ name: 'C', image: Art7 },
+		{ name: 'D', image: Time1 },
 		{ name: 'E', image: Art5 },
-		{ name: 'F', image: Art6 },
+		{ name: 'F', image: Time3 },
 		{ name: 'G', image: Art7 },
-		{ name: 'H', image: Art8 },
-		{ name: 'I', image: Art9 },
+		{ name: 'H', image: Time4 },
 		// { name: 'J', image: Art10},
 		// { name: 'K', image: Art11},
 		// { name: 'L', image: Art12},
@@ -73,7 +79,7 @@ export default function Home() {
 					name="viewport"
 					content="width=device-width, initial-scale=1"
 				/>
-				<link rel="icon" href="/music.svg" />
+				<link rel="icon" href="/next-js.ico" />
 			</Head>
 
 			{/* Wrapper Start */}
@@ -84,8 +90,8 @@ export default function Home() {
 
 					{/* Logo */}
 					<a href="https://www.krisrehfuss.com" alt="home">
-						<div className="NameShadow flex items-center justify-center lg:pl-24 ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold text-xl">
-							<Image className=" mr-3 w-12" src={M} alt="M Logo" />
+						<div className="NameShadow lg:text-xl  flex items-center justify-center lg:pl-24 ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold">
+							{/* <Image className=" mr-3 w-12" src={M} alt="M Logo" /> */}
 							Kris<span className="ml-1 text-Sub"> Rehfuss </span>
 						</div>
 					</a>
