@@ -15,7 +15,6 @@ import Art6 from "../../public/AI/Art6.png";
 import Art7 from "../../public/AI/Art7.png";
 import Art8 from "../../public/AI/Art8.png";
 import Art9 from "../../public/AI/Art9.png";
-
 import Time1 from "../../public/AI/Time.png";
 import Time2 from "../../public/AI/Time2.png";
 import Time3 from "../../public/AI/Time3.png";
