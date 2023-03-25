@@ -60,47 +60,31 @@ export default function Home() {
         <link rel="icon" href="/music.svg" />
       </Head>
 
-    {/* Wrapper Start */}
-      <main>
+      <main className="MAIN Smoother">
 
         {/* Nav */}
-        <div className="Nav NavMD z-50 antialiased shadow-2xl dark:shadow-Redd ">
+        <div className="Nav grid-cols-2 z-10 antialiased shadow-2xl dark:shadow-Ind ">
 
           {/* Logo */}
           <a href="https://www.krisrehfuss.com" alt="home">
             <div className="NameShadow flex items-center justify-center lg:pl-24 ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold text-xl">
-            <Image className=" mr-3 w-12" src={M} alt="M Logo" />
-            Kris<span className="ml-1 text-Sub"> Rehfuss </span>
-          </div>
+              <Image className=" mr-3 w-12" src={M} alt="M Logo" />
+              Kris<span className="ml-1 text-Sub"> Rehfuss </span>
+            </div>
           </a>
 
 
-          {/* Search Bar */}
-          <div className=" flex gap-4 items-center justify-center Round h-full">
-            <div className="MARK Pull px-4 BoxFit"> <Link href='/Index'> Home </Link> </div>
-            <div className="MARK Pull px-4 BoxFit"> <Link href='/Grid'> Gallery </Link> </div>
-            <div className="MARK hidden px-4 BoxFit"> Test </div>
-            <div className="MARK hidden px-4 BoxFit"> Test </div>
-            
-
-
-          </div>
-
-          {/* Icons */}
-          <div className="flex items-center justify-center pr-24  text-2xl text-Redd  ">
-
-            <div className=" NavItem p-2" onClick={handleThemeSwitch}>
+          {/* Links */}
+          <div className="lg:pr-48 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
+            <div className="Pull md:px-4 BoxFit"> <a href='https://www.krisrehfuss.com'> Home </a> </div>
+            <div className="Pull md:px-4 BoxFit"> <Link href='/Grid'> Gallery </Link> </div>
+            <div className="NavItem p-2 text-2xl text-Redd" onClick={handleThemeSwitch}>
               <BsSun className="hover:animate-spin hover:text-yellow-500" />
-            </div>
-
-            <div className="p-2 hidden Round cursor-pointer hover:text-Ind">
-              
-                <Menu  />
             </div>
           </div>
         </div>
 
-        <Banner image={BannerImage}/>
+        <Banner image={BannerImage} />
 
         {/* Container */}
         <div className="FlexCenterCol mt-4 font-pop BoxFull">
