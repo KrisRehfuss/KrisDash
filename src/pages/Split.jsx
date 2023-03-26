@@ -114,9 +114,9 @@ export default function Home() {
             <Banner image={City} />
 
             {/* Container */}
-            <div className="FlexCenterCol h-[2400px] mt-4 font-pop ">
+            <div className="FlexCenterCol lg:h-[1600px] mt-4 font-pop ">
 
-               <div className="FlexCenterCol p-2 h-s mb-12 w-screen">
+               <div className="FlexCenterCol p-2 h-s  w-screen">
 
                   {/* Header */}
                   {/* <Header style="Header antialiased my-24" text='AI Gallery' /> */}
@@ -126,8 +126,8 @@ export default function Home() {
 
                         {/* Grid Container */}
                         <div className="-z-30 text-CityBlu  mb-2 items-center ">
-                           <Image className='opacity-70 h-1/2 w-1/2 my-24' src={Jar}alt='DNA' />
-                           <Image className='opacity-70 absolute right-0 h-5/6 w-5/12 m-24 mb-36 ' src={DNM}alt='DNA' />
+                           <Image className='opacity-70 lg:h-1/2 lg:w-1/2 my-24' src={Jar}alt='DNA' />
+                           <Image className='opacity-70 lg:absolute lg:right-0 lg:h-5/6 lg:w-5/12 m-24 mb-12 ' src={DNM}alt='DNA' />
 
                         </div>
                      </div>
