@@ -32,6 +32,7 @@ module.exports = {
         RightG: "#0e380e",
         DarkG: "#202020",
         Ind: '#2a315a',
+        Orbit: '#df07f8',
 
         Redd: "#e74175",
         Smokey: "#090C02",

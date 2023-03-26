@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from 'next/link';
 import Art from './Art';
 import Header from "./Header";
+import { BsQuestionCircleFill } from "react-icons/bs";
+import Footer from "./Footer";
 import SkillTree from "./SkillTree";
 import Menu from './Menu'
 
@@ -114,13 +116,13 @@ export default function Home() {
 					<div className="FlexCenterCol p-2  w-fit md:w-7/12 lg:w-8/12 xl:w-6/12">
 
 						{/* Header */}
-						<Header style="Header antialiased mb-12" text='AI Gallery' />
+						<Header style="Header antialiased my-24" text='AI Gallery' />
 
 						<div className="BoxFull mx-4 px-4 mt-2 mb-6">
 							<div className="w-full h-fit p-3 mb-4 ">
 
 								{/* Grid Container */}
-								<div className="grid lg:grid-cols-3 grid-cols-2 gap-8 gap-y-12  items-center ">
+								<div className="grid lg:grid-cols-3 grid-cols-2 gap-8 gap-y-12  mb-2 items-center ">
 									{items.map((item) => (
 										<Art
 											key={item.name}
@@ -131,6 +133,24 @@ export default function Home() {
 								</div>
 							</div>
 							{/* Live Sites */}
+						</div>
+						    {/* // Link Container */}
+						<div className="FlexCenterCol">
+
+							<div className="flex items-center justify-evenly w-full h-fit p-2">
+
+
+								{/* Insta */}
+								<div className="text-3xl text-violet-500 hover:text-Pinkk dark:text-Orbit dark:hover:text-white Smooth w-fit h-fit p-2 mt-48 mb-6">
+									<Link href="/Split">
+										<BsQuestionCircleFill />
+									</Link>
+								</div>
+
+
+
+							</div>
+							{/* <Top text="This site was developed by Kris and is getting regular updates" /> */}
 						</div>
 					</div>
 				</div>
