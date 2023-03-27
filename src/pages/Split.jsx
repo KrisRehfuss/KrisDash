@@ -81,7 +81,7 @@ export default function Home() {
          <main className="xl:h-[1600px] scroll-smooth Smoother dark:bg-gradient-to-t from-PlanetO via-Pinkk to-PlanetDark bg-coal">
 
             {/* Nav */}
-            <div className="Nav grid-cols-2 z-10 antialiased shadow-2xl shadow-PlanetO dark:shadow-coal ">
+            <div className="Nav grid-cols-2 z-10 antialiased shadow-2xl Smoother shadow-PlanetO dark:shadow-coal ">
 
                {/* Logo */}
                <a href="https://www.krisrehfuss.com" alt="home">
@@ -96,8 +96,8 @@ export default function Home() {
                <div className="lg:pr-48 flex gap-4 w-fit items-center justify-end text-white dark:text-coal h-full">
                   <div className="Pull md:px-4 active:text-Redd BoxFit"> <a href='https://www.krisrehfuss.com'> Home </a> </div>
                   <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/Grid'> Gallery </Link> </div>
-                  <div className="NavItem p-2 text-2xl text-Redd" onClick={handleThemeSwitch}>
-                     <BsSun className="hover:animate-spin hover:text-yellow-500" />
+                  <div className="NavItem p-2 text-2xl text-white dark:text-coal" onClick={handleThemeSwitch}>
+                     <BsSun className="animate-spin hover:text-yellow-500 Smoother" />
                   </div>
                </div>
             </div>
@@ -109,7 +109,7 @@ export default function Home() {
                <div className="FlexCenterCol p-2  w-fit md:w-7/12 lg:w-8/12 xl:w-6/12">
 
                   {/* Header */}
-                  <Header style="mt-6 mb-6 xl:text-9xl lg:text-8xl text-7xl  w-full NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center  xl:mr-[400px] Smoother antialiased text-5xl py-12" 
+                  <Header style="my-12 xl:text-9xl lg:text-8xl text-7xl w-full NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center xl:mr-[400px] Smoother antialiased " 
                   text='Modern Gallery' />
 
                   <div className="BoxFull mx-4 px-4 mt-2 mb-6">

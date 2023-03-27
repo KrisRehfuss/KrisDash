@@ -95,8 +95,7 @@ function LiveSites() {
                <a className="w-full dark:text-gray-700 text-gray-200" href="https://prompt-engine.vercel.app/">
                   Prompt <span className="text-violet-500">Engine</span>
                   <p className="lg:text-sm text-xs dark:text-gray-700 text-gray-400 ">
-                     Created a prompt engine with a dynamic layout using
-                     ChatGPT&apos;s API and Tailwind
+                     Created a prompt engine with ChatGPT&apos;s API and Tailwind
                   </p>
                </a>
             </div>
@@ -110,7 +109,7 @@ function LiveSites() {
                   <h3 className="font-normal">  <span className="CardText pr-12"> Social Network ID </span>
                   </h3>
                   <p className="lg:text-sm text-xs text-gray-400 dark:text-gray-700 ">
-                     Created a social card interface based on a `Quantum Entangler`
+                     Created a social card interface 
                   </p>
                </a>
             </div>
