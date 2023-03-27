@@ -163,6 +163,12 @@ body {
   @apply flex flex-col items-center ;
 }
 
+/* Gradients */
+
+.PeachWall {
+  @apply bg-gradient-to-t from-PlanetO via-Pinkk to-CityBlu
+}
+
 .PrismaticText {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-Pinq to-Q 
 }

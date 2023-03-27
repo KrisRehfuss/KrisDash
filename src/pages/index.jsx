@@ -11,7 +11,6 @@ import Banner from "./Banner";
 import Header from "./Header";
 import SkillTree from "./SkillTree";
 import { BsSun } from "react-icons/bs";
-import Menu from './Menu'
 
 import Footer from "./Footer";
 import LiveSites from './LiveSites.jsx'

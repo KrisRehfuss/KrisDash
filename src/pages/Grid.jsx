@@ -6,7 +6,6 @@ import Header from "./Header";
 import { BsQuestionCircleFill } from "react-icons/bs";
 import Footer from "./Footer";
 import SkillTree from "./SkillTree";
-import Menu from './Menu'
 
 import Art1 from "../../public/AI/Art.png";
 import Art2 from "../../public/AI/Art2.png";

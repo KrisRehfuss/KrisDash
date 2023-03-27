@@ -34,6 +34,9 @@ module.exports = {
         Ind: '#2a315a',
         Orbit: '#df07f8',
 
+        PlanetO: '#fbd6c7',
+        PlanetDark: '#fad8cb',
+
         Redd: "#e74175",
         Smokey: "#090C02",
         Ash: "#BBC5AA",
