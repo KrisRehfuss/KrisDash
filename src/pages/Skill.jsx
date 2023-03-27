@@ -28,7 +28,7 @@ function Skill({ name, logo, audio }) {
     >
       <Image src={logo} className="w-4" alt="#" />
       <div className="ml-1 ">{name}</div>
-      <audio ref={audioRef} src={audio}></audio>{" "}
+      <audio ref={audioRef} src={audio}></audio>
     </div>
   );
 }

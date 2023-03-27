@@ -15,6 +15,10 @@ module.exports = {
       xl: "1440px",
     },
     extend: {
+      backgroundImage: {
+        'Planet': 'linear-gradient(to-t, #PlanetO, #Pinkk, #PlanetDark)',
+
+      },
       fontSize: {
         bio: "13px",
         QR: "15px",
