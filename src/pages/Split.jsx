@@ -120,7 +120,7 @@ export default function Home() {
                      <div className="w-full FlexCenter h-fit p-3 mb-4 ">
 
                         {/* Grid Container */}
-                        <div className="grid xl:grid-cols-3 grid-cols-2 gap-8 pt-64 xl:p-32 xl:pt-64 p-12 dark:gap-24 lg:gap-x-36 lg:dark:gap-36 lg:dark:gap-x-48 lg:p-24 xl:dark:pt-68 xl:dark:px-64 xl:gap-12 xl:dark:gap-36 w-full  ">
+                        <div className="grid xl:grid-cols-3 grid-cols-2 gap-8 pt-64 xl:p-32 xl:dark:pt-64 p-12 dark:gap-24 lg:gap-x-36 lg:dark:gap-36 lg:dark:gap-x-48 lg:p-24 xl:dark:pt-68 xl:dark:px-64 xl:gap-12 xl:dark:gap-36 w-full  ">
                            {items.map((item) => (
                               <Art
                                  style ='PullMid Shadow rounded-md dark:-rotate-45 dark:shadow-PlanetDark dark:shadow-lg ease-out hover:shadow-Ind dark:hover:shadow-DarkTeal'
