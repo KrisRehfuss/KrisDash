@@ -82,7 +82,7 @@ export default function Home() {
          </Head>
 
          {/* Wrapper Start */}
-         <main className="SplitWrapper ">
+         <main className="SplitWrapper h-[1600px]">
 
             {/* Nav */}
             <div className="Nav grid-cols-2 z-10 antialiased shadow-2xl Smoother shadow:coal dark:shadow-PlanetO ">
@@ -108,16 +108,16 @@ export default function Home() {
 
 
             {/* Container */}
-            <div className="FlexCenterCol xl:h-[1800px]  mt-4 font-pop ">
+            <div className="FlexCenterCol h-screen  mt-4 font-pop ">
 
-               <div className="FlexCenterCol  p-2 w-fit md:w-7/12 lg:w-9/12 xl:w-8/12">
+               <div className="FlexCenterCol h-screen p-2 w-fit md:w-7/12 lg:w-9/12 xl:w-8/12">
 
                   {/* Header */}
                   <Header style="my-12 xl:text-9xl lg:text-8xl text-7xl w-full NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center xl:mr-[400px] Smoother antialiased " 
                   text='Modern Gallery' />
 
                   <div className=" w-full mx-4 px-4 mt-2 mb-6">
-                     <div className="w-full FlexCenter h-screen p-3 mb-4 ">
+                     <div className="w-full FlexCenter h-fit p-3 mb-4 ">
 
                         {/* Grid Container */}
                         <div className="grid xl:grid-cols-3 grid-cols-2 gap-8 pt-64 xl:p-32 xl:pt-64 p-12 dark:gap-24 lg:gap-x-36 lg:dark:gap-36 lg:dark:gap-x-48 lg:p-24 xl:dark:pt-68 xl:dark:px-64 xl:gap-12 xl:dark:gap-36 w-full  ">
