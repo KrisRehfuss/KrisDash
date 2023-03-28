@@ -3,7 +3,7 @@ import Image from "next/image";
   
 
 
-function Art({ image, audio }) {
+function Art({ style, image, audio }) {
 
   // Audio Player
   const audioRef = useRef(null);
@@ -26,7 +26,7 @@ function Art({ image, audio }) {
   // Return Function
   return (
     <div {...handleEvent}>
-        <Image className='Pull Shadow w-64 rounded-md dark:-rotate-45 hover:shadow-Ind ' src={ image } alt='/' />
+      <Image className= {style} src={ image } alt='/' />
       <audio ref={audioRef} src={audio}></audio>
 
     </div>

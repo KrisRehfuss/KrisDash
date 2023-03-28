@@ -40,6 +40,7 @@ module.exports = {
 
         PlanetO: '#fbd6c7',
         PlanetDark: '#fad8cb',
+        DarkTeal: '#1f3f4d',
 
         Redd: "#e74175",
         Smokey: "#090C02",

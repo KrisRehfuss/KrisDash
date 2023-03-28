@@ -124,6 +124,7 @@ export default function Home() {
 								<div className="grid lg:grid-cols-3 grid-cols-2 gap-8 gap-y-12  mb-2 items-center ">
 									{items.map((item) => (
 										<Art
+										style='PullMid Shadow rounded-md dark:shadow-Ind dark:shadow-lg ease-linear hover:shadow-Ind dark:hover:shadow-DarkTeal'
 											key={item.name}
 											image={item.image} />
 									))}

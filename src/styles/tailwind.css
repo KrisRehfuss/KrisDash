@@ -24,7 +24,7 @@ body {
 }
 
 .SplitWrapper {
-  @apply bg-gradient-to-t from-PlanetO via-Pinkk to-PlanetDark dark:bg-none h-[1800px] scroll-smooth Smoother
+  @apply bg-gradient-to-t from-PlanetO via-Pinkk to-PlanetDark dark:bg-none scroll-smooth Smoother
 }
 
 .MainCard {
@@ -131,6 +131,10 @@ body {
 
 .PullHard {
   @apply sm:hover:z-50 sm:hover:shadow-2xl hover:scale-150 sm:transition sm:transform sm:duration-100 sm:ease-in-out
+}
+
+.PullMid {
+  @apply sm:hover:z-50 sm:hover:shadow-2xl hover:scale-125 sm:transition sm:transform sm:ease-in-out
 }
 
 /* Structure */
