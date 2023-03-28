@@ -54,15 +54,16 @@ export default function Home() {
    }, [theme])
 
    const items = [
-      { name: 'A', image: Art3, audio: A1 },
+      { name: 'A', image: Art1, audio: A1 },
       { name: 'B', image: Art2, audio: A2},
-      { name: 'C', image: Art4, audio: A3 },
-      { name: 'D', image: Art5, audio: A4 },
-      { name: 'E', image: Art6, audio: A5 },
-      { name: 'F', image: Art3, audio: A6 },
-      { name: 'G', image: Art4, audio: A7 },
-      { name: 'H', image: Art7, audio: A8 },
-      { name: 'J', image: Art3, audio: A9 },
+      { name: 'C', image: Art3, audio: A3 },
+      { name: 'D', image: Art4, audio: A4 },
+      { name: 'E', image: Art5, audio: A5 },
+      { name: 'F', image: Art6, audio: A6 },
+      { name: 'G', image: Art7, audio: A7 },
+      { name: 'H', image: Art8, audio: A8 },
+      { name: 'J', image: Art9, audio: A9 },
+      // { name: 'K', image: Art4, audio: A5 },
       // { name: 'K', image: Art3, audio: A9 },
       // { name: 'L', image: Art12},
    ]
@@ -110,7 +111,7 @@ export default function Home() {
             {/* Container */}
             <div className="FlexCenterCol  h-fit  mt-4 font-pop ">
 
-               <div className="FlexCenterCol  h-fit p-2 w-fit md:w-7/12 lg:w-9/12 xl:w-8/12">
+               <div className="FlexCenterCol  h-fit p-2 w-fit md:w-7/12 lg:w-10/12 xl:w-8/12">
 
                   {/* Header */}
                   <Header style="my-12 xl:text-9xl lg:text-8xl text-7xl w-full NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center xl:mr-[400px] Smoother antialiased " 
@@ -120,7 +121,7 @@ export default function Home() {
                      <div className="w-full FlexCenter h-fit p-3 mb-4 ">
 
                         {/* Grid Container */}
-                        <div className="grid xl:grid-cols-3 grid-cols-2 gap-8 pt-64 xl:p-32 xl:dark:pt-48 p-12 dark:gap-24 lg:gap-x-12 lg:dark:gap-36 lg:dark:gap-x-48 lg:p-24 xl:pt-12 xl:dark:pt-68 xl:dark:px-64 xl:gap-12 xl:dark:gap-36 w-full  ">
+                        <div className="grid xl:grid-cols-3 grid-cols-2 gap-8 pt-64 xl:p-32 xl:dark:pt-48 p-12 dark:gap-24 lg:gap-x-24 lg:dark:gap-36 lg:dark:gap-x-48 lg:p-24 lg:pt-12 xl:pt-12 xl:dark:pt-68 xl:dark:px-64 xl:gap-12 xl:dark:gap-36 w-full  ">
                            {items.map((item) => (
                               <Art
                                  style ='PullMid Shadow rounded-md dark:-rotate-45 dark:shadow-PlanetDark dark:shadow-lg ease-out hover:shadow-Ind dark:hover:shadow-DarkTeal'
