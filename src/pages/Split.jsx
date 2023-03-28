@@ -82,7 +82,7 @@ export default function Home() {
          </Head>
 
          {/* Wrapper Start */}
-         <main className="SplitWrapper h-[1600px]">
+         <main className="SplitWrapper xl:h-[1600px] lg:h-[2200px] h-[1600px]">
 
             {/* Nav */}
             <div className="Nav grid-cols-2 z-10 antialiased shadow-2xl Smoother shadow:coal dark:shadow-PlanetO ">
@@ -108,9 +108,9 @@ export default function Home() {
 
 
             {/* Container */}
-            <div className="FlexCenterCol h-screen  mt-4 font-pop ">
+            <div className="FlexCenterCol  h-fit  mt-4 font-pop ">
 
-               <div className="FlexCenterCol h-screen p-2 w-fit md:w-7/12 lg:w-9/12 xl:w-8/12">
+               <div className="FlexCenterCol  h-fit p-2 w-fit md:w-7/12 lg:w-9/12 xl:w-8/12">
 
                   {/* Header */}
                   <Header style="my-12 xl:text-9xl lg:text-8xl text-7xl w-full NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center xl:mr-[400px] Smoother antialiased " 
@@ -120,7 +120,7 @@ export default function Home() {
                      <div className="w-full FlexCenter h-fit p-3 mb-4 ">
 
                         {/* Grid Container */}
-                        <div className="grid xl:grid-cols-3 grid-cols-2 gap-8 pt-64 xl:p-32 xl:dark:pt-64 p-12 dark:gap-24 lg:gap-x-36 lg:dark:gap-36 lg:dark:gap-x-48 lg:p-24 xl:dark:pt-68 xl:dark:px-64 xl:gap-12 xl:dark:gap-36 w-full  ">
+                        <div className="grid xl:grid-cols-3 grid-cols-2 gap-8 pt-64 xl:p-32 xl:dark:pt-48 p-12 dark:gap-24 lg:gap-x-12 lg:dark:gap-36 lg:dark:gap-x-48 lg:p-24 xl:pt-12 xl:dark:pt-68 xl:dark:px-64 xl:gap-12 xl:dark:gap-36 w-full  ">
                            {items.map((item) => (
                               <Art
                                  style ='PullMid Shadow rounded-md dark:-rotate-45 dark:shadow-PlanetDark dark:shadow-lg ease-out hover:shadow-Ind dark:hover:shadow-DarkTeal'
