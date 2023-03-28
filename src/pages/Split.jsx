@@ -114,14 +114,14 @@ export default function Home() {
                <div className="FlexCenterCol  h-fit p-2 w-fit md:w-7/12 lg:w-10/12 xl:w-8/12">
 
                   {/* Header */}
-                  <Header style="my-12 xl:text-9xl lg:text-8xl text-7xl w-full NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center xl:mr-[400px] Smoother antialiased " 
+                  <Header style="md:my-12 mt-4 xl:text-9xl lg:text-8xl text-6xl w-full NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center xl:mr-[400px] Smoother antialiased " 
                   text='Modern Gallery' />
 
-                  <div className=" w-full mx-4 px-4 mt-2 mb-6">
+                  <div className=" w-full mx-4 px-4 mt-2 md:mb-6 mb-2">
                      <div className="w-full FlexCenter h-fit p-3 mb-4 ">
 
                         {/* Grid Container */}
-                        <div className="grid xl:grid-cols-3 grid-cols-2 gap-8 pt-64 xl:p-32 xl:dark:pt-48 p-12 dark:gap-24 lg:gap-x-24 lg:dark:gap-36 lg:dark:gap-x-48 lg:p-24 lg:pt-12 xl:pt-12 xl:dark:pt-68 xl:dark:px-64 xl:gap-12 xl:dark:gap-36 w-full  ">
+                        <div className="grid xl:grid-cols-3 grid-cols-2 gap-8 xl:p-32 xl:dark:pt-48 p-12 dark:gap-24 lg:gap-x-24 lg:dark:gap-36 lg:dark:gap-x-48 lg:p-24 lg:pt-12 xl:pt-12 xl:dark:pt-68 xl:dark:px-64 xl:gap-12 xl:dark:gap-36 w-full  ">
                            {items.map((item) => (
                               <Art
                                  style ='PullMid Shadow rounded-md dark:-rotate-45 dark:shadow-PlanetDark dark:shadow-lg ease-out hover:shadow-Ind dark:hover:shadow-DarkTeal'
