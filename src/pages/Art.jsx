@@ -3,7 +3,7 @@ import Image from "next/image";
   
 
 
-function Art({image, audio, keyTrigger }) {
+function Art({image, audio, keyTrigger, caption }) {
   // Audio Player
   const audioRef = useRef(null);
 
@@ -66,11 +66,12 @@ function Art({image, audio, keyTrigger }) {
     <div {...handleEvent}>
       <Image className=
       {`PullMid shadow-2xl rounded-md 
-      dark:shadow-PlanetDark dark:shadow-lg ease-out 
+      dark:shadow-lg ease-linear
       hover:shadow-Ind 
-      transform ${isKeyPressed ? 'scale-125 -rotate-45 dark:-rotate-90 dark:shadow-DarkTeal shadow-DarkTeal' : 'dark:-rotate-45 shadow-black'}`} 
+      transform ${isKeyPressed ? 'scale-125 dark:border-2 dark:border-sky-500 dark:shadow-2xl dark:-rotate-90 dark:shadow-DarkTeal' : 'dark:-rotate-45 dark:shadow-PlanetDark shadow-black'}`} 
       src={image} 
       alt='/' />
+      <p className='pt-2 dark:hidden'>{caption}</p>
 
 
       <audio ref={audioRef} src={audio}></audio>

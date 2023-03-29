@@ -17,6 +17,8 @@ import Art7 from "../../public/AI/planets.png";
 import Art8 from "../../public/AI/Planets5.png";
 import Art9 from "../../public/AI/CandyMountains.png";
 
+import Keys from "../../public/Key.png";
+
 import A1 from "../../public/Piano/Diamond-001.mp3";
 import A2 from "../../public/Piano/Diamond-002.mp3";
 import A3 from "../../public/Piano/Diamond-003.mp3";
@@ -84,15 +86,15 @@ export default function Home() {
 
    // Note Changers
    const [notes, setNotes] = useState([
-      { id: 'A', image: Art1, audio: A1, keyTrigger: 'a', scale: 1 },
-      { id: 'B', image: Art2, audio: A2, keyTrigger: 's', scale: 1 },
-      { id: 'C', image: Art3, audio: A3, keyTrigger: 'd', scale: 1 },
-      { id: 'D', image: Art4, audio: A4, keyTrigger: 'w', scale: 1 },
-      { id: 'E', image: Art5, audio: A5, keyTrigger: 'j', scale: 1 },
-      { id: 'F', image: Art6, audio: A6, keyTrigger: 'k', scale: 1 },
-      { id: 'G', image: Art3, audio: A7, keyTrigger: 'l', scale: 1 },
-      { id: 'H', image: Art8, audio: A8, keyTrigger: 'u', scale: 1 },
-      { id: 'J', image: Art9, audio: A9, keyTrigger: 'i', scale: 1 },
+      { id: 'A', image: Art1, audio: A1, caption: 'A', keyTrigger: 'a'},
+      { id: 'B', image: Art2, audio: A2, caption: 'S', keyTrigger: 's'},
+      { id: 'C', image: Art3, audio: A3, caption: 'D', keyTrigger: 'd'},
+      { id: 'D', image: Art4, audio: A4, caption: 'W', keyTrigger: 'w'},
+      { id: 'E', image: Art5, audio: A5, caption: 'J', keyTrigger: 'j'},
+      { id: 'F', image: Art6, audio: A6, caption: 'K', keyTrigger: 'k'},
+      { id: 'G', image: Art3, audio: A7, caption: 'L', keyTrigger: 'l'},
+      { id: 'H', image: Art8, audio: A8, caption: 'U', keyTrigger: 'u'},
+      { id: 'J', image: Art9, audio: A9, caption: 'I', keyTrigger: 'i'},
    ])
    const [noteList1, setNoteList1] = useState([
       { id: 'A', audio: A1 },
@@ -160,7 +162,7 @@ export default function Home() {
          </Head>
 
          {/* Wrapper Start */}
-         <main className="SplitWrapper dark:LiteTeal xl:h-[1600px] lg:h-[2200px] h-[1600px]">
+         <main className="SplitWrapper xl:h-[1600px]  h-[1600px]">
 
             {/* Nav */}
             <div className="Nav grid-cols-2 z-10 antialiased shadow-2xl Smoother shadow:coal dark:shadow-PlanetO ">
@@ -173,12 +175,12 @@ export default function Home() {
                   </div>
                </a>
 
-
+      
                {/* Links */}
                <div className="lg:pr-48 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
                   <div className="Pull md:px-4 active:text-Redd BoxFit"> <a href='https://www.krisrehfuss.com'> Home </a> </div>
-                  <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/Grid'> Gallery </Link> </div>
-                  <div className="NavItem p-2 text-xl text-coal dark:text-white"  onMouseLeave={Darken}>
+                  <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/Split'> Gallery </Link> </div>
+                  <div className="NavItem p-2 text-xl text-coal dark:text-white"  onMouseEnter={Darken}>
                      <FaMusic className="hover:text-DarkTeal Smoother" />
                   </div>
                </div>
@@ -188,36 +190,44 @@ export default function Home() {
             {/* Container */}
             <div className="FlexCenterCol  h-fit  mt-4 font-pop ">
 
-               <div className="FlexCenterCol  h-fit p-2 w-fit md:w-7/12 lg:w-10/12 xl:w-8/12">
+               <div className="FlexCenterCol h-fit p-2 w-fit md:w-7/12 lg:w-10/12 xl:w-8/12">
 
                   {/* Header */}
-                     <Header style="md:my-12 mt-4 xl:text-9xl lg:text-8xl md:text-6xl text-5xl w-fit NameShadow hover:text-Aero cursor-text SubversionText font-extrabold lg:text-left text-center xl:mr-[400px] Smoother antialiased " 
-                  text='Modern Gallery' />
+                     <Header style="mt-4
+                        md:my-12 md:text-6xl
+                        xl:w-full xl:ml-24 xl:text-9xl xl:mr-[400px]
+                        lg:text-9xl lg:text-left
+                           lg:dark:pt-32
+                        text-5xl w-fit NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center Smoother antialiased " 
+                  text='Modern Synth' />
                 
                   
-
+                  {/* More Containers? */}
                   <div className=" w-full mx-4 px-4 mt-2 md:mb-6 mb-2">
                      <div className="w-full FlexCenter h-fit p-3 mb-4 ">
-                        {/* <button onClick={handleToggle}>{isNoteList1 ? 'Use Note List 2' : 'Use Note List 1'}</button> */}
 
+                        {/* Key Picture
+                        <div className="hidden dark:hidden lg:block border-2 border-white absolute left-40 h-96 p-8">
+                           <Image src={Keys} width={240} alt='Keys'/>
+                        </div> */}
 
                         {/* Grid Container */}
                         <div 
                         className="
                         grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-3 w-full
                            p-6 gap-8 dark:gap-12 dark:pt-16  
-                              lg:gap-x-24 lg:p-24 lg:pt-12 
-                                 lg:dark:p-48 lg:dark:gap-36 lg:dark:gap-x-48 
-                              xl:p-56 xl:pt-8 xl:gap-24
-                                 xl:dark:gap-36 xl:dark:pt-16 xl:dark:px-64
+                              lg:gap-x-24 lg:p-36 lg:pt-12 
+                                 lg:dark:grid-cols-3 lg:dark:p-4 lg:dark:pt-[200px] lg:dark:gap-36 lg:dark:gap-x-48 
+                              xl:p-64 xl:pt-36 xl:gap-16
+                                 xl:dark:gap-36 xl:dark:pt-42 xl:dark:px-64
                                     ">
-                           {/* <button className="border-2 h-fit p-4 w-fit " onClick={handleToggle}>{isNoteList1 ? 'Minor' : 'Augmented'}</button> */}
 
                            {notes.map((item) => (
                               <Art
                                  key={item.name}
                                  image={item.image}
                                  audio={item.audio}
+                                 caption={item.caption} 
                                  keyTrigger={item.keyTrigger} />
                            ))}
 

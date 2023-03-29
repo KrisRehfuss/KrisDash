@@ -5,17 +5,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  @apply 
-} */
 
 
 body {
-  @apply h-[1600px] Smoother text-white font-pop bg-whiteish dark:bg-coal  antialiased scrollbar-hide scroll-smooth;
+  @apply  Smoother text-white font-pop bg-whiteish dark:bg-coal  antialiased scrollbar-hide scroll-smooth;
 }
 
 .MAIN {
-  @apply h-full  scroll-smooth bg-whiteish dark:bg-coal
+  @apply scroll-smooth bg-whiteish dark:bg-coal
 }
 
 
@@ -24,7 +21,7 @@ body {
 }
 
 .SplitWrapper {
-  @apply bg-gradient-to-t from-PlanetO via-Pinkk to-PlanetDark dark:bg-none scroll-smooth Smoother
+  @apply lg:h-[2400px] bg-gradient-to-t from-PlanetO via-Pinkk to-PlanetDark dark:bg-none scroll-smooth Smoother
 }
 
 .MainCard {
@@ -134,7 +131,7 @@ body {
 }
 
 .PullMid {
-  @apply sm:hover:z-50 sm:hover:shadow-2xl  sm:transition sm:transform sm:ease-in-out
+  @apply sm:hover:z-50 hover:shadow-2xl  sm:transition sm:transform hover:scale-110 sm:ease-in-out
 }
 
 /* Structure */
