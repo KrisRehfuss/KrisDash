@@ -90,7 +90,7 @@ export default function Home() {
       { id: 'D', image: Art4, audio: A4, keyTrigger: 'w', scale: 1 },
       { id: 'E', image: Art5, audio: A5, keyTrigger: 'j', scale: 1 },
       { id: 'F', image: Art6, audio: A6, keyTrigger: 'k', scale: 1 },
-      { id: 'G', image: Art7, audio: A7, keyTrigger: 'l', scale: 1 },
+      { id: 'G', image: Art3, audio: A7, keyTrigger: 'l', scale: 1 },
       { id: 'H', image: Art8, audio: A8, keyTrigger: 'u', scale: 1 },
       { id: 'J', image: Art9, audio: A9, keyTrigger: 'i', scale: 1 },
    ])
@@ -208,8 +208,8 @@ export default function Home() {
                            p-6 gap-8 dark:gap-12 dark:pt-16  
                               lg:gap-x-24 lg:p-24 lg:pt-12 
                                  lg:dark:p-48 lg:dark:gap-36 lg:dark:gap-x-48 
-                              xl:p-56 xl:pt-36 xl:gap-24
-                                 xl:dark:gap-36 xl:dark:pt-42 xl:dark:px-64
+                              xl:p-56 xl:pt-8 xl:gap-24
+                                 xl:dark:gap-36 xl:dark:pt-16 xl:dark:px-64
                                     ">
                            {/* <button className="border-2 h-fit p-4 w-fit " onClick={handleToggle}>{isNoteList1 ? 'Minor' : 'Augmented'}</button> */}
 

@@ -134,7 +134,7 @@ body {
 }
 
 .PullMid {
-  @apply focus:scale-150 sm:hover:z-50 sm:hover:shadow-2xl hover:scale-125 sm:transition sm:transform sm:ease-in-out
+  @apply sm:hover:z-50 sm:hover:shadow-2xl  sm:transition sm:transform sm:ease-in-out
 }
 
 /* Structure */
