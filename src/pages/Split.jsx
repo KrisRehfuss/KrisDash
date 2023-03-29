@@ -197,7 +197,8 @@ export default function Home() {
                         md:my-12 md:text-6xl
                         xl:w-full xl:ml-24 xl:text-9xl xl:mr-[400px]
                         lg:text-9xl lg:text-left
-                           lg:dark:pt-32
+                        lg:dark:pt-32
+                        xl:dark:pt-0
                         text-5xl w-fit NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center Smoother antialiased " 
                   text='Modern Synth' />
                 
