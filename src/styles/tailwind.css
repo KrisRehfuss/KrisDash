@@ -134,7 +134,7 @@ body {
 }
 
 .PullMid {
-  @apply sm:hover:z-50 sm:hover:shadow-2xl hover:scale-125 sm:transition sm:transform sm:ease-in-out
+  @apply focus:scale-150 sm:hover:z-50 sm:hover:shadow-2xl hover:scale-125 sm:transition sm:transform sm:ease-in-out
 }
 
 /* Structure */
@@ -184,6 +184,7 @@ body {
 .SubversionText {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-Splatter to-Pinq
 }
+
 
 /* Styles */
 

@@ -26,25 +26,32 @@ import A6 from "../../public/Piano/Diamond-006.mp3";
 import A7 from "../../public/Piano/Diamond-007.mp3";
 import A8 from "../../public/Piano/Diamond-008.mp3";
 import A9 from "../../public/Piano/Diamond-009.mp3";
-import A10 from "../../public/Piano/Note-010.mp3";
-import A11 from "../../public/Piano/Note-011.mp3";
-import A12 from "../../public/Piano/Note-012.mp3";
 
+import R1 from "../../public/Piano/Robot-001.mp3";
+import R2 from "../../public/Piano/Robot-002.mp3";
+import R3 from "../../public/Piano/Robot-003.mp3";
+import R4 from "../../public/Piano/Robot-004.mp3";
+import R5 from "../../public/Piano/Robot-005.mp3";
+import R6 from "../../public/Piano/Robot-006.mp3";
+import R7 from "../../public/Piano/Robot-007.mp3";
+import R8 from "../../public/Piano/Robot-008.mp3";
+import R9 from "../../public/Piano/Robot-009.mp3";
 
 import React, { useRef, useState, useEffect } from "react";
 import { BsSun } from "react-icons/bs";
+import { FaMusic } from "react-icons/fa";
 import Banner from "./Banner";
 import City from "../../public/Disc.jpg";
 import M from "../../public/Engine.png";
 
 export default function Home() {
 
+  // Theme Switcher
    const [theme, setTheme] = useState(null)
-
    const handleThemeSwitch = () => {
       setTheme(theme === 'dark' ? 'light' : 'dark')
    }
-
+ 
    useEffect(() => {
       if (theme === 'dark') {
          document.documentElement.classList.add('dark')
@@ -53,21 +60,91 @@ export default function Home() {
       }
    }, [theme])
 
-   const items = [
-      { name: 'A', image: Art1, audio: A1 },
-      { name: 'B', image: Art2, audio: A2},
-      { name: 'C', image: Art3, audio: A3 },
-      { name: 'D', image: Art4, audio: A4 },
-      { name: 'E', image: Art5, audio: A5 },
-      { name: 'F', image: Art6, audio: A6 },
-      { name: 'G', image: Art7, audio: A7 },
-      { name: 'H', image: Art8, audio: A8 },
-      { name: 'J', image: Art9, audio: A9 },
-      // { name: 'K', image: Art4, audio: A5 },
-      // { name: 'K', image: Art3, audio: A9 },
-      // { name: 'L', image: Art12},
-   ]
+   // Note/Theme Changer
+   function Darken() {
+      handleThemeSwitch();
+      handleToggle();
+   }
 
+   // Theme Change on SpaceBar
+   useEffect(() => {
+      function handleKeyDown(event) {
+         if (event.code === 'Space') {
+            event.preventDefault();
+            Darken();
+         }
+      }
+
+      window.addEventListener('keydown', handleKeyDown);
+
+      return () => {
+         window.removeEventListener('keydown', handleKeyDown);
+      };
+   });
+
+   // Note Changers
+   const [notes, setNotes] = useState([
+      { id: 'A', image: Art1, audio: A1, keyTrigger: 'a', scale: 1 },
+      { id: 'B', image: Art2, audio: A2, keyTrigger: 's', scale: 1 },
+      { id: 'C', image: Art3, audio: A3, keyTrigger: 'd', scale: 1 },
+      { id: 'D', image: Art4, audio: A4, keyTrigger: 'w', scale: 1 },
+      { id: 'E', image: Art5, audio: A5, keyTrigger: 'j', scale: 1 },
+      { id: 'F', image: Art6, audio: A6, keyTrigger: 'k', scale: 1 },
+      { id: 'G', image: Art7, audio: A7, keyTrigger: 'l', scale: 1 },
+      { id: 'H', image: Art8, audio: A8, keyTrigger: 'u', scale: 1 },
+      { id: 'J', image: Art9, audio: A9, keyTrigger: 'i', scale: 1 },
+   ])
+   const [noteList1, setNoteList1] = useState([
+      { id: 'A', audio: A1 },
+      { id: 'B', audio: A2 },
+      { id: 'C', audio: A3 },
+      { id: 'D', audio: A4 },
+      { id: 'E', audio: A5 },
+      { id: 'F', audio: A6 },
+      { id: 'G', audio: A7 },
+      { id: 'H', audio: A8 },
+      { id: 'J', audio: A9 },
+   ])
+   const [noteList2, setNoteList2] = useState([
+      { id: 'A', audio: R1 },
+      { id: 'B', audio: R2 },
+      { id: 'C', audio: R3 },
+      { id: 'D', audio: R4 },
+      { id: 'E', audio: R5 },
+      { id: 'F', audio: R6 },
+      { id: 'G', audio: R7 },
+      { id: 'H', audio: R8 },
+      { id: 'J', audio: R9 },
+   ])
+   const [isNoteList1, setIsNoteList1] = useState(true)
+
+   // Use useEffect to play the default sounds when the component mounts
+   useEffect(() => {
+      notes.forEach((note) => {
+         const audio = new Audio(note.defaultAudio);
+         audio.play();
+      });
+   }, [notes]);
+
+   // Remap the notes on toggle
+   const handleToggle = () => {
+      setIsNoteList1((prevIsNoteList1) => {
+         const newNoteList = prevIsNoteList1 ? noteList2 : noteList1;
+         setNotes((prevArray) =>
+            prevArray.map((item) => {
+               const note = newNoteList.find((n) => n.id === item.id);
+               return {
+                  ...item,
+                  noteList: newNoteList, // update the note list based on the new value of isNoteList1
+                  audio: note.audio, // add the audio property of the selected note
+               };
+            })
+         );
+         return !prevIsNoteList1;
+      });
+   };
+
+   // Attempt at Scaling on KeyPress
 
 
    return (
@@ -83,7 +160,7 @@ export default function Home() {
          </Head>
 
          {/* Wrapper Start */}
-         <main className="SplitWrapper xl:h-[1600px] lg:h-[2200px] h-[1600px]">
+         <main className="SplitWrapper dark:LiteTeal xl:h-[1600px] lg:h-[2200px] h-[1600px]">
 
             {/* Nav */}
             <div className="Nav grid-cols-2 z-10 antialiased shadow-2xl Smoother shadow:coal dark:shadow-PlanetO ">
@@ -101,8 +178,8 @@ export default function Home() {
                <div className="lg:pr-48 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
                   <div className="Pull md:px-4 active:text-Redd BoxFit"> <a href='https://www.krisrehfuss.com'> Home </a> </div>
                   <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/Grid'> Gallery </Link> </div>
-                  <div className="NavItem p-2 text-2xl text-coal dark:text-white" onClick={handleThemeSwitch}>
-                     <BsSun className="hover:animate-spin hover:text-yellow-500 Smoother" />
+                  <div className="NavItem p-2 text-xl text-coal dark:text-white"  onMouseLeave={Darken}>
+                     <FaMusic className="hover:text-DarkTeal Smoother" />
                   </div>
                </div>
             </div>
@@ -114,20 +191,34 @@ export default function Home() {
                <div className="FlexCenterCol  h-fit p-2 w-fit md:w-7/12 lg:w-10/12 xl:w-8/12">
 
                   {/* Header */}
-                  <Header style="md:my-12 mt-4 xl:text-9xl lg:text-8xl text-6xl w-full NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center xl:mr-[400px] Smoother antialiased " 
+                     <Header style="md:my-12 mt-4 xl:text-9xl lg:text-8xl md:text-6xl text-5xl w-fit NameShadow hover:text-Aero cursor-text SubversionText font-extrabold lg:text-left text-center xl:mr-[400px] Smoother antialiased " 
                   text='Modern Gallery' />
+                
+                  
 
                   <div className=" w-full mx-4 px-4 mt-2 md:mb-6 mb-2">
                      <div className="w-full FlexCenter h-fit p-3 mb-4 ">
+                        {/* <button onClick={handleToggle}>{isNoteList1 ? 'Use Note List 2' : 'Use Note List 1'}</button> */}
+
 
                         {/* Grid Container */}
-                        <div className="grid xl:grid-cols-3 grid-cols-2 gap-8 xl:p-32 xl:dark:pt-48 p-12 dark:gap-24 lg:gap-x-24 lg:dark:gap-36 lg:dark:gap-x-48 lg:p-24 lg:pt-12 xl:pt-12 xl:dark:pt-68 xl:dark:px-64 xl:gap-12 xl:dark:gap-36 w-full  ">
-                           {items.map((item) => (
+                        <div 
+                        className="
+                        grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-3 w-full
+                           p-6 gap-8 dark:gap-12 dark:pt-16  
+                              lg:gap-x-24 lg:p-24 lg:pt-12 
+                                 lg:dark:p-48 lg:dark:gap-36 lg:dark:gap-x-48 
+                              xl:p-56 xl:pt-36 xl:gap-24
+                                 xl:dark:gap-36 xl:dark:pt-42 xl:dark:px-64
+                                    ">
+                           {/* <button className="border-2 h-fit p-4 w-fit " onClick={handleToggle}>{isNoteList1 ? 'Minor' : 'Augmented'}</button> */}
+
+                           {notes.map((item) => (
                               <Art
-                                 style ='PullMid Shadow rounded-md dark:-rotate-45 dark:shadow-PlanetDark dark:shadow-lg ease-out hover:shadow-Ind dark:hover:shadow-DarkTeal'
                                  key={item.name}
                                  image={item.image}
-                                 audio={item.audio} />
+                                 audio={item.audio}
+                                 keyTrigger={item.keyTrigger} />
                            ))}
 
 
