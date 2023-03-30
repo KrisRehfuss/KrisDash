@@ -19,15 +19,15 @@ import Art9 from "../../public/AI/CandyMountains.png";
 
 import Keys from "../../public/Key.png";
 
-import A1 from "../../public/Piano/Modern/Diamond-001.mp3";
-import A2 from "../../public/Piano/Modern/Diamond-002.mp3";
-import A3 from "../../public/Piano/Modern/Diamond-003.mp3";
-import A4 from "../../public/Piano/Modern/Diamond-004.mp3";
-import A5 from "../../public/Piano/Modern/Diamond-005.mp3";
-import A6 from "../../public/Piano/Modern/Diamond-006.mp3";
-import A7 from "../../public/Piano/Modern/Diamond-007.mp3";
-import A8 from "../../public/Piano/Modern/Diamond-008.mp3";
-import A9 from "../../public/Piano/Modern/Diamond-009.mp3";
+import A1 from "../../public/Piano/Diamond-001.mp3";
+import A2 from "../../public/Piano/Diamond-002.mp3";
+import A3 from "../../public/Piano/Diamond-003.mp3";
+import A4 from "../../public/Piano/Diamond-004.mp3";
+import A5 from "../../public/Piano/Diamond-005.mp3";
+import A6 from "../../public/Piano/Diamond-006.mp3";
+import A7 from "../../public/Piano/Diamond-007.mp3";
+import A8 from "../../public/Piano/Diamond-008.mp3";
+import A9 from "../../public/Piano/Diamond-009.mp3";
 
 import R1 from "../../public/Piano/Modern/Robot-001.mp3";
 import R2 from "../../public/Piano/Modern/Robot-002.mp3";
