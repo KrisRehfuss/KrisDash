@@ -27,13 +27,6 @@ function Art({image, audio, keyTrigger, caption }) {
     };
   }, [keyTrigger]);
 
-  // Checks if we're in a browser
-  const isBrowser = typeof window !== "undefined";
-  const isMobileDevice = isBrowser && /Mobi/i.test(navigator.userAgent);
-
-  const handleEvent = isMobileDevice
-    ? { onClick: playNote }
-    : { onMouseEnter: playNote };
 
   // Keydown Scale
   const [isKeyPressed, setIsKeyPressed] = useState(false);
@@ -60,15 +53,23 @@ function Art({image, audio, keyTrigger, caption }) {
     };
   }, [keyTrigger]);
 
+  // Checks if we're in a browser
+  const isBrowser = typeof window !== "undefined";
+  const isMobileDevice = isBrowser && /Mobi/i.test(navigator.userAgent);
+
+  const handleEvent = isMobileDevice
+    ? { onClick: playNote }
+    : { onMouseEnter: playNote };
+
 
   // Return Function
   return (
     <div {...handleEvent}>
       <Image className=
-      {`PullMid shadow-2xl rounded-md 
-      dark:shadow-lg ease-linear
+      {`PullMid shadow-2xl ease-linear Smoother
+      dark:shadow-lg rounded-md -p-8
       hover:shadow-Ind 
-      transform ${isKeyPressed ? 'scale-125 dark:border-2 dark:border-sky-500 dark:shadow-2xl dark:-rotate-90 dark:shadow-DarkTeal' : 'dark:-rotate-45 dark:shadow-PlanetDark shadow-black'}`} 
+      transform ${isKeyPressed ? 'scale-90 bg-coal inline-block transition duration-150 opacity-100 animate-spin dark:shadow-2xl dark:-rotate-90 dark:shadow-DarkTeal' : 'dark:-rotate-45 dark:opacity-40  dark:shadow-PlanetDark shadow-black'}`} 
       src={image} 
       alt='/' />
       <p className='pt-2 dark:hidden'>{caption}</p>

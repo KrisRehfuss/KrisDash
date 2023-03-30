@@ -42,6 +42,10 @@ module.exports = {
         PlanetDark: '#fad8cb',
         DarkTeal: '#1f3f4d',
         LiteTeal: '#21414f',
+        Treal:'#67c7d8',
+        Tred: '#7f7fca',
+        Tann: '#e8cbb9',
+
 
         Redd: "#e74175",
         Smokey: "#090C02",

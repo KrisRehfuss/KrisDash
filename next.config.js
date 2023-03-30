@@ -8,7 +8,7 @@ const nextConfig = {
 module.exports = {
   webpack(config, options) {
     config.module.rules.push({
-      test: /\.(mp3)$/,
+      test: /\.(mp3|wav)$/,
       type: "asset/resource",
       generator: {
         filename: "static/chunks/[path][name].[hash][ext]",
