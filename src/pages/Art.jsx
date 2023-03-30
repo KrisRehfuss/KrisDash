@@ -66,12 +66,12 @@ function Art({image, audio, keyTrigger, caption }) {
   return (
     <div {...handleEvent}>
       <Image className=
-      {`PullMid shadow-2xl ease-linear Smoother
-      dark:shadow-lg rounded-md -p-8
+      {`PullMid shadow-2xl ease-linear Smoother 
+      dark:shadow-lg  -p-8
       hover:shadow-Ind 
-      transform ${isKeyPressed ? 'scale-90 bg-coal inline-block transition duration-150 opacity-100 animate-spin dark:shadow-2xl dark:-rotate-90 dark:shadow-DarkTeal' : 'dark:-rotate-45 dark:opacity-40  dark:shadow-PlanetDark shadow-black'}`} 
+      transform ${isKeyPressed ? 'scale-90 bg-coal inline-block transition duration-150 opacity-100 animate-spin dark:shadow-2xl dark:border-sky-500 rounded-full dark:border-2 dark:shadow-DarkTeal' : ' rounded-md dark:-rotate-45 lg:dark:opacity-0  dark:shadow-PlanetDark shadow-black'}`} 
       src={image} 
-      alt='/' />
+      alt='' />
       <p className='pt-2 dark:hidden'>{caption}</p>
 
 

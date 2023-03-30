@@ -76,7 +76,7 @@ export default function Home() {
           {/* Links */}
           <div className="lg:pr-48 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
             <div className="Pull md:px-4 active:text-Redd BoxFit"> <a href='https://www.krisrehfuss.com'> Home </a> </div>
-            <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/Split'> Gallery </Link> </div>
+            <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/ModernSynth'> Gallery </Link> </div>
             <div className="NavItem p-2 text-2xl text-Redd" onClick={handleThemeSwitch}>
               <BsSun className="hover:animate-spin hover:text-yellow-500" />
             </div>

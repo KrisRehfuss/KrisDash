@@ -8,7 +8,7 @@ import Art from './Art';
 import Header from "./Header";
 
 import Art1 from "../../public/AI/Tree.png";
-import Art2 from "../../public/AI/Tree2.png";
+import Art2 from "../../public/AI/NeonTree.jpg";
 import Art3 from "../../public/AI/TreeColor.png";
 import Art4 from "../../public/AI/TreeColor2.png";
 import Art5 from "../../public/AI/ModernPlants2.png";
@@ -42,7 +42,6 @@ import R9 from "../../public/Piano/ZiloRobot-009.mp3";
 
 
 export default function Home() {
-
 
   // Theme Switcher
    const [theme, setTheme] = useState(null)
@@ -146,6 +145,8 @@ export default function Home() {
       });
    };
 
+
+
    
 
    // Attempt at Scaling on KeyPress
@@ -164,14 +165,15 @@ export default function Home() {
          </Head>
 
          {/* Wrapper Start */}
-         <main className="GridWrapper xl:h-fit h-[1600px]">
+         <main className="GridWrapper xl:h-fit ">
 
             {/* Nav */}
-            <div className="Nav grid-cols-2 z-10 antialiased shadow-2xl Smoother shadow:coal dark:shadow-Treal ">
+            <div 
+               className="Nav grid-cols-2 z-10 antialiased lg:px-0 shadow-2xl Smoother shadow:coal dark:shadow-Treal ">
 
                {/* Logo */}
                <a href="https://www.krisrehfuss.com" alt="home">
-                  <div className="NameShadow text-coal dark:text-white Smoother text-xl flex items-center justify-center lg:pl-24 ml-4 h-full m-0 text-center font-bold">
+                  <div className="NameShadow text-whiteish dark:text-white Smoother text-xl flex items-center justify-center lg:pl-24 ml-4 h-full m-0 text-center font-bold">
                      {/* <Image className=" mr-3 w-12" src={M} alt="M Logo" /> */}
                      Modern<span className="ml-1 text-Sub"> Synth </span>
                   </div>
@@ -179,7 +181,7 @@ export default function Home() {
 
       
                {/* Links */}
-               <div className="lg:pr-48 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
+               <div className="xl:pr-48 lg:pr-16 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
                   <div className="Pull md:px-4 active:text-Redd BoxFit"> <a href='https://www.krisrehfuss.com'> Home </a> </div>
                   <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/Split'> Gallery </Link> </div>
                   <div className="NavItem p-2 text-xl text-coal dark:text-white"  onMouseEnter={Darken}>
@@ -198,10 +200,10 @@ export default function Home() {
                      <Header style="mt-4 py-6
                         md:my-6 md:text-6xl
                         xl:w-full xl:dark:pt-6 xl:ml-24 xl:text-9xl xl:ml-[200px] 
-                        lg:text-9xl lg:text-right
+                        lg:text-9xl lg:text-right lg:ml-[400px]
                         lg:dark:pt-32
                         text-5xl w-fit NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center Smoother antialiased " 
-                  text='Anchor' />
+                  text='' />
                 
                   
                   {/* More Containers? */}
