@@ -37,7 +37,6 @@ module.exports = {
         DarkG: "#202020",
         Ind: '#2a315a',
         Orbit: '#df07f8',
-        // Orbit: '#df07f8',
 
         PlanetO: '#fbd6c7',
         PlanetDark: '#fad8cb',
