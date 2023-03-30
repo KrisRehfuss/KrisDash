@@ -46,6 +46,9 @@ module.exports = {
         Tred: '#7f7fca',
         Tann: '#e8cbb9',
 
+        JarBlue: '#0d152b',
+        JarPink: '#fa5093',
+
 
         Redd: "#e74175",
         Smokey: "#090C02",

@@ -28,6 +28,10 @@ body {
   @apply lg:h-[2400px] bg-gradient-to-t from-Treal to-Tann dark:bg-none scroll-smooth Smoother
 }
 
+.KineticWrapper {
+  @apply lg:h-[2400px] bg-gradient-to-tr from-JarBlue to-JarPink dark:bg-none scroll-smooth Smoother
+}
+
 .MainCard {
   @apply  FlexCenterCol p-2   w-fit md:w-7/12 lg:w-8/12 xl:w-6/12
 }
