@@ -164,7 +164,7 @@ export default function Home() {
          </Head>
 
          {/* Wrapper Start */}
-         <main className="GridWrapper xl:h-[1600px]  h-[1600px]">
+         <main className="GridWrapper xl:h-fit h-[1600px]">
 
             {/* Nav */}
             <div className="Nav grid-cols-2 z-10 antialiased shadow-2xl Smoother shadow:coal dark:shadow-Treal ">
@@ -220,7 +220,7 @@ export default function Home() {
                            p-6 gap-8 dark:gap-12 dark:pt-16  
                               lg:gap-x-24 lg:p-36 lg:pt-12 
                                  lg:dark:grid-cols-3 lg:dark:p-4 lg:dark:pt-[200px] lg:dark:gap-36 lg:dark:gap-x-48 
-                              xl:p-64 xl:pt-32 xl:gap-16
+                              xl:p-64 xl:pt-36 xl:gap-16
                                  xl:dark:gap-36 xl:dark:pt-36 xl:dark:px-64
                                     ">
 
