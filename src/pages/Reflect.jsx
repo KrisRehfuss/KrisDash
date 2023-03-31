@@ -158,7 +158,7 @@ export default function Home() {
          </Head>
 
          {/* Wrapper Start */}
-         <main className="GridWrapper xl:h-fit ">
+         <main className="GridWrapper h-screen xl:h-fit ">
 
             {/* Nav */}
             <div 

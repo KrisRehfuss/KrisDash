@@ -163,7 +163,7 @@ export default function Home() {
          </Head>
 
          {/* Wrapper Start */}
-         <main className="SplitWrapper Smoother xl:h-[1600px]">
+         <main className="SplitWrapper h-screen Smoother xl:h-[1600px]">
 
             {/* Nav */}
             <div 
