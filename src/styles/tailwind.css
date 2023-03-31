@@ -29,7 +29,7 @@ body {
 }
 
 .KineticWrapper {
-  @apply lg:h-[2400px] bg-gradient-to-tr from-JarBlue to-JarPink dark:bg-none scroll-smooth Smoother
+  @apply lg:h-[2400px] bg-gradient-to-tr from-OrbBlack via-OrbBlack to-OrbPink dark:bg-none scroll-smooth Smoother
 }
 
 .MainCard {

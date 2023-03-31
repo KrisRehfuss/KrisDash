@@ -4,18 +4,18 @@ import React, { useRef, useState, useEffect } from "react";
 import { FaMusic } from "react-icons/fa";
 import { AiFillQuestionCircle } from "react-icons/ai";
 import Link from 'next/link';
-import Art from './Art';
+import Orb from './Orb';
 import Header from "./Header";
 
-import Art1 from "../../public/AI/whoa.png";
-import Art2 from "../../public/AI/NeonTree.jpg";
-import Art3 from "../../public/AI/TreeColor.png";
-import Art4 from "../../public/AI/TreeColor2.png";
-import Art5 from "../../public/AI/ModernPlants2.png";
-import Art6 from "../../public/AI/ModernArt3.png";
-import Art7 from "../../public/AI/planets.png";
-import Art8 from "../../public/AI/Planets5.png";
-import Art9 from "../../public/AI/CandyMountains.png";
+import Art1 from "../../public/AI/Orbs/Neon.png";
+import Art2 from "../../public/AI/Orbs/Neon.png";
+import Art3 from "../../public/AI/Orbs/Neon.png";
+import Art5 from "../../public/AI/Orbs/Neon.png";
+import Art6 from "../../public/AI/Orbs/Neon.png";
+import Art7 from "../../public/AI/Orbs/Neon.png";
+import Art4 from "../../public/AI/Orbs/Neon.png";
+import Art8 from "../../public/AI/Orbs/Neon.png";
+import Art9 from "../../public/AI/Orbs/Neon.png";
 
 import Keys from "../../public/Key.png";
 
@@ -41,7 +41,7 @@ import R9 from "../../public/Piano/Anchor/ZiloRobot-009.mp3";
 
 
 
-export default function Home() {
+export default function Kinetic() {
 
   // Theme Switcher
    const [theme, setTheme] = useState(null)
@@ -85,14 +85,14 @@ export default function Home() {
    // Note Arrays
    const [notes, setNotes] = useState([
       { id: 'E', image: Art1, audio: A4, caption: 'W', keyTrigger: 'w' },
-      { id: 'A', image: Art1, audio: A8, caption: 'U', keyTrigger: 'u' },
-      { id: 'B', image: Art1, audio: A9, caption: 'I', keyTrigger: 'i' },
-      { id: 'D', image: Art1, audio: A5, caption: 'J', keyTrigger: 'j' },
-      { id: 'G', image: Art1, audio: A6, caption: 'K', keyTrigger: 'k' },
-      { id: 'C', image: Art1, audio: A7, caption: 'L', keyTrigger: 'l' },
-      { id: 'I', image: Art1, audio: A1, caption: 'A', keyTrigger: 'a' },
-      { id: 'H', image: Art1, audio: A2, caption: 'S', keyTrigger: 's' },
-      { id: 'F', image: Art1, audio: A3, caption: 'D', keyTrigger: 'd' },
+      { id: 'A', image: Art2, audio: A8, caption: 'U', keyTrigger: 'u' },
+      { id: 'B', image: Art3, audio: A9, caption: 'I', keyTrigger: 'i' },
+      { id: 'D', image: Art4, audio: A5, caption: 'J', keyTrigger: 'j' },
+      { id: 'G', image: Art5, audio: A6, caption: 'K', keyTrigger: 'k' },
+      { id: 'C', image: Art6, audio: A7, caption: 'L', keyTrigger: 'l' },
+      { id: 'I', image: Art7, audio: A1, caption: 'A', keyTrigger: 'a' },
+      { id: 'H', image: Art8, audio: A2, caption: 'S', keyTrigger: 's' },
+      { id: 'F', image: Art9, audio: A3, caption: 'D', keyTrigger: 'd' },
    ])
    const [noteList1, setNoteList1] = useState([
       { id: 'A', audio: A8 },
@@ -169,7 +169,7 @@ export default function Home() {
 
             {/* Nav */}
             <div 
-               className="Nav grid-cols-2 z-10 antialiased lg:px-0 shadow-2xl Smoother shadow:JarBlue dark:shadow-JarPink ">
+               className="Nav grid-cols-2 z-10 antialiased lg:px-0 shadow-2xl Smoother shadow:JarBlue dark:shadow-OrbPink ">
 
                {/* Logo */}
                <a href="https://www.krisrehfuss.com" alt="home">
@@ -227,7 +227,7 @@ export default function Home() {
                                     ">
 
                            {notes.map((item) => (
-                              <Art
+                              <Orb
                                  key={item.name}
                                  image={item.image}
                                  audio={item.audio}

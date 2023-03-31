@@ -41,7 +41,7 @@ import R9 from "../../public/Piano/Modern/Robot-009.mp3";
 
 
 
-export default function Home() {
+export default function ModernSynth() {
 
 
   // Theme Switcher

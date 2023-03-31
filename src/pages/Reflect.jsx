@@ -41,7 +41,7 @@ import R9 from "../../public/Piano/Anchor/ZiloRobot-009.mp3";
 
 
 
-export default function Home() {
+export default function Reflect() {
 
   // Theme Switcher
    const [theme, setTheme] = useState(null)
@@ -177,14 +177,14 @@ export default function Home() {
                <div className="xl:pr-48 lg:pr-16 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
                   <div className="Pull md:px-4 active:text-Redd BoxFit"> <a href='https://www.krisrehfuss.com'> Home </a> </div>
                   <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/ModernSynth'> Gallery </Link> </div>
-                  <div className="NavItem p-2 text-xl text-coal dark:text-white"  onMouseEnter={Darken}>
+                  {/* <div className="NavItem p-2 text-xl text-coal dark:text-white"  onMouseEnter={Darken}>
                      <FaMusic className="hover:text-DarkTeal Smoother" />
-                  </div>
+                  </div> */}
 
                {/* Kintetic */}
-                  {/* <div className="NavItem p-2 text-xl text-Tred  dark:text-white" >
-                     <Link href='/Kinetic'><FaMusic className="animate-bounce hover:animate-none Smoother " /></Link>
-                  </div> */}
+                  <div className="NavItem p-2 text-xl text-Tred  dark:text-white" >
+                     <Link href='/Kinetic'><FaMusic className="animate-bounce hover:text-white  transition transform duration-150 ease-out hover:animate-none Smoother" /></Link>
+                  </div>
                </div>
             </div>
 

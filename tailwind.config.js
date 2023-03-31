@@ -78,6 +78,13 @@ module.exports = {
         Q: "#cc3dfa",
         Sub: "#314d7a",
 
+        OrbPurple: '#ff26f4',
+        OrbBlue: '#0cfcfe',
+        OrbPink: '#c20a4a',
+        OrbBlack: '#2e2f2e',
+        
+
+
         Bluee: "#1a0b52",
         Purpp: "#5e0e8c",
         Logo: "#b86bac",
@@ -97,6 +104,6 @@ module.exports = {
   },
   plugins: [
     require("tailwind-scrollbar-hide"),
-    require("daisyui"),
+    // require("daisyui"),
   ]
 };
