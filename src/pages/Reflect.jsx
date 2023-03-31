@@ -63,7 +63,7 @@ export default function Home() {
       handleToggle();
    }
 
-   // Theme Change on ctrl
+   // Theme Change on Space
    useEffect(() => {
       function handleKeyDown(event) {
          if (event.code === 'Space') {
@@ -78,9 +78,6 @@ export default function Home() {
          window.removeEventListener('keydown', handleKeyDown);
       };
    });
-
-
- 
 
    // Note Arrays
    const [notes, setNotes] = useState([
@@ -144,10 +141,6 @@ export default function Home() {
          return !prevIsNoteList1;
       });
    };
-
-
-
-   
 
    // Attempt at Scaling on KeyPress
 
