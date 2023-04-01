@@ -23,25 +23,25 @@ import Art9 from "../../public/AI/Orbs/MechaOrbII-1.png";
 
 import Keys from "../../public/Key.png";
 
-import A1 from "../../public/Piano/Kinetic/KineticAlt-001.mp3";
-import A2 from "../../public/Piano/Kinetic/KineticAlt-002.mp3";
-import A3 from "../../public/Piano/Kinetic/KineticAlt-003.mp3";
-import A4 from "../../public/Piano/Kinetic/KineticAlt-004.mp3";
-import A5 from "../../public/Piano/Kinetic/KineticAlt-005.mp3";
-import A6 from "../../public/Piano/Kinetic/KineticAlt-006.mp3";
-import A7 from "../../public/Piano/Kinetic/KineticAlt-007.mp3";
-import A8 from "../../public/Piano/Kinetic/KineticAlt-008.mp3";
-import A9 from "../../public/Piano/Kinetic/KineticAlt-009.mp3";
+import A1 from "../../public/Piano/Kinetic/KineticLo-001.mp3";
+import A2 from "../../public/Piano/Kinetic/KineticLo-002.mp3";
+import A3 from "../../public/Piano/Kinetic/KineticLo-003.mp3";
+import A4 from "../../public/Piano/Kinetic/KineticLo-004.mp3";
+import A5 from "../../public/Piano/Kinetic/KineticLo-005.mp3";
+import A6 from "../../public/Piano/Kinetic/KineticLo-006.mp3";
+import A7 from "../../public/Piano/Kinetic/KineticLo-007.mp3";
+import A8 from "../../public/Piano/Kinetic/KineticLo-008.mp3";
+import A9 from "../../public/Piano/Kinetic/KineticLo-009.mp3";
 
-import R1 from "../../public/Piano/Kinetic/KineticLo-001.mp3";
-import R2 from "../../public/Piano/Kinetic/KineticLo-002.mp3";
-import R3 from "../../public/Piano/Kinetic/KineticLo-003.mp3";
-import R4 from "../../public/Piano/Kinetic/KineticLo-004.mp3";
-import R5 from "../../public/Piano/Kinetic/KineticLo-005.mp3";
-import R6 from "../../public/Piano/Kinetic/KineticLo-006.mp3";
-import R7 from "../../public/Piano/Kinetic/KineticLo-007.mp3";
-import R8 from "../../public/Piano/Kinetic/KineticLo-008.mp3";
-import R9 from "../../public/Piano/Kinetic/KineticLo-009.mp3";
+import R1 from "../../public/Piano/Kinetic/KineticAlt-001.mp3";
+import R2 from "../../public/Piano/Kinetic/KineticAlt-002.mp3";
+import R3 from "../../public/Piano/Kinetic/KineticAlt-003.mp3";
+import R4 from "../../public/Piano/Kinetic/KineticAlt-004.mp3";
+import R5 from "../../public/Piano/Kinetic/KineticAlt-005.mp3";
+import R6 from "../../public/Piano/Kinetic/KineticAlt-006.mp3";
+import R7 from "../../public/Piano/Kinetic/KineticAlt-007.mp3";
+import R8 from "../../public/Piano/Kinetic/KineticAlt-008.mp3";
+import R9 from "../../public/Piano/Kinetic/KineticAlt-009.mp3";
 
 
 
@@ -187,7 +187,7 @@ export default function Kinetic() {
          </Head>
 
          {/* Wrapper Start */}
-         <main className="KineticWrapper h-fit xl:h-fit ">
+         <main className="KineticWrapper h-fit Smoother ">
             <Image className='absolute p-24 pt-48 blur-sm dark:hidden top-0 right-0 ' src={Drop} alt='/' />
             {/* <Image className='absolute blur-sm hidden dark:inline-block top-0 left-0 ' src={Drop} alt='/' /> */}
 
@@ -275,7 +275,7 @@ export default function Kinetic() {
                            text='Modern' />
                      </Link></div>
 
-                     <div className='w-fit h-fit '><Link href='/Reflect'>
+                     <div className='w-fit  h-fit '><Link href='/Reflect'>
                         <Header style="mt-6 mb-4 text-4xl md:hidden
                         md:-mt-24 md:text-6xl
                         xl:w-full xl:ml-24 xl:text-9xl 

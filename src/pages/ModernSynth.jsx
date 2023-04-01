@@ -183,7 +183,7 @@ export default function ModernSynth() {
          </Head>
 
          {/* Wrapper Start */}
-         <main className="SplitWrapper h-fit Smoother xl:h-[1600px]">
+         <main className="SplitWrapper h-fit Smoother ">
 
             {/* Nav */}
             <div 

@@ -21,15 +21,15 @@ body {
 }
 
 .SplitWrapper {
-  @apply lg:h-[2400px] bg-gradient-to-t from-PlanetO via-Pinkk to-PlanetDark dark:bg-none scroll-smooth Smoother
+  @apply lg:h-[2400px] xl:h-fit bg-gradient-to-t from-PlanetO via-Pinkk to-PlanetDark dark:bg-none scroll-smooth Smoother
 }
 
 .GridWrapper {
-  @apply lg:h-[2400px] bg-gradient-to-t from-Treal to-Tann dark:bg-none scroll-smooth Smoother
+  @apply lg:h-[2400px]  xl:h-fit bg-gradient-to-t from-Treal to-Tann dark:bg-none scroll-smooth Smoother
 }
 
 .KineticWrapper {
-  @apply lg:h-[2400px] bg-gradient-to-t from-OrbTan to-OrbTan dark:bg-none scroll-smooth Smoother
+  @apply lg:h-[2400px]  xl:h-fit bg-gradient-to-t from-OrbTan to-OrbTan dark:bg-none scroll-smooth Smoother
 }
 
 .MainCard {
