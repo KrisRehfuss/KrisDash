@@ -263,7 +263,7 @@ export default function Reflect() {
                   text='Reflect' />
 
                      <Link href='/Kinetic'>
-                        <Header style="mt-24 text-4xl md:hidden
+                        <Header style="mt-12 text-4xl md:hidden
                         md:-mt-24 md:text-6xl
                         xl:w-full xl:ml-24 xl:text-9xl 
                         dark:hidden     
