@@ -233,10 +233,10 @@ export default function Reflect() {
                         {/* Grid Container */}
                         <div 
                            className="md:-mt-24 
-                        grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-3 w-full
+                        grid xl:grid-cols-3 lg:grid-cols-3 grid-cols-3 w-full
                            p-6 gap-8 dark:gap-12 dark:pt-16  
-                              lg:gap-x-24 lg:p-36 
-                                 lg:dark:grid-cols-3 lg:dark:p-24 lg:dark:pt-[200px] lg:dark:gap-36 lg:dark:gap-36 
+                              lg:gap-32 lg:p-12 lg:pt-64 
+                                 lg:dark:grid-cols-3 lg:dark:py-12 lg:dark:pt-[300px] lg:dark:gap-y-64 lg:dark:gap-x-48
                               xl:p-64 xl:pt-36 xl:gap-16
                                  xl:dark:gap-36 xl:dark:pt-36 xl:dark:px-64
                                     ">
@@ -263,7 +263,7 @@ export default function Reflect() {
                   text='Reflect' />
 
                      <Link href='/Kinetic'>
-                        <Header style="mt-12 text-4xl md:hidden
+                        <Header style="mt-12 MARKc text-4xl md:hidden
                         md:-mt-24 md:text-6xl
                         xl:w-full xl:ml-24 xl:text-9xl 
                         dark:hidden     
