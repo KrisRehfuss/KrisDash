@@ -44,12 +44,13 @@ import R9 from "../../public/Piano/Modern/Robot-009.mp3";
 
 export default function ModernSynth() {
 
-      // Pager
+   // Pager
    const router = useRouter();
-
    const handleKeyDown = (event) => {
       if (event.key === 'p' || event.key === 'P') {
          router.push('/Reflect');
+      } else if (event.key === 'c' || event.key === 'C') {
+         router.push('/Kinetic');
       }
    };
 
@@ -65,6 +66,7 @@ export default function ModernSynth() {
 
   // Theme Switcher
    const [theme, setTheme] = useState(null)
+   
    const handleThemeSwitch = () => {
       setTheme(theme === 'dark' ? 'light' : 'dark')
    }

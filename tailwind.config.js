@@ -85,6 +85,8 @@ module.exports = {
         
         OrbTan: '#f8e2ca',
         OrbBrown: '#c2906f',
+        TreeSun: '#f7e1d4',
+        OrbDark: '#533b33',
 
 
         Bluee: "#1a0b52",
