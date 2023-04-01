@@ -229,7 +229,7 @@ export default function Reflect() {
 
                         {/* Grid Container */}
                         <div 
-                        className="-mt-24
+                           className="md:-mt-24 
                         grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-3 w-full
                            p-6 gap-8 dark:gap-12 dark:pt-16  
                               lg:gap-x-24 lg:p-36 
@@ -252,7 +252,7 @@ export default function Reflect() {
                         
                      </div>
                          <Header style="
-                        -mt-24 md:text-6xl
+                        md:-mt-24 md:text-6xl
                         xl:w-full xl:inline-block xl:ml-24 xl:text-9xl 
                         dark:hidden     
                         lg:hidden lg:-mt-96 lg:text-9xl lg:text-right lg:ml-[400px]
