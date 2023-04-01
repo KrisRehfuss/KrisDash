@@ -66,10 +66,10 @@ function Orb({image, audio, keyTrigger, caption }) {
   return (
     <div {...handleEvent}>
       <Image className=
-      {`PullMid  ease-linear Smoother rounded-full
+      {`PullMid  ease-linear Smoother 
         
       hover:shadow-Ind 
-      transform ${isKeyPressed ? 'scale-90 inline-block transition duration-150 opacity-100 animate-spin  dark:border-OrbPink rounded-full dark:border-2 dark:shadow-OrbBlue shadow-OrbPink shadow-2xl' : '  dark:-rotate-45 lg:dark:opacity-0   '}`} 
+      transform ${isKeyPressed ? 'scale-90 inline-block transition duration-150 opacity-100 animate-spin  dark:border-OrbPink shadow-black rounded-full dark:border-2  shadow-2xl' : ' rounded-md   dark:-rotate-45 lg:dark:opacity-0   '}`} 
       src={image} 
       alt='' />
       <p className='pt-2 dark:hidden'>{caption}</p>

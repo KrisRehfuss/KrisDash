@@ -78,11 +78,13 @@ module.exports = {
         Q: "#cc3dfa",
         Sub: "#314d7a",
 
-        OrbPurple: '#ff26f4',
-        OrbBlue: '#0cfcfe',
-        OrbPink: '#c20a4a',
+        OrbPurple: '#3d223f',
+        OrbBlue: '#177fb6',
+        OrbPink: '#fd297e',
         OrbBlack: '#2e2f2e',
         
+        OrbTan: '#f8e2ca',
+        OrbBrown: '#c2906f',
 
 
         Bluee: "#1a0b52",

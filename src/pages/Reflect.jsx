@@ -1,6 +1,8 @@
 import Head from "next/head";
 // import Image from "next/image";
 import React, { useRef, useState, useEffect } from "react";
+import { useRouter } from 'next/router';
+
 import { FaMusic } from "react-icons/fa";
 import { AiFillQuestionCircle } from "react-icons/ai";
 import Link from 'next/link';
@@ -42,6 +44,24 @@ import R9 from "../../public/Piano/Anchor/ZiloRobot-009.mp3";
 
 
 export default function Reflect() {
+
+      // Pager
+   const router = useRouter();
+
+   const handleKeyDown = (event) => {
+      if (event.key === 'p' || event.key === 'P') {
+         router.push('/Kinetic');
+      } else if (event.key === 'c' || event.key === 'C') {
+         router.push('/ModernSynth');
+      }
+   };
+
+   useEffect(() => {
+      window.addEventListener('keydown', handleKeyDown);
+      return () => {
+         window.removeEventListener('keydown', handleKeyDown);
+      };
+   }, []);
 
   // Theme Switcher
    const [theme, setTheme] = useState(null)
@@ -195,14 +215,7 @@ export default function Reflect() {
                <div className="FlexCenterCol h-fit p-2 w-fit md:w-7/12 lg:w-10/12 xl:w-8/12">
 
                   {/* Header */}
-                     <Header style="mt-4 py-6
-                        md:my-6 md:text-6xl
-                        xl:w-full xl:dark:pt-6 xl:ml-24 xl:text-9xl 
-                        lg:text-9xl lg:text-right lg:ml-[400px]
-                        lg:dark:pt-32
-                        text-5xl w-fit NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center Smoother antialiased " 
-                  text='Reflect' />
-                
+                 
                   
                   {/* More Containers? */}
                   <div className=" w-full mx-4 px-4 mt-2 md:mb-6 mb-2">
@@ -215,11 +228,11 @@ export default function Reflect() {
 
                         {/* Grid Container */}
                         <div 
-                        className="
+                        className="-mt-24
                         grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-3 w-full
                            p-6 gap-8 dark:gap-12 dark:pt-16  
-                              lg:gap-x-24 lg:p-36 lg:pt-12 
-                                 lg:dark:grid-cols-3 lg:dark:p-4 lg:dark:pt-[200px] lg:dark:gap-36 lg:dark:gap-x-48 
+                              lg:gap-x-24 lg:p-36 
+                                 lg:dark:grid-cols-3  lg:dark:pt-[200px] lg:dark:gap-36 lg:dark:gap-x-48 
                               xl:p-64 xl:pt-36 xl:gap-16
                                  xl:dark:gap-36 xl:dark:pt-36 xl:dark:px-64
                                     ">
@@ -235,7 +248,17 @@ export default function Reflect() {
 
 
                         </div>
+                        
                      </div>
+                         <Header style="
+                        -mt-24 md:text-6xl
+                        xl:w-full  xl:ml-24 xl:text-9xl 
+                        dark:hidden     
+                        lg:hidden lg:-mt-96 lg:text-9xl lg:text-right lg:ml-[400px]
+
+                        text-5xl w-fit NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center Smoother antialiased " 
+                  text='Reflect' />
+                
                      {/* Live Sites */}
                   </div>
                   {/* // Link Container */}

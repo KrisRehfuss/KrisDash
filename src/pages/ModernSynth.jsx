@@ -2,7 +2,9 @@ import Head from "next/head";
 // import Image from "next/image";
 import React, { useRef, useState, useEffect } from "react";
 import { FaMusic } from "react-icons/fa";
-import { AiFillQuestionCircle } from "react-icons/ai";
+import { useRouter } from 'next/router';
+
+import { AiFillQuestionircle } from "react-icons/ai";
 import Link from 'next/link';
 import Art from './Art';
 import Header from "./Header";
@@ -40,8 +42,25 @@ import R8 from "../../public/Piano/Modern/Robot-008.mp3";
 import R9 from "../../public/Piano/Modern/Robot-009.mp3";
 
 
-
 export default function ModernSynth() {
+
+      // Pager
+   const router = useRouter();
+
+   const handleKeyDown = (event) => {
+      if (event.key === 'p' || event.key === 'P') {
+         router.push('/Reflect');
+      }
+   };
+
+   useEffect(() => {
+      window.addEventListener('keydown', handleKeyDown);
+      return () => {
+         window.removeEventListener('keydown', handleKeyDown);
+      };
+   }, []);
+
+
 
 
   // Theme Switcher
@@ -145,7 +164,6 @@ export default function ModernSynth() {
       });
    };
 
-   
 
    // Attempt at Scaling on KeyPress
 

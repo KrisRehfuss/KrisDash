@@ -5,7 +5,7 @@ import { BiSearch } from "react-icons/bi";
 import Image from "next/image";
 import React, { useRef, useState, useEffect } from "react";
 import BannerImage from "../../public/Abstract2.jpg";
-
+import { useRouter } from 'next/router';
 // import Axis from "./Axis";
 import Banner from "./Banner";
 import Header from "./Header";
@@ -22,6 +22,23 @@ import M from "../../public/Engine.png";
 
 export default function Home() {
 
+    // Pager
+   const router = useRouter();
+
+   const handleKeyDown = (event) => {
+      if (event.key === 'p' || event.key === 'P') {
+         router.push('/ModernSynth');
+      }
+   };
+
+   useEffect(() => {
+      window.addEventListener('keydown', handleKeyDown);
+      return () => {
+         window.removeEventListener('keydown', handleKeyDown);
+      };
+   }, []);
+
+    // Themer
   const [theme, setTheme] = useState(null)
 
   useEffect(() => {
@@ -122,7 +139,7 @@ export default function Home() {
                 <h1 className="CaptionBlock text-coal">Personal Works</h1>
 
                 <div className="FlexCenterCol BoxFull pt-4">
-                  <Prismatic audio={Chord} />
+                  <Prismatic />
                 </div>
                 {/* <h1 className="CaptionBlock text-Redd"> Recent Compositions</h1> */}
               </div>

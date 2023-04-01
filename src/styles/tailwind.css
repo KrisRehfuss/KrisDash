@@ -29,7 +29,7 @@ body {
 }
 
 .KineticWrapper {
-  @apply lg:h-[2400px] bg-gradient-to-tr from-OrbBlack via-OrbBlack to-OrbPink dark:bg-none scroll-smooth Smoother
+  @apply lg:h-[2400px] bg-gradient-to-t from-OrbTan to-OrbTan dark:bg-none scroll-smooth Smoother
 }
 
 .MainCard {
@@ -188,6 +188,10 @@ body {
 
 .SubversionText {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-Splatter to-Pinq
+}
+
+.KineticText {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-OrbBrown to-OrbTan
 }
 
 .TrealText {
