@@ -205,7 +205,7 @@ export default function ModernSynth() {
                   {/* <div className="NavItem p-2 text-xl text-coal dark:text-white" onMouseEnter={Darken}>
                      <FaMusic className="hover:text-DarkTeal Smoother" />
                   </div> */}
-                  <div className="NavItem p-2 text-xl text-Treal  dark:text-white">
+                  <div className="NavItem p-2 text-xl text-Treal  ">
                      <Link href='/Reflect'><FaMusic className="animate-bounce hover:text-white  transition transform duration-150 ease-out hover:animate-none Smoother " /></Link>
                   </div>
                </div>

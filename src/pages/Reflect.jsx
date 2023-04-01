@@ -203,10 +203,10 @@ export default function Reflect() {
                   </div> */}
 
                {/* Kintetic */}
-                  <div className="NavItem p-2 text-xl text-coal dark:text-white"  onClick={Darken}>
+                  <div className="md:hidden NavItem p-2 text-xl text-coal dark:text-white"  onClick={Darken}>
                      <FaMusic className="hover:text-DarkTeal Smoother" />
                   </div>
-                  <div className="hidden md:inline-block NavItem p-2 text-xl text-Tred  dark:text-white" >
+                  <div className="hidden md:inline-block NavItem p-2 text-xl text-Tred  " >
                      <Link href='/Kinetic'><FaMusic className="animate-bounce hover:text-white  transition transform duration-150 ease-out hover:animate-none Smoother" /></Link>
                   </div>
                </div>
