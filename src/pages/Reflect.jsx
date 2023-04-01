@@ -203,7 +203,10 @@ export default function Reflect() {
                   </div> */}
 
                {/* Kintetic */}
-                  <div className="NavItem p-2 text-xl text-Tred  dark:text-white" >
+                  <div className="NavItem p-2 text-xl text-coal dark:text-white"  onClick={Darken}>
+                     <FaMusic className="hover:text-DarkTeal Smoother" />
+                  </div>
+                  <div className="hidden md:inline-block NavItem p-2 text-xl text-Tred  dark:text-white" >
                      <Link href='/Kinetic'><FaMusic className="animate-bounce hover:text-white  transition transform duration-150 ease-out hover:animate-none Smoother" /></Link>
                   </div>
                </div>
@@ -252,13 +255,34 @@ export default function Reflect() {
                         
                      </div>
                          <Header style="
-                        md:-mt-24 md:text-6xl
+                        md:-mt-24 md:text-6xl dark:mt-24
                         xl:w-full xl:inline-block xl:ml-24 xl:text-9xl 
-                        dark:hidden     
                         lg:hidden lg:-mt-96 lg:text-9xl lg:text-right lg:ml-[400px]
 
                         text-5xl w-fit NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center Smoother antialiased " 
                   text='Reflect' />
+
+                     <Link href='/Kinetic'>
+                        <Header style="mt-24 text-4xl md:hidden
+                        md:-mt-24 md:text-6xl
+                        xl:w-full xl:ml-24 xl:text-9xl 
+                        dark:hidden     
+                        lg:hidden lg:-mt-96 lg:text-9xl lg:text-right lg:ml-[400px]
+
+                        w-fit NameShadow Push cursor-pointer text-white/40 hover:text-white/100 active:text-white/100  font-extrabold text-center Smoother antialiased "
+                           text='Kinetic' />
+                     </Link>
+
+                     <Link href='/ModernSynth'>
+                        <Header style="mt-6 text-4xl md:hidden
+                        md:-mt-24 md:text-6xl
+                        xl:w-full xl:ml-24 xl:text-9xl 
+                        dark:hidden     
+                        lg:hidden lg:-mt-96 lg:text-9xl lg:text-right lg:ml-[400px]
+
+                        w-fit NameShadow Push cursor-text text-white/40 hover:text-white/100  font-extrabold text-center Smoother antialiased "
+                           text='Modern' />
+                     </Link>
                 
                      {/* Live Sites */}
                   </div>

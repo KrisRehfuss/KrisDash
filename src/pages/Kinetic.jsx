@@ -12,15 +12,14 @@ import Header from "./Header";
 
 import Drop from "../../public/Earth.png";
 
-import Art1 from "../../public/EarthMech.png";
-import Art2 from "../../public/AI/Orbs/MechaOrb-1.png";
-import Art4 from "../../public/AI/Orbs/MechaOrb-3.png";
-import Art5 from "../../public/AI/Orbs/MechaOrbIII-1.png";
+import Art1 from "../../public/AI/Orbs/EarthMechII-1.png";
+import Art2 from "../../public/AI/Orbs/EarthMechII-2.png";
+import Art3 from "../../public/AI/Orbs/EarthMechII-3.png";
+import Art4 from "../../public/AI/Orbs/EarthMechII-4.png";
 import Art6 from "../../public/AI/Orbs/MechaOrbIII-2.png";
 import Art7 from "../../public/AI/Orbs/MechaOrbIII-3.png";
 import Art8 from "../../public/AI/Orbs/MechaOrbII-1.png";
 import Art9 from "../../public/AI/Orbs/MechaOrbII-1.png";
-import Art3 from "../../public/AI/Orbs/MechaOrbII-2.png";
 
 import Keys from "../../public/Key.png";
 
@@ -108,13 +107,13 @@ export default function Kinetic() {
    // Note Arrays
    const [notes, setNotes] = useState([
       { id: 'E', image: Art1, audio: A4, caption: 'W', keyTrigger: 'w' },
-      { id: 'A', image: Art1, audio: A8, caption: 'U', keyTrigger: 'u' },
-      { id: 'B', image: Art1, audio: A9, caption: 'I', keyTrigger: 'i' },
-      { id: 'D', image: Art1, audio: A5, caption: 'J', keyTrigger: 'j' },
+      { id: 'A', image: Art2, audio: A8, caption: 'U', keyTrigger: 'u' },
+      { id: 'B', image: Art3, audio: A9, caption: 'I', keyTrigger: 'i' },
+      { id: 'D', image: Art4, audio: A5, caption: 'J', keyTrigger: 'j' },
       { id: 'G', image: Art1, audio: A6, caption: 'K', keyTrigger: 'k' },
-      { id: 'C', image: Art1, audio: A7, caption: 'L', keyTrigger: 'l' },
-      { id: 'I', image: Art1, audio: A1, caption: 'A', keyTrigger: 'a' },
-      { id: 'H', image: Art1, audio: A2, caption: 'S', keyTrigger: 's' },
+      { id: 'C', image: Art2, audio: A7, caption: 'L', keyTrigger: 'l' },
+      { id: 'I', image: Art3, audio: A1, caption: 'A', keyTrigger: 'a' },
+      { id: 'H', image: Art4, audio: A2, caption: 'S', keyTrigger: 's' },
       { id: 'F', image: Art1, audio: A3, caption: 'D', keyTrigger: 'd' },
    ])
    const [noteList1, setNoteList1] = useState([
@@ -198,7 +197,7 @@ export default function Kinetic() {
 
                {/* Logo */}
                <a href="https://www.krisrehfuss.com" alt="home">
-                  <div className="NameShadow text-whiteish dark:text-white Smoother text-xl flex items-center justify-center lg:pl-24 ml-4 h-full m-0 text-center font-bold">
+                  <div className="NameShadow text-coal dark:text-white Smoother text-xl flex items-center justify-center lg:pl-24 ml-4 h-full m-0 text-center font-bold">
                      {/* <Image className=" mr-3 w-12" src={M} alt="M Logo" /> */}
                      Modern<span className="ml-1 text-Sub"> Synth </span>
                   </div>
@@ -209,7 +208,7 @@ export default function Kinetic() {
                <div className="xl:pr-48 lg:pr-16 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
                   <div className="Pull md:px-4 active:text-OrbTan BoxFit"> <a href='https://www.krisrehfuss.com'> Home </a> </div>
                   <div className="Pull md:px-4 active:text-OrbTan BoxFit"> <Link href='/ModernSynth'> Gallery </Link> </div>
-                  <div className="NavItem p-2 text-xl text-coal dark:text-white"  onMouseEnter={Darken}>
+                  <div className="NavItem p-2 text-xl text-coal dark:text-white"  onClick={Darken}>
                      <FaMusic className="hover:text-DarkTeal Smoother" />
                   </div>
                </div>
@@ -255,14 +254,39 @@ export default function Kinetic() {
 
                         </div>
                      </div>
+
                      <Header style="
-                        md:-mt-24  md:text-6xl
+                        md:-mt-24  md:text-6xl dark:mt-24
                         xl:w-full xl:inline-block  xl:ml-24 xl:text-9xl 
                         xl:dark:hidden     
                         lg:hidden lg:-mt-64 lg:text-9xl lg:text-right lg:ml-[400px]
 
-                        text-5xl w-fit NameShadow hover:text-Aero cursor-text KineticText font-extrabold text-center Smoother antialiased " 
+                        text-5xl w-fit NameShadow hover:text-white cursor-text KineticText font-extrabold text-center Smoother antialiased " 
                   text='Kinetic' />
+
+                     <Link href='/Reflect'>
+                        <Header style="mt-24 text-4xl md:hidden
+                        md:-mt-24 md:text-6xl
+                        xl:w-full xl:ml-24 xl:text-9xl 
+                        dark:hidden     
+                        lg:hidden lg:-mt-96 lg:text-9xl lg:text-right lg:ml-[400px]
+
+                        w-fit NameShadow Push cursor-text text-white/40 hover:text-white/100  font-extrabold text-center Smoother antialiased "
+                           text='Reflect' />
+                     </Link>
+
+                     <Link href='/ModernSynth'>
+                        <Header style="mt-6 text-4xl md:hidden
+                        md:-mt-24 md:text-6xl
+                        xl:w-full xl:ml-24 xl:text-9xl 
+                        dark:hidden     
+                        lg:hidden lg:-mt-96 lg:text-9xl lg:text-right lg:ml-[400px]
+
+                        w-fit NameShadow Push cursor-text text-white/40 hover:text-white/100  font-extrabold text-center Smoother antialiased "
+                           text='Modern' />
+                     </Link>
+
+
                      {/* Live Sites */}
                   </div>
                   {/* // Link Container */}
