@@ -262,8 +262,8 @@ export default function Reflect() {
                         text-5xl w-fit NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center Smoother antialiased " 
                   text='Reflect' />
 
-                     <Link href='/Kinetic'>
-                        <Header style="mt-12 MARKc text-4xl md:hidden
+                     <div className='w-fit h-fit '> <Link href='/Kinetic'>
+                        <Header style="mt-12 text-4xl md:hidden
                         md:-mt-24 md:text-6xl
                         xl:w-full xl:ml-24 xl:text-9xl 
                         dark:hidden     
@@ -271,10 +271,10 @@ export default function Reflect() {
 
                         w-fit NameShadow Push cursor-pointer text-white/40 hover:text-white/100 active:text-white/100  font-extrabold text-center Smoother antialiased "
                            text='Kinetic' />
-                     </Link>
+                     </Link></div>
 
-                     <Link href='/ModernSynth'>
-                        <Header style="mt-6 text-4xl md:hidden
+                     <div className='w-fit h-fit '><Link href='/ModernSynth'>
+                        <Header style="mt-6 mb-4 text-4xl md:hidden
                         md:-mt-24 md:text-6xl
                         xl:w-full xl:ml-24 xl:text-9xl 
                         dark:hidden     
@@ -282,7 +282,7 @@ export default function Reflect() {
 
                         w-fit NameShadow Push cursor-text text-white/40 hover:text-white/100  font-extrabold text-center Smoother antialiased "
                            text='Modern' />
-                     </Link>
+                     </Link></div>
                 
                      {/* Live Sites */}
                   </div>

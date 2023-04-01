@@ -183,7 +183,7 @@ export default function ModernSynth() {
          </Head>
 
          {/* Wrapper Start */}
-         <main className="SplitWrapper h-screen Smoother xl:h-[1600px]">
+         <main className="SplitWrapper h-fit Smoother xl:h-[1600px]">
 
             {/* Nav */}
             <div 
@@ -202,12 +202,12 @@ export default function ModernSynth() {
                <div className="xl:pr-48 lg:pr-16 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
                   <div className="Pull md:px-4 active:text-Redd BoxFit"> <a href='https://www.krisrehfuss.com'> Home </a> </div>
                   <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/ModernSynth'> Gallery </Link> </div>
-                  {/* <div className="NavItem p-2 text-xl text-coal dark:text-white" onMouseEnter={Darken}>
+                  <div className="NavItem p-2 text-xl text-coal dark:text-white" onClick={Darken}>
                      <FaMusic className="hover:text-DarkTeal Smoother" />
-                  </div> */}
-                  <div className="NavItem p-2 text-xl text-Treal  ">
-                     <Link href='/Reflect'><FaMusic className="animate-bounce hover:text-white  transition transform duration-150 ease-out hover:animate-none Smoother " /></Link>
                   </div>
+                  {/* <div className="NavItem p-2 text-xl text-Treal  ">
+                     <Link href='/Reflect'><FaMusic className="animate-bounce hover:text-white  transition transform duration-150 ease-out hover:animate-none Smoother " /></Link>
+                  </div> */}
                </div>
             </div>
 
@@ -218,14 +218,7 @@ export default function ModernSynth() {
                <div className="FlexCenterCol h-fit p-2 w-fit md:w-7/12 lg:w-10/12 xl:w-8/12">
 
                   {/* Header */}
-                     <Header style="mt-4
-                        md:my-12 md:text-6xl
-                        xl:w-full xl:ml-24 xl:text-9xl xl:mr-[400px]
-                        lg:text-9xl lg:text-left
-                        lg:dark:pt-32
-                        xl:dark:pt-0
-                        text-5xl w-fit NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center Smoother antialiased " 
-                  text='Modern Synth' />
+
                 
                   
                   {/* More Containers? */}
@@ -239,13 +232,13 @@ export default function ModernSynth() {
 
                         {/* Grid Container */}
                         <div 
-                        className="
+                        className="md:-mt-24
                         grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-3 w-full
                            p-6 gap-8 dark:gap-12 dark:pt-16  
-                              lg:gap-x-24 lg:p-36 lg:pt-12 
+                              lg:gap-x-24 lg:p-36 lg:pt-36 
                                  lg:dark:grid-cols-3 lg:dark:p-4 lg:dark:pt-[200px] lg:dark:gap-36 lg:dark:gap-x-48 
-                              xl:p-64 xl:pt-36 xl:gap-16
-                                 xl:dark:gap-36 xl:dark:pt-42 xl:dark:px-64
+                              xl:p-64 xl:pt-28 xl:gap-16
+                                 xl:dark:gap-36 xl:dark:pt-36 xl:dark:px-64
                                     ">
 
                            {notes.map((item) => (
@@ -260,6 +253,36 @@ export default function ModernSynth() {
 
                         </div>
                      </div>
+                     <Header style="
+                        md:-mt-24 md:text-6xl dark:mt-24
+                        xl:w-full xl:inline-block xl:ml-24 xl:text-9xl 
+                        lg:hidden lg:-mt-96 lg:text-9xl lg:text-right lg:ml-[400px]
+                        xl:dark:hidden
+
+                        text-5xl w-fit NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center Smoother antialiased " 
+                  text='Modern' />
+
+                    <div className='w-fit h-fit '> <Link href='/Reflect'>
+                        <Header style="mt-12 text-4xl md:hidden
+                        md:-mt-24 md:text-6xl
+                        xl:w-full xl:ml-24 xl:text-9xl 
+                        dark:hidden     
+                        lg:hidden lg:-mt-96 lg:text-9xl lg:text-right lg:ml-[400px]
+
+                        w-fit NameShadow Push cursor-pointer text-white/40 hover:text-white/100 active:text-white/100  font-extrabold text-center Smoother antialiased "
+                           text='Reflect' />
+                     </Link></div>
+
+                     <div className='w-fit h-fit '><Link href='/Kinetic'>
+                        <Header style="mt-6 mb-4 text-4xl md:hidden
+                        md:-mt-24 md:text-6xl
+                        xl:w-full xl:ml-24 xl:text-9xl 
+                        dark:hidden     
+                        lg:hidden lg:-mt-96 lg:text-9xl lg:text-right lg:ml-[400px]
+
+                        w-fit NameShadow Push cursor-text text-white/40 hover:text-white/100  font-extrabold text-center Smoother antialiased "
+                           text='Kinetic' />
+                     </Link></div>
                      {/* Live Sites */}
                   </div>
                   {/* // Link Container */}
