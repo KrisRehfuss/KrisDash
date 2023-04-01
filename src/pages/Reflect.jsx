@@ -252,7 +252,7 @@ export default function Reflect() {
                      </div>
                          <Header style="
                         -mt-24 md:text-6xl
-                        xl:w-full  xl:ml-24 xl:text-9xl 
+                        xl:w-full xl:inline-block xl:ml-24 xl:text-9xl 
                         dark:hidden     
                         lg:hidden lg:-mt-96 lg:text-9xl lg:text-right lg:ml-[400px]
 
