@@ -179,7 +179,7 @@ export default function Reflect() {
          </Head>
 
          {/* Wrapper Start */}
-         <main className="GridWrapper h-screen xl:h-fit ">
+         <main className="GridWrapper h-fit xl:h-fit ">
 
             {/* Nav */}
             <div 
@@ -236,7 +236,7 @@ export default function Reflect() {
                         grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-3 w-full
                            p-6 gap-8 dark:gap-12 dark:pt-16  
                               lg:gap-x-24 lg:p-36 
-                                 lg:dark:grid-cols-3  lg:dark:pt-[200px] lg:dark:gap-36 lg:dark:gap-x-48 
+                                 lg:dark:grid-cols-3 lg:dark:p-24 lg:dark:pt-[200px] lg:dark:gap-36 lg:dark:gap-36 
                               xl:p-64 xl:pt-36 xl:gap-16
                                  xl:dark:gap-36 xl:dark:pt-36 xl:dark:px-64
                                     ">

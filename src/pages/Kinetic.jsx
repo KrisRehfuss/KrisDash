@@ -187,7 +187,7 @@ export default function Kinetic() {
          </Head>
 
          {/* Wrapper Start */}
-         <main className="KineticWrapper h-screen xl:h-fit ">
+         <main className="KineticWrapper h-fit xl:h-fit ">
             <Image className='absolute p-24 pt-48 blur-sm dark:hidden top-0 right-0 ' src={Drop} alt='/' />
             {/* <Image className='absolute blur-sm hidden dark:inline-block top-0 left-0 ' src={Drop} alt='/' /> */}
 
