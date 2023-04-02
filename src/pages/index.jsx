@@ -73,7 +73,7 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1"
         />
-        <link rel="icon" href="/saturn.ico" />
+        <link rel="icon" href="/NeonIco.ico" />
       </Head>
 
       <main className="MAIN Smoother">
