@@ -179,7 +179,7 @@ export default function ModernSynth() {
                name="viewport"
                content="width=device-width, initial-scale=1"
             />
-            <link rel="icon" href="/saturn2.ico" />
+            <link rel="icon" href="/NeonIco.ico" />
          </Head>
 
          {/* Wrapper Start */}
