@@ -50,7 +50,7 @@ export default function ModernSynth() {
       if (event.key === 'p' || event.key === 'P') {
          router.push('/Reflect');
       } else if (event.key === 'c' || event.key === 'C') {
-         router.push('/Kinetic');
+         router.push('/');
       }
    };
 
@@ -190,17 +190,17 @@ export default function ModernSynth() {
             className="Nav grid-cols-2 z-10 antialiased lg:px-0 shadow-2xl Smoother shadow:coal dark:shadow-PlanetO ">
 
                {/* Logo */}
-               <a href="https://www.krisrehfuss.com" alt="home">
+               <Link href="/ModernSynth" alt="home">
                   <div className="NameShadow text-coal dark:text-white Smoother text-xl flex items-center justify-center lg:pl-24 ml-4 h-full m-0 text-center font-bold">
                      {/* <Image className=" mr-3 w-12" src={M} alt="M Logo" /> */}
                      Art<span className="ml-1 text-Sub"> Gallery </span>
                   </div>
-               </a>
+               </Link>
 
       
                {/* Links */}
                <div className="xl:pr-48 lg:pr-16 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
-                  <div className="Pull md:px-4 active:text-Redd BoxFit"> <a href='https://www.krisrehfuss.com'> Home </a> </div>
+                  <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/'> Home </Link> </div>
                   <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/ModernSynth'> Gallery </Link> </div>
                   <div className="NavItem p-2 text-xl text-coal dark:text-white" onClick={Darken}>
                      <FaMusic className="hover:text-DarkTeal Smoother" />

@@ -68,7 +68,7 @@ export default function Home() {
     <div className="MAIN Smoother">
       <Head>
         <title>Kris Dashboard </title>
-        <meta name="description" content="Dashboard" />
+        <meta name="description" content="Home" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
@@ -82,17 +82,17 @@ export default function Home() {
         <div className="Nav grid-cols-2 z-10 antialiased shadow-2xl dark:shadow-Ind ">
 
           {/* Logo */}
-          <a href="https://www.krisrehfuss.com" alt="home">
+          <Link href="/" alt="home">
             <div className="NameShadow lg:text-xl text-lg flex items-center justify-center lg:pl-48 ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold ">
               {/* <Image className=" mr-3 w-12" src={M} alt="M Logo" /> */}
               Kris<span className="ml-1 text-Sub"> Rehfuss </span>
             </div>
-          </a>
+          </Link>
 
 
           {/* Links */}
           <div className="lg:pr-48 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
-            <div className="Pull md:px-4 active:text-Redd BoxFit"> <a href='https://www.krisrehfuss.com'> Home </a> </div>
+            <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/'> Home </Link> </div>
             <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/ModernSynth'> Gallery </Link> </div>
             <div className="NavItem p-2 text-2xl text-Redd" onClick={handleThemeSwitch}>
               <BsSun className="hover:animate-spin hover:text-yellow-500" />
