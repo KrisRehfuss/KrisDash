@@ -23,14 +23,15 @@ import M from "../../public/Engine.png";
 export default function Home() {
 
     // Pager
-   const router = useRouter();
+  const router = useRouter();
 
-   const handleKeyDown = (event) => {
-      if (event.key === 'p' || event.key === 'P') {
-         router.push('/ModernSynth');
-      }
-   };
-
+  const handleKeyDown = (event) => {
+    if (event.key === 'p' || event.key === 'P') {
+      router.push('/ModernSynth');
+    } else if (event.key === 'c' || event.key === 'C') {
+      router.push('/Bubble');
+    }
+  };
    useEffect(() => {
       window.addEventListener('keydown', handleKeyDown);
       return () => {
@@ -73,7 +74,7 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1"
         />
-        <link rel="icon" href="/NeonIco.ico" />
+        <link rel="icon" href="/DNA.svg" />
       </Head>
 
       <main className="MAIN Smoother">

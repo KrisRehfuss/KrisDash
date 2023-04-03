@@ -36,6 +36,10 @@ body {
   @apply  FlexCenterCol p-2   w-fit md:w-7/12 lg:w-8/12 xl:w-6/12
 }
 
+.Bubble {
+  @apply m-2 flex shadow-md  shadow-CityBlu rounded-full aspect-square  
+}
+
 
 
 .MainWrapperDesktop {

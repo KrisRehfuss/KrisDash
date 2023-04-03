@@ -183,7 +183,7 @@ export default function Kinetic() {
                name="viewport"
                content="width=device-width, initial-scale=1"
             />
-            <link rel="icon" href="/NeonIco.ico" />
+            <link rel="icon" href="/EarthIcon.ico" />
          </Head>
 
          {/* Wrapper Start */}
