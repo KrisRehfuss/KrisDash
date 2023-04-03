@@ -94,15 +94,15 @@ export default function Reflect() {
    
    // Note Arrays
    const [notes, setNotes] = useState([
-      { id: 'I', audio: A1, style: 'h-48 flex-0', caption: 'A', keyTrigger: 'a' },
-      { id: 'E', audio: A4, style: 'h-48 flex-0', caption: 'W', keyTrigger: 'w' },
-      { id: 'A', audio: A8, style: 'h-48 flex-0', caption: 'U', keyTrigger: 'u' },
-      { id: 'B', audio: A9, style: 'h-48 flex-0', caption: 'I', keyTrigger: 'i' },
-      { id: 'D', audio: A5, style: 'h-48 flex-0', caption: 'J', keyTrigger: 'j' },
-      { id: 'G', audio: A6, style: 'h-48 flex-0', caption: 'K', keyTrigger: 'k' },
-      { id: 'C', audio: A7, style: 'h-48 flex-0', caption: 'L', keyTrigger: 'l' },
-      { id: 'H', audio: A2, style: 'h-48 flex-0', caption: 'S', keyTrigger: 's' },
-      { id: 'F', audio: A3, style: 'h-48 flex-0', caption: 'D', keyTrigger: 'd' },
+      { id: 'I', audio: A1, style: 'md:h-48 h-24 flex-0', caption: 'A', keyTrigger: 'a' },
+      { id: 'E', audio: A4, style: 'md:h-48 h-24 flex-0', caption: 'W', keyTrigger: 'w' },
+      { id: 'A', audio: A8, style: 'md:h-48 h-24 flex-0', caption: 'U', keyTrigger: 'u' },
+      { id: 'B', audio: A9, style: 'md:h-48 h-24 flex-0', caption: 'I', keyTrigger: 'i' },
+      { id: 'D', audio: A5, style: 'md:h-48 h-24 flex-0', caption: 'J', keyTrigger: 'j' },
+      { id: 'G', audio: A6, style: 'md:h-48 h-24 flex-0', caption: 'K', keyTrigger: 'k' },
+      { id: 'C', audio: A7, style: 'md:h-48 h-24 flex-0', caption: 'L', keyTrigger: 'l' },
+      { id: 'H', audio: A2, style: 'md:h-48 h-24 flex-0', caption: 'S', keyTrigger: 's' },
+      { id: 'F', audio: A3, style: 'md:h-48 h-24 flex-0', caption: 'D', keyTrigger: 'd' },
    ])
    const [noteList1, setNoteList1] = useState([
       { id: 'A', audio: A8 },
@@ -172,7 +172,7 @@ export default function Reflect() {
          <main className=" bg-gradient-to-t from-PlanetDark to-Ind py-24 FlexCenter dark:bg-none scroll-smooth mx-auto  w-screen h-screen  ">
 
             {/* Container */}
-            <div className="bg-coal Smooth ml-4 xl:rounded-full xl:w-fit xl:h-fit grid grid-cols-3 xl:p-24 lg:p-12 lg:h-5/6 lg:gap-24 lg:rounded-md items-center justify-between shadow-2xl  shadow-coal dark:shadow-OrbPurple ">
+            <div className="bg-coal Smooth ml-4 xl:rounded-full xl:w-fit xl:h-fit grid grid-cols-3 p-4 xl:p-24 lg:p-12 lg:h-5/6 lg:gap-x-24 lg:rounded-md items-center justify-between shadow-2xl  shadow-coal dark:shadow-OrbPurple ">
 
                {notes.map((item) => (
                   <Bubbles
