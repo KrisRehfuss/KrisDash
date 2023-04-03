@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Image from "next/image";
+
 // import Image from "next/image";
 import React, { useRef, useState, useEffect } from "react";
 import { useRouter } from 'next/router';
@@ -9,6 +11,9 @@ import Link from 'next/link';
 import Art from './Art';
 import Bubbles from './Bubbles'
 import Header from "./Header";
+import Explode from '../../public/Sunset.png'
+import Street from '../../public/Street.jpg'
+
 
 
 import A1 from "../../public/Piano/Kinetic/KineticLo-001.mp3";
@@ -71,11 +76,11 @@ export default function Reflect() {
 
    // Note/Theme Changer
    function Darken() {
-      handleThemeSwitch();
+      // handleThemeSwitch();
       handleToggle();
    }
 
-   // Theme Change on ctrl
+   // Theme Change on Space
    useEffect(() => {
       function handleKeyDown(event) {
          if (event.code === 'Space') {
@@ -170,9 +175,22 @@ export default function Reflect() {
 
          {/* Wrapper Start */}
          <main className=" bg-gradient-to-t from-PlanetDark to-Ind py-24 FlexCenter dark:bg-none scroll-smooth mx-auto  w-screen h-screen  ">
+            
 
             {/* Container */}
-            <div className="bg-coal Smooth ml-4 xl:rounded-full xl:w-fit xl:h-fit grid grid-cols-3 p-4 xl:p-24 lg:p-12 lg:h-5/6 lg:gap-x-24 lg:rounded-md items-center justify-between shadow-2xl  shadow-coal dark:shadow-OrbPurple ">
+            <div className="bg-coal Smooth ml-4 grid grid-cols-3 p-4  
+            xl:rounded-full xl:w-fit xl:h-fit xl:p-28 xl:gap-4
+            lg:p-12 lg:h-5/6 lg:gap-x-24 lg:rounded-md 
+            items-center justify-between 
+            shadow-2xl shadow-OrbPurple dark:bg-none ">  
+
+               <Image className='Smoother dark:inline-block hidden opacity-50 absolute overflow-hidden ' layout='fill' objectFit='cover'
+               src={Explode} alt='Sunset'/>
+
+               {/* <Image className='Smoother inline-block dark:hidden opacity-50 absolute overflow-hidden ' layout='fill' objectFit='cover'
+               src={Street} alt='Street'/> */}
+
+  
 
                {notes.map((item) => (
                   <Bubbles

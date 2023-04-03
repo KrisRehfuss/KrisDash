@@ -178,7 +178,7 @@ export default function Kinetic() {
       <div>
          <Head>
             <title>Dashboard</title>
-            <meta name="description" content="Dashboard" />
+            <meta name="description" content="Kinetic" />
             <meta
                name="viewport"
                content="width=device-width, initial-scale=1"
