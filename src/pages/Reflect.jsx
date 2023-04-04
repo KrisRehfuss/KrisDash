@@ -50,10 +50,12 @@ export default function Reflect() {
 
    const handleKeyDown = (event) => {
       if (event.key === 'p' || event.key === 'P') {
-         router.push('/Kinetic');
+         router.push('/Sin');
       } else if (event.key === 'c' || event.key === 'C') {
          router.push('/ModernSynth');
-      }
+      } else if (event.key === '[') {
+         router.push('/Kinetic');
+      } 
    };
 
    useEffect(() => {

@@ -30,6 +30,8 @@ export default function Home() {
       router.push('/ModernSynth');
     } else if (event.key === 'c' || event.key === 'C') {
       router.push('/Bubble');
+    }  else if (event.key === '[') {
+      router.push('/Bubble');
     }
   };
   useEffect(() => {

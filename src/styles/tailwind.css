@@ -203,7 +203,7 @@ body {
 }
 
 .SinText {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-OrbPink/60 to-whiteish  
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-FlowerRed to-FlowerInd  
 }
 
 .TrealText {

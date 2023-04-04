@@ -52,10 +52,12 @@ export default function Sin() {
    const router = useRouter();
    const handleKeyDown = (event) => {
       if (event.key === 'p' || event.key === 'P') {
-         router.push('/ModernSynth');
-      } else if (event.key === 'c' || event.key === 'C') {
          router.push('/Kinetic');
-      }
+      } else if (event.key === 'c' || event.key === 'C') {
+         router.push('/Reflect');
+      }  else if (event.key === '[') {
+         router.push('/ModernSynth');
+      } 
    };
 
    useEffect(() => {
@@ -189,12 +191,12 @@ export default function Sin() {
 
          {/* Wrapper Start */}
          <main className="SinWrapper h-fit Smoother ">
-            <Image className='absolute  p-24 pt-48 blur-sm dark:hidden top-0 right-0 ' src={Drop} alt='/' />
+            <Image className='absolute p-24 pt-36 blur-sm dark:hidden top-0 right-0 ' src={Drop} alt='/' />
             {/* <Image className='absolute blur-sm hidden dark:inline-block top-0 left-0 ' src={Drop} alt='/' /> */}
 
             {/* Nav */}
             <div 
-               className="Nav grid-cols-2 z-10 antialiased lg:px-0 shadow-2xl Smoother  dark:shadow-OrbPink ">
+               className="Nav grid-cols-2 z-10 antialiased lg:px-0 shadow-2xl Smoother  dark:shadow-FlowerRed ">
 
                {/* Logo */}
                <a href="https://www.krisrehfuss.com" alt="home">

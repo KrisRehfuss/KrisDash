@@ -51,10 +51,12 @@ export default function Kinetic() {
    const router = useRouter();
    const handleKeyDown = (event) => {
       if (event.key === 'p' || event.key === 'P') {
-         router.push('/Sin');
+         router.push('/ModernSynth');
       } else if (event.key === 'c' || event.key === 'C') {
+         router.push('/Sin');
+      } else if (event.key === '[') {
          router.push('/Reflect');
-      }
+      } 
    };
 
    useEffect(() => {

@@ -81,6 +81,7 @@ module.exports = {
         FlowerInd: "#141625",
         FlowerPurple: "#654053",
         FlowerSun: "#f9d4bc",
+        FlowerRed: "#ca4b65",
 
         OrbPurple: '#3d223f',
         OrbPurple2: '#be0fb2',
