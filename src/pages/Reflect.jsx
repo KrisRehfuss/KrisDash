@@ -277,7 +277,7 @@ export default function Reflect() {
                         <Header style="mt-6 mb-4 text-4xl md:hidden
                         md:-mt-24 md:text-6xl
                         xl:w-full xl:ml-24 xl:text-9xl 
-                        dark:hidden     
+                        dark:hidden xl:dark:hidden 
                         lg:hidden lg:-mt-96 lg:text-9xl lg:text-right lg:ml-[400px]
 
                         w-fit NameShadow Push cursor-text text-white/40 hover:text-white/100  font-extrabold text-center Smoother antialiased "
