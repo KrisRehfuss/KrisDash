@@ -258,6 +258,7 @@ export default function Reflect() {
                         md:-mt-24 md:text-6xl dark:mt-24
                         xl:w-full xl:inline-block xl:ml-24 xl:text-9xl 
                         lg:hidden lg:-mt-96 lg:text-9xl lg:text-right lg:ml-[400px]
+                        xl:dark:hidden
 
                         text-5xl w-fit NameShadow hover:text-Aero cursor-text SubversionText font-extrabold text-center Smoother antialiased " 
                   text='Reflect' />
