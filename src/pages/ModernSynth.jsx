@@ -195,7 +195,7 @@ export default function ModernSynth() {
                <Link href="/ModernSynth" alt="home">
                   <div className="NameShadow text-coal dark:text-white Smoother text-xl flex items-center justify-center lg:pl-24 ml-4 h-full m-0 text-center font-bold">
                      {/* <Image className=" mr-3 w-12" src={M} alt="M Logo" /> */}
-                     Art<span className="ml-1 text-Sub"> Gallery </span>
+                     Art<span className="ml-1  text-Sub"> Gallery </span>
                   </div>
                </Link>
 

@@ -3,7 +3,7 @@ import Image from "next/image";
   
 
 
-function Orb({image, audio, keyTrigger, caption }) {
+function Orb({image, audio, keyTrigger, caption, ring }) {
   // Audio Player
   const audioRef = useRef(null);
 
@@ -66,10 +66,10 @@ function Orb({image, audio, keyTrigger, caption }) {
   return (
     <div {...handleEvent}>
       <Image className=
-      {`PullMid  ease-linear Smoother 
+      {`PullMid  ease-linear Smoother ${ring}
         
       hover:shadow-Ind 
-      transform ${isKeyPressed ? 'scale-90 inline-block transition duration-150 opacity-100 animate-spin  dark:border-OrbPink shadow-Ind rounded-full dark:border-2  shadow-2xl' : ' rounded-md shadow-xl shadow-OrbDark dark:-rotate-45 lg:dark:opacity-0   '}`} 
+      transform ${isKeyPressed ? '`scale-90 inline-block transition duration-150 opacity-100 animate-spin shadow-Ind rounded-full dark:border-2  shadow-2xl' : ' rounded-md shadow-xl border-none shadow-OrbDark dark:-rotate-45 lg:dark:opacity-0   `'}`} 
       src={image} 
       alt='' />
       <p className='pt-2 dark:hidden'>{caption}</p>

@@ -249,6 +249,7 @@ export default function Kinetic() {
                                  key={item.name}
                                  image={item.image}
                                  audio={item.audio}
+                                 ring='border-OrbPink'
                                  // caption={item.caption} 
                                  keyTrigger={item.keyTrigger} />
                            ))}

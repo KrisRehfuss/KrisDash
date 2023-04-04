@@ -43,8 +43,10 @@ module.exports = {
         DarkTeal: '#1f3f4d',
         LiteTeal: '#21414f',
         Treal:'#67c7d8',
+        Treal2: '#1f9285',
         Tred: '#7f7fca',
         Tann: '#e8cbb9',
+        Tro: '#fb7b74',
 
         JarBlue: '#0d152b',
         JarPink: '#fa5093',
@@ -82,6 +84,7 @@ module.exports = {
         FlowerPurple: "#654053",
         FlowerSun: "#f9d4bc",
         FlowerRed: "#ca4b65",
+        FlowerO: "#b6586b",
 
         OrbPurple: '#3d223f',
         OrbPurple2: '#be0fb2',

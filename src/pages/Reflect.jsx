@@ -191,7 +191,7 @@ export default function Reflect() {
                <a href="https://www.krisrehfuss.com" alt="home">
                   <div className="NameShadow text-whiteish dark:text-white Smoother text-xl flex items-center justify-center lg:pl-24 ml-4 h-full m-0 text-center font-bold">
                      {/* <Image className=" mr-3 w-12" src={M} alt="M Logo" /> */}
-                     Modern<span className="ml-1 text-Sub"> Synth </span>
+                     Modern<span className="ml-1  text-Sub"> Synth </span>
                   </div>
                </a>
 
