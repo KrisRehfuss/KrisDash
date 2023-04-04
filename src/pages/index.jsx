@@ -22,24 +22,24 @@ import M from "../../public/Engine.png";
 
 export default function Home() {
 
-    // Pager
+  // Pager
   const router = useRouter();
 
-  const handleKeyDown = (event) => {
+  const Pager = (event) => {
     if (event.key === 'p' || event.key === 'P') {
       router.push('/ModernSynth');
     } else if (event.key === 'c' || event.key === 'C') {
       router.push('/Bubble');
     }
   };
-   useEffect(() => {
-      window.addEventListener('keydown', handleKeyDown);
-      return () => {
-         window.removeEventListener('keydown', handleKeyDown);
-      };
-   }, []);
+  useEffect(() => {
+    window.addEventListener('keydown', Pager);
+    return () => {
+      window.removeEventListener('keydown', Pager);
+    };
+  }, []);
 
-    // Themer
+  // Themer
   const [theme, setTheme] = useState(null)
 
   useEffect(() => {
@@ -51,7 +51,7 @@ export default function Home() {
     }
   }, [])
 
-  const handleThemeSwitch = () => {
+  const Themer = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark')
   }
 
@@ -62,6 +62,23 @@ export default function Home() {
       document.documentElement.classList.remove('dark')
     }
   }, [theme])
+
+  // Theme Change on Space
+  useEffect(() => {
+    function handleKeyDown(event) {
+      if (event.code === 'Space') {
+        event.preventDefault();
+        Themer();
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  });
+
 
 
 
@@ -95,7 +112,7 @@ export default function Home() {
           <div className="lg:pr-48 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
             <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/'> Home </Link> </div>
             <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/ModernSynth'> Gallery </Link> </div>
-            <div className="NavItem p-2 text-2xl text-Redd" onClick={handleThemeSwitch}>
+            <div className="NavItem p-2 text-2xl text-Redd" onClick={Themer}>
               <BsSun className="hover:animate-spin hover:text-yellow-500" />
             </div>
           </div>
@@ -108,10 +125,10 @@ export default function Home() {
           <div className="MainCard">
 
             {/* Header */}
-            <Header 
-            style="Header antialiased"
-            text='Welcome to my dashboard'
-             />
+            <Header
+              style="Header antialiased"
+              text='Welcome to my dashboard'
+            />
 
             {/* Caption */}
             <p className="my-5 mb-3 p-4 lg:text-xl lg:px-12 leading-7 text-base dark:text-whiteish text-coal/70 font-semibold text-center">
