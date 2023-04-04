@@ -54,7 +54,7 @@ export default function Sin() {
       if (event.key === 'p' || event.key === 'P') {
          router.push('/ModernSynth');
       } else if (event.key === 'c' || event.key === 'C') {
-         router.push('/Reflect');
+         router.push('/Kinetic');
       }
    };
 
