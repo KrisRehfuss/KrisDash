@@ -47,11 +47,11 @@ import R9 from "../../public/Piano/Kinetic/KineticAlt-009.mp3";
 
 export default function Kinetic() {
 
-      // Pager
+   // Pager
    const router = useRouter();
    const handleKeyDown = (event) => {
       if (event.key === 'p' || event.key === 'P') {
-         router.push('/ModernSynth');
+         router.push('/Sin');
       } else if (event.key === 'c' || event.key === 'C') {
          router.push('/Reflect');
       }

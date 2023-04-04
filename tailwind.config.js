@@ -78,7 +78,13 @@ module.exports = {
         Q: "#cc3dfa",
         Sub: "#314d7a",
 
+        FlowerInd: "#141625",
+        FlowerPurple: "#654053",
+        FlowerSun: "#f9d4bc",
+
         OrbPurple: '#3d223f',
+        OrbPurple2: '#be0fb2',
+        OrbPurple3: '#6b2ff1',
         OrbBlue: '#177fb6',
         OrbPink: '#fd297e',
         OrbBlack: '#2e2f2e',

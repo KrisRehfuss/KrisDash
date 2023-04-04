@@ -32,6 +32,10 @@ body {
   @apply lg:h-[2400px]  xl:h-fit bg-gradient-to-t from-OrbTan to-OrbTan dark:bg-none scroll-smooth Smoother
 }
 
+.SinWrapper {
+  @apply lg:h-[2400px] xl:h-fit bg-gradient-to-t from-FlowerInd via-FlowerPurple to-FlowerSun dark:bg-none scroll-smooth Smoother
+}
+
 .MainCard {
   @apply  FlexCenterCol p-2   w-fit md:w-7/12 lg:w-8/12 xl:w-6/12
 }
@@ -196,6 +200,10 @@ body {
 
 .KineticText {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-OrbBrown to-OrbTan
+}
+
+.SinText {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-OrbPink/60 to-whiteish  
 }
 
 .TrealText {
