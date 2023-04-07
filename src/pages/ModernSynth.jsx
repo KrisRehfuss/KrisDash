@@ -50,7 +50,7 @@ export default function ModernSynth() {
       if (event.key === 'p' || event.key === 'P') {
          router.push('/Reflect');
       } else if (event.key === 'c' || event.key === 'C') {
-         router.push('/');
+         router.push('/Kinetic');
       }  else if (event.key === '[') {
          router.push('/Sin');
       } 

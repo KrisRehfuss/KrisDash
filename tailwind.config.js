@@ -51,6 +51,8 @@ module.exports = {
         JarBlue: '#0d152b',
         JarPink: '#fa5093',
 
+        FeatherO: '#f57329',
+
 
         Redd: "#e74175",
         Smokey: "#090C02",
