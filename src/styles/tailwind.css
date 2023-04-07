@@ -45,7 +45,7 @@ body {
 }
 
 .SplashLinks {
-  @apply border-coal text-2xl FlexCenter bg-whiteish text-coal hover:text-whiteish hover:bg-coal Pull Smooth border-2 rounded-md backdrop-blur-md hover:backdrop-blur-sm p-4
+  @apply border-whiteish text-2xl FlexCenter text-white xl:text-white xl:bg-coal xl:hover:bg-transparent xl:hover:text-coal hover:bg-coal Pull Smooth border-2 rounded-md backdrop-blur-md hover:backdrop-blur-sm p-4
 }
 
 

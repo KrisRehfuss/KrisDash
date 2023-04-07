@@ -75,18 +75,17 @@ export default function Splash() {
             </div>
           </a>
 
-          <Link href='/Splash'>
-            <div className="SplashLinks">
-              <AiOutlineHome className=' w-5 h-5' /><p className='ml-2'>Home Page</p>
-            </div>
-          </Link>
-
           <Link href='/ModernSynth'>
-            <div className="SplashLinks xl:mr-36">
+            <div className="SplashLinks">
               <MdPiano className='w-5 h-5' /><p className='ml-2'>Modern Synth</p>
             </div>
           </Link>
 
+          <Link href='/Splash'>
+            <div className="SplashLinks xl:mr-36">
+              <AiOutlineHome className=' w-5 h-5' /><p className='ml-2'>Home Page</p>
+            </div>
+          </Link>
 
         </div>
 
