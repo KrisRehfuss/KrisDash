@@ -24,16 +24,14 @@ import { SlSocialSpotify } from "react-icons/sl";// import Synth from '../../pub
 
 
 export default function Splash() {
-  const router = useRouter();
+  // const router = useRouter();
 
   const [DropChanger, setDropChanger] = useState(Cover);
 
   useEffect(() => {
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    // const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     const newImageUrl = window.innerWidth >= 1440 ? Cover : Drop;
-    if (!isMobile) {
-      router.push("/");
-    }
+
     setDropChanger(newImageUrl);
   }, []);
 
