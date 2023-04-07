@@ -18,6 +18,7 @@ import Top from "./Top";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
+import { TbBrandBandcamp } from "react-icons/tb";
 import { MdPiano } from "react-icons/md";
 import { SlSocialSpotify } from "react-icons/sl";// import Synth from '../../public/SynthB.png'ynth from '../../public/SynthB.png'
 
@@ -52,7 +53,7 @@ export default function Splash() {
 
 
       {/* Container */}
-      <div className="FlexCenterCol xl:justify-center font-pop h-screen w-screen">
+      <div className="FlexCenterCol items-center justify-center xl:justify-center font-pop h-full w-screen">
         {/* <Banner image={BannerImage} /> */}
 
 
@@ -67,25 +68,27 @@ export default function Splash() {
         />
 
 
-        <div className="z-20 flex flex-col rounded-md xl:ml-96 xl:items-center xl:justify-center items-end justify-center gap-8  BoxFull xl:mb-0 xl:h-fit xl:w-fit p-4">
+        <div className="z-20 flex flex-col rounded-md xl:ml-96 xl:items-center xl:justify-center items-end justify-center xl:gap-16 gap-8 BoxFull xl:mt-48 mt-64 xl:h-fit xl:w-fit p-4">
+
+          <Link href='/Splash'>
+            <div className="SplashLinks xl:ml-36">
+              <AiOutlineHome className=' w-5 h-5 xl:w-24 xl:h-24' /><p className='ml-2 xl:ml-6'>Homepage</p>
+            </div>
+          </Link>
 
           <a href='https://open.spotify.com/artist/3je0rpoLMnH2doxB43msGn'>
-            <div className="SplashLinks xl:ml-36">
-              <SlSocialSpotify className='w-5 h-5' /><p className='ml-2'>Prismatic EP</p>
+            <div className="SplashLinks ">
+              <SlSocialSpotify className='w-5 h-5 xl:w-24 xl:h-24' /><p className='ml-2 xl:ml-6'>Prismatic EP</p>
             </div>
           </a>
 
           <Link href='/ModernSynth'>
-            <div className="SplashLinks">
-              <MdPiano className='w-5 h-5' /><p className='ml-2'>Modern Synth</p>
+            <div className="SplashLinks xl:mr-36">
+              <MdPiano className='w-5 h-5  xl:w-24 xl:h-24' /><p className='ml-2 xl:ml-6'>Modern Synth</p>
             </div>
           </Link>
 
-          <Link href='/Splash'>
-            <div className="SplashLinks xl:mr-36">
-              <AiOutlineHome className=' w-5 h-5' /><p className='ml-2'>Home Page</p>
-            </div>
-          </Link>
+
 
         </div>
 
