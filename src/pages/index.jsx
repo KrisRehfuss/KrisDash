@@ -52,7 +52,7 @@ export default function Splash() {
 
 
       {/* Container */}
-      <div className="FlexCenterCol font-pop h-screen w-screen">
+      <div className="FlexCenterCol xl:justify-center font-pop h-screen w-screen">
         {/* <Banner image={BannerImage} /> */}
 
 
@@ -67,19 +67,7 @@ export default function Splash() {
         />
 
 
-        <div className="z-20 flex flex-col xl:items-center xl:justify-center items-end justify-end gap-8 BoxFull p-4">
-
-          <Link href='/Splash'>
-            <div className="SplashLinks xl:mr-36">
-              <AiOutlineHome className=' w-5 h-5' /><p className='ml-2'>Home Page</p>
-            </div>
-          </Link>
-
-          <Link href='/ModernSynth'>
-            <div className="SplashLinks">
-              <MdPiano className='w-5 h-5' /><p className='ml-2'>Modern Synth</p>
-            </div>
-          </Link>
+        <div className="z-20 flex flex-col rounded-md xl:ml-96 xl:items-center xl:justify-center items-end justify-end gap-8 mb-72 BoxFull xl:mb-0 xl:h-fit xl:w-fit p-4">
 
           <a href='https://open.spotify.com/artist/3je0rpoLMnH2doxB43msGn'>
             <div className="SplashLinks xl:ml-36">
@@ -87,13 +75,26 @@ export default function Splash() {
             </div>
           </a>
 
+          <Link href='/Splash'>
+            <div className="SplashLinks">
+              <AiOutlineHome className=' w-5 h-5' /><p className='ml-2'>Home Page</p>
+            </div>
+          </Link>
+
+          <Link href='/ModernSynth'>
+            <div className="SplashLinks xl:mr-36">
+              <MdPiano className='w-5 h-5' /><p className='ml-2'>Modern Synth</p>
+            </div>
+          </Link>
+
+
         </div>
 
 
 
 
         {/* // Footer */}
-        <div className="flex items-center xl:justify-evenly justify-between mt-24 mb-6 z-50">
+        <div className="flex absolute bottom-0 items-center xl:justify-evenly justify-between mt-24 mb-6 z-50">
 
           <div className="flex items-center xl:justify-center xl:gap-12 justify-evenly w-screen h-fit p-2">
 
