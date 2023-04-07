@@ -45,10 +45,8 @@ body {
 }
 
 .SplashLinks {
-  @apply border-whiteish text-2xl xl:text-5xl xl:px-12 FlexCenter text-white xl:text-white xl:bg-coal xl:hover:bg-transparent xl:hover:text-coal hover:bg-coal Pull Smooth rounded-md border-2  backdrop-blur-md hover:backdrop-blur-sm p-4
+  @apply border-whiteish text-2xl xl:text-4xl xl:px-8 FlexCenter text-white xl:text-white xl:bg-coal xl:hover:bg-transparent xl:hover:text-coal hover:bg-coal Pull Smooth rounded-md border-2  backdrop-blur-md hover:backdrop-blur-sm p-4
 }
-
-
 
 .MainWrapperDesktop {
   @apply md:p-4 lg:flex-col-reverse xl:flex-row

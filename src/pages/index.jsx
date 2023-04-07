@@ -68,23 +68,23 @@ export default function Splash() {
         />
 
 
-        <div className="z-20 flex flex-col rounded-md xl:ml-96 xl:items-center xl:justify-center items-end justify-center xl:gap-16 gap-8 BoxFull xl:mt-48 mt-64 xl:h-fit xl:w-fit p-4">
+        <div className="z-20 flex flex-col rounded-md xl:ml-[600px] xl:items-center xl:justify-center items-end justify-center xl:gap-16 gap-8 BoxFull xl:mt-48 mt-64 xl:h-fit xl:w-fit p-4">
 
           <Link href='/Splash'>
             <div className="SplashLinks xl:ml-36">
-              <AiOutlineHome className=' w-5 h-5 xl:w-24 xl:h-24' /><p className='ml-2 xl:ml-6'>Homepage</p>
+              <AiOutlineHome className=' w-5 h-5 xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Homepage</p>
             </div>
           </Link>
 
           <a href='https://open.spotify.com/artist/3je0rpoLMnH2doxB43msGn'>
             <div className="SplashLinks ">
-              <SlSocialSpotify className='w-5 h-5 xl:w-24 xl:h-24' /><p className='ml-2 xl:ml-6'>Prismatic EP</p>
+              <SlSocialSpotify className='w-5 h-5 xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Prismatic EP</p>
             </div>
           </a>
 
           <Link href='/ModernSynth'>
             <div className="SplashLinks xl:mr-36">
-              <MdPiano className='w-5 h-5  xl:w-24 xl:h-24' /><p className='ml-2 xl:ml-6'>Modern Synth</p>
+              <MdPiano className='w-5 h-5  xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Modern Synth</p>
             </div>
           </Link>
 
