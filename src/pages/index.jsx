@@ -29,7 +29,7 @@ export default function Home() {
     if (event.key === 'p' || event.key === 'P') {
       router.push('/ModernSynth');
     } else if (event.key === 'c' || event.key === 'C') {
-      router.push('/Bubble');
+      router.push('/Splash');
     }  else if (event.key === '[') {
       router.push('/Bubble');
     }
@@ -166,7 +166,7 @@ export default function Home() {
 
 
             </div>
-            <Footer />
+            <Footer text="This site was developed by Kris and is getting regular updates" />
             {/* <SearchBar /> */}
           </div>
         </div>

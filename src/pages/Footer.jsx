@@ -6,7 +6,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 
 
 
-function Footer() {
+function Footer({text}) {
 
   return (
 
@@ -40,7 +40,7 @@ function Footer() {
 
 
       </div>
-      <Top text="This site was developed by Kris and is getting regular updates" />
+      <Top text={text} />
     </div>
   );
 }
