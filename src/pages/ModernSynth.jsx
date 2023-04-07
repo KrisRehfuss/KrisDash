@@ -185,7 +185,7 @@ export default function ModernSynth() {
          </Head>
 
          {/* Wrapper Start */}
-         <main className="SplitWrapper h-fit Smoother ">
+         <main className="SplitWrapper h-screen Smoother ">
 
             {/* Nav */}
             <div 
@@ -276,7 +276,7 @@ export default function ModernSynth() {
                      </Link></div>
 
                      <div className='w-fit h-fit '><Link href='/Kinetic'>
-                        <Header style="mt-6 mb-4 text-4xl md:hidden
+                        <Header style="mt-6 text-4xl md:hidden
                         md:-mt-24 md:text-6xl
                         xl:w-full xl:ml-24 xl:text-9xl 
                         dark:hidden     

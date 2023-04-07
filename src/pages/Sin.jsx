@@ -190,7 +190,7 @@ export default function Sin() {
          </Head>
 
          {/* Wrapper Start */}
-         <main className="SinWrapper h-fit Smoother ">
+         <main className="SinWrapper h-screen Smoother ">
             <Image className='absolute p-24 pt-36 blur-sm dark:hidden top-0 right-0 ' src={Drop} alt='/' />
             {/* <Image className='absolute blur-sm hidden dark:inline-block top-0 left-0 ' src={Drop} alt='/' /> */}
 
@@ -280,7 +280,7 @@ export default function Sin() {
                      </Link></div>
 
                      <div className='w-fit  h-fit '><Link href='/Reflect'>
-                        <Header style="mt-6 mb-4 text-4xl md:hidden
+                        <Header style="mt-6 text-4xl md:hidden
                         md:-mt-24 md:text-6xl
                         xl:w-full xl:ml-24 xl:text-9xl 
                         dark:hidden     
@@ -288,6 +288,17 @@ export default function Sin() {
 
                         w-fit NameShadow Push cursor-text text-white/40 hover:text-white/100  font-extrabold text-center Smoother antialiased "
                            text='Reflect' />
+                     </Link></div>
+
+                     <div className='w-fit  h-fit '><Link href='/Kinetic'>
+                        <Header style="mt-6 text-4xl md:hidden
+                        md:-mt-24 md:text-6xl
+                        xl:w-full xl:ml-24 xl:text-9xl 
+                        dark:hidden     
+                        lg:hidden lg:-mt-96 lg:text-9xl lg:text-right lg:ml-[400px]
+
+                        w-fit NameShadow Push cursor-text text-white/40 hover:text-white/100  font-extrabold text-center Smoother antialiased "
+                           text='Kinetic' />
                      </Link></div>
 
 

@@ -181,7 +181,7 @@ export default function Reflect() {
          </Head>
 
          {/* Wrapper Start */}
-         <main className="GridWrapper h-fit Smoother ">
+         <main className="GridWrapper h-screen Smoother ">
 
             {/* Nav */}
             <div 
