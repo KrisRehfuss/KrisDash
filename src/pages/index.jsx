@@ -67,7 +67,7 @@ export default function Splash() {
         />
 
 
-        <div className="z-20 flex flex-col rounded-md xl:ml-96 xl:items-center xl:justify-center items-end justify-end gap-8 mb-48 BoxFull xl:mb-0 xl:h-fit xl:w-fit p-4">
+        <div className="z-20 flex flex-col rounded-md xl:ml-96 xl:items-center xl:justify-center items-end justify-center gap-8  BoxFull xl:mb-0 xl:h-fit xl:w-fit p-4">
 
           <a href='https://open.spotify.com/artist/3je0rpoLMnH2doxB43msGn'>
             <div className="SplashLinks xl:ml-36">
