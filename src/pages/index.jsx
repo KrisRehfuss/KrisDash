@@ -6,8 +6,8 @@ import Image from "next/image";
 import { AiOutlineHome } from "react-icons/ai";
 import React, { useState, useEffect } from "react";
 import BannerImage from "../../public/Explode.png";
-import Cover from "../../public/Explode.png";
-import Drop from "../../public/ExplodeVert.png";
+import Cover from "../../public/NeonLandIII.png";
+import Drop from "../../public/NeonCityII.png";
 import { useRouter } from 'next/router';
 import Banner from "./Banner";
 import Header from "./Header";
@@ -27,14 +27,14 @@ import { SlSocialSpotify } from "react-icons/sl";// import Synth from '../../pub
 export default function Splash() {
   // const router = useRouter();
 
-  const [DropChanger, setDropChanger] = useState(Cover);
+  // const [DropChanger, setDropChanger] = useState(Cover);
 
-  useEffect(() => {
-    // const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    const newImageUrl = window.innerWidth >= 1440 ? Cover : Drop;
+  // useEffect(() => {
+  // const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  // const newImageUrl = window.innerWidth >= 1440 ? Cover : Drop;
 
-    setDropChanger(newImageUrl);
-  }, []);
+  // setDropChanger(newImageUrl);
+  // }, []);
 
   return (
     <div className="scroll-smooth h-fit bg-whiteish dark:bg-coal Smoother">
@@ -59,32 +59,44 @@ export default function Splash() {
 
         {/*  */}
         <Image
-          src={DropChanger}
+          src={Cover}
           priority={true}
-          // className=""
+          className="hidden md:inline-block"
+          layout='fill'
+          objectFit='cover'
+          alt='#'
+        />
+
+        <Image
+          src={Drop}
+          priority={true}
+          className="md:hidden"
           layout='fill'
           objectFit='cover'
           alt='#'
         />
 
 
-        <div className="z-20 flex flex-col rounded-md xl:ml-[600px] xl:items-center xl:justify-center items-end justify-center xl:gap-16 gap-8 BoxFull xl:mt-48 mt-64 xl:h-fit xl:w-fit p-4">
+        <div className="z-20 flex flex-col rounded-md 
+        xl:ml-[400px] xl:items-center xl:justify-center xl:gap-12 xl:h-fit xl:w-fit xl:mt-54 
+        items-end justify-center gap-8 BoxFull 
+        mt-48 p-4">
 
           <Link href='/Splash'>
             <div className="SplashLinks xl:ml-36">
-              <AiOutlineHome className=' w-5 h-5 xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Homepage</p>
+              <AiOutlineHome className=' w-8 h-8 mr-2  xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Homepage</p>
             </div>
           </Link>
 
           <a href='https://open.spotify.com/artist/3je0rpoLMnH2doxB43msGn'>
             <div className="SplashLinks ">
-              <SlSocialSpotify className='w-5 h-5 xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Prismatic EP</p>
+              <SlSocialSpotify className='w-8 h-8 mr-2  xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Prismatic EP</p>
             </div>
           </a>
 
           <Link href='/ModernSynth'>
             <div className="SplashLinks xl:mr-36">
-              <MdPiano className='w-5 h-5  xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Modern Synth</p>
+              <MdPiano className='w-8 h-8 mr-2   xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Modern Synth</p>
             </div>
           </Link>
 
