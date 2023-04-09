@@ -6,8 +6,8 @@ import Image from "next/image";
 import { AiOutlineHome } from "react-icons/ai";
 import React, { useState, useEffect } from "react";
 import BannerImage from "../../public/Explode.png";
-import Cover from "../../public/NeonLandIII.png";
-import Drop from "../../public/NeonCityII.png";
+import Desktop from "../../public/NeonLandIII.png";
+import Mobile from "../../public/NeonCityII.png";
 import { useRouter } from 'next/router';
 import Banner from "./Banner";
 import Header from "./Header";
@@ -59,7 +59,7 @@ export default function Splash() {
 
         {/*  */}
         <Image
-          src={Cover}
+          src={Desktop}
           priority={true}
           className="hidden md:inline-block"
           layout='fill'
@@ -68,7 +68,7 @@ export default function Splash() {
         />
 
         <Image
-          src={Drop}
+          src={Mobile}
           priority={true}
           className="md:hidden"
           layout='fill'
