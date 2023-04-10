@@ -46,7 +46,7 @@ body {
 
 .SplashLinks {
   @apply border-whiteish text-3xl FlexCenter text-white 
-  xl:text-4xl xl:px-8 xl:text-white  xl:hover:bg-none hover:bg-coal  
+  xl:text-4xl xl:px-8 xl:text-white xl:bg-coal xl:hover:bg-none xl:hover:bg-transparent xl:hover:text-coal
    Pull Smooth rounded-md  p-4
 }
 

@@ -6,7 +6,7 @@ import Image from "next/image";
 import { AiOutlineHome } from "react-icons/ai";
 import React, { useState, useEffect } from "react";
 import BannerImage from "../../public/Explode.png";
-import Desktop from "../../public/NeonLandIII.png";
+import Desktop from "../../public/Explode.png";
 import Mobile from "../../public/NeonCityII.png";
 import { useRouter } from 'next/router';
 import Banner from "./Banner";
@@ -88,17 +88,19 @@ export default function Splash() {
             </div>
           </Link>
 
-          <a href='https://open.spotify.com/artist/3je0rpoLMnH2doxB43msGn'>
+          <Link href='/ModernSynth'>
             <div className="SplashLinks ">
+              <MdPiano className='w-8 h-8 mr-2   xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Modern Synth</p>
+            </div>
+          </Link>
+
+          <a href='https://open.spotify.com/artist/3je0rpoLMnH2doxB43msGn'>
+            <div className="SplashLinks xl:mr-36 ">
               <SlSocialSpotify className='w-8 h-8 mr-2  xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Prismatic EP</p>
             </div>
           </a>
 
-          <Link href='/ModernSynth'>
-            <div className="SplashLinks xl:mr-36">
-              <MdPiano className='w-8 h-8 mr-2   xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Modern Synth</p>
-            </div>
-          </Link>
+
 
 
 
