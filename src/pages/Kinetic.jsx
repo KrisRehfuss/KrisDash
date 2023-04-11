@@ -56,7 +56,9 @@ export default function Kinetic() {
          router.push('/Sin');
       } else if (event.key === '[') {
          router.push('/Reflect');
-      } 
+      } else if (event.key === 'h') {
+         router.push('/');
+      }
    };
 
    useEffect(() => {

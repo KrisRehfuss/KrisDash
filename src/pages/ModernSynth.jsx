@@ -53,7 +53,9 @@ export default function ModernSynth() {
          router.push('/Kinetic');
       }  else if (event.key === '[') {
          router.push('/Sin');
-      } 
+      } else if (event.key === 'h') {
+         router.push('/');
+      }
    };
 
    useEffect(() => {

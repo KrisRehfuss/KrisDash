@@ -57,7 +57,9 @@ export default function Sin() {
          router.push('/Reflect');
       }  else if (event.key === '[') {
          router.push('/ModernSynth');
-      } 
+      } else if (event.key === 'h') {
+         router.push('/');
+      }
    };
 
    useEffect(() => {

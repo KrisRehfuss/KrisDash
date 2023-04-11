@@ -3,44 +3,95 @@ import Link from 'next/link'
 import { AiOutlineStar } from "react-icons/ai";
 import { BiSearch } from "react-icons/bi";
 import Image from "next/image";
-import { AiOutlineHome } from "react-icons/ai";
-import React, { useState, useEffect } from "react";
-import BannerImage from "../../public/Explode.png";
-import Desktop from "../../public/Explode.png";
-import Mobile from "../../public/NeonCityII.png";
+import React, { useRef, useState, useEffect } from "react";
+import BannerImage from "../../public/Abstract2.jpg";
 import { useRouter } from 'next/router';
+// import Axis from "./Axis";
 import Banner from "./Banner";
 import Header from "./Header";
 import SkillTree from "./SkillTree";
 import { BsSun } from "react-icons/bs";
+
 import Footer from "./Footer";
-import Top from "./Top";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { AiOutlineGithub } from "react-icons/ai";
-import { AiFillLinkedin } from "react-icons/ai";
-import { TbBrandBandcamp } from "react-icons/tb";
-import { MdPiano } from "react-icons/md";
-import { SlSocialSpotify } from "react-icons/sl";// import Synth from '../../public/SynthB.png'ynth from '../../public/SynthB.png'
+import LiveSites from './LiveSites.jsx'
+import Prismatic from "./Prismatic";
+import Chord from "../../public/Piano/Chord.mp3";
+import Chord2 from "../../public/Piano/Chord-02.mp3";
+import Chord3 from "../../public/Piano/Chord-03.mp3";
+import M from "../../public/Engine.png";
+
+export default function Home() {
+
+  // Pager
+  const router = useRouter();
+
+  const Pager = (event) => {
+    if (event.key === 'p' || event.key === 'P') {
+      router.push('/ModernSynth');
+    } else if (event.key === 'c' || event.key === 'C') {
+      router.push('/');
+    } else if (event.key === '[') {
+      router.push('/Reflect');
+    }
+    else if (event.key === 'h') {
+      router.push('/');
+    }
+  };
+  useEffect(() => {
+    window.addEventListener('keydown', Pager);
+    return () => {
+      window.removeEventListener('keydown', Pager);
+    };
+  }, []);
+
+  // Themer
+  const [theme, setTheme] = useState(null)
+
+  useEffect(() => {
+    if (window.matchMedia('(prefers-color-scheme: dark)').
+      matches) {
+      setTheme('dark')
+    } else {
+      setTheme('light')
+    }
+  }, [])
+
+  const Themer = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark')
+  }
+
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  }, [theme])
+
+  // Theme Change on Space
+  useEffect(() => {
+    function handleKeyDown(event) {
+      if (event.code === 'Space') {
+        event.preventDefault();
+        Themer();
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  });
 
 
 
-export default function Splash() {
-  // const router = useRouter();
-
-  // const [DropChanger, setDropChanger] = useState(Cover);
-
-  // useEffect(() => {
-  // const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-  // const newImageUrl = window.innerWidth >= 1440 ? Cover : Drop;
-
-  // setDropChanger(newImageUrl);
-  // }, []);
 
   return (
-    <div className="scroll-smooth h-fit bg-whiteish dark:bg-coal Smoother">
+    <div className="MAIN Smoother">
       <Head>
         <title>Kris Dashboard </title>
-        <meta name="description" content="Splash" />
+        <meta name="description" content="Home" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
@@ -48,100 +99,81 @@ export default function Splash() {
         <link rel="icon" href="/DNA.svg" />
       </Head>
 
+      <main className="MAIN Smoother">
 
+        {/* Nav */}
+        <div className="Nav grid-cols-2 z-10 antialiased shadow-2xl dark:shadow-Ind ">
 
-
-
-      {/* Container */}
-      <div className="FlexCenterCol items-center justify-center xl:justify-center font-pop h-full w-screen">
-        {/* <Banner image={BannerImage} /> */}
-
-
-        {/*  */}
-        <Image
-          src={Desktop}
-          priority={true}
-          className="hidden md:inline-block"
-          layout='fill'
-          objectFit='cover'
-          alt='#'
-        />
-
-        <Image
-          src={Mobile}
-          priority={true}
-          className="md:hidden"
-          layout='fill'
-          objectFit='cover'
-          alt='#'
-        />
-
-
-        <div className="z-20 flex flex-col rounded-md 
-        xl:ml-[400px] xl:items-center xl:justify-center xl:gap-12 xl:h-fit xl:w-fit xl:mt-54 
-        items-end justify-center gap-8 BoxFull 
-        mt-48 p-4">
-
-          <Link href='/Splash'>
-            <div className="SplashLinks xl:ml-36">
-              <AiOutlineHome className=' w-8 h-8 mr-2  xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Homepage</p>
+          {/* Logo */}
+          <Link href="/" alt="home">
+            <div className="NameShadow lg:text-xl text-lg flex items-center justify-center lg:pl-48 ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold ">
+              {/* <Image className=" mr-3 w-12" src={M} alt="M Logo" /> */}
+              Kris<span className="ml-1 text-Sub"> Rehfuss </span>
             </div>
           </Link>
 
-          <Link href='/ModernSynth'>
-            <div className="SplashLinks ">
-              <MdPiano className='w-8 h-8 mr-2   xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Modern Synth</p>
+
+          {/* Links */}
+          <div className="lg:pr-48 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
+            <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/'> Home </Link> </div>
+            <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/ModernSynth'> Gallery </Link> </div>
+            <div className="NavItem p-2 text-2xl text-Redd" onClick={Themer}>
+              <BsSun className="hover:animate-spin hover:text-yellow-500" />
             </div>
-          </Link>
-
-          <a href='https://open.spotify.com/artist/3je0rpoLMnH2doxB43msGn'>
-            <div className="SplashLinks xl:mr-36 ">
-              <SlSocialSpotify className='w-8 h-8 mr-2  xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Prismatic EP</p>
-            </div>
-          </a>
-
-
-
-
-
-        </div>
-
-
-
-
-        {/* // Footer */}
-        <div className="flex absolute bottom-0 items-center xl:justify-evenly justify-between mt-24 mb-6 z-50">
-
-          <div className="flex items-center xl:justify-center xl:gap-12 justify-evenly w-screen h-fit p-2">
-
-            {/* LinkedIn */}
-            <div className="text-3xl text-whiteish hover:text-Pinkk Smooth w-fit h-fit p-2">
-              <a href="https://www.linkedin.com/in/krisrehfuss/">
-                <AiFillLinkedin />
-              </a>
-            </div>
-
-            {/* Github */}
-            <div className="text-3xl text-whiteish hover:text-Pinkk Smooth w-fit h-fit p-2">
-              <a href="https://github.com/KrisRehfuss">
-                <AiOutlineGithub />
-              </a>
-            </div>
-
-
-            {/* Insta */}
-            <div className="text-3xl text-whiteish hover:text-Pinkk Smooth w-fit h-fit p-2">
-              <a href="https://www.instagram.com/krismatic__/">
-                <AiOutlineInstagram />
-              </a>
-            </div>
-
-
-
           </div>
         </div>
 
-      </div>
+        <Banner image={BannerImage} />
+
+        {/* Container */}
+        <div className="FlexCenterCol mt-4 font-pop BoxFull">
+          <div className="MainCard">
+
+            {/* Header */}
+            <Header
+              style="Header antialiased"
+              text='Welcome to my dashboard'
+            />
+
+            {/* Caption */}
+            <p className="my-5 mb-3 p-4 lg:text-xl lg:px-12 leading-7 text-base dark:text-whiteish text-coal/70 font-semibold text-center">
+              Hello, my name is Kristopher and I&apos;m a passionate software engineer that values creativity and optimization.
+            </p>
+
+
+
+            {/* Section */}
+            <div className="BoxFull mx-4 px-4 mt-2 mb-6">
+              {/* Live Sites */}
+              <LiveSites />
+
+
+
+              {/* My Skills */}
+              <div className="Section">
+                <h1 className="CaptionBlock text-coal">My Skills</h1>
+                <div className="BoxFull mt-8 relative text-coal px-1 ">
+                  <SkillTree />
+                </div>
+              </div>
+
+              {/* Current Skill Tree */}
+              <div className="Section mt-4">
+                <h1 className="CaptionBlock text-coal">Personal Works</h1>
+
+                <div className="FlexCenterCol BoxFull pt-4">
+                  <Prismatic />
+                </div>
+                {/* <h1 className="CaptionBlock text-Redd"> Recent Compositions</h1> */}
+              </div>
+
+
+            </div>
+            <Footer text="This site was developed by Kris and is getting regular updates" />
+            {/* <SearchBar /> */}
+          </div>
+        </div>
+      </main>
     </div>
   );
 }
