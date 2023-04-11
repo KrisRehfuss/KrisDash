@@ -29,7 +29,7 @@ export default function Home() {
     if (event.key === 'p' || event.key === 'P') {
       router.push('/ModernSynth');
     } else if (event.key === 'c' || event.key === 'C') {
-      router.push('/');
+      router.push('/Splash');
     } else if (event.key === '[') {
       router.push('/Reflect');
     }
