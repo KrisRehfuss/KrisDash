@@ -82,7 +82,7 @@ export default function Splash() {
         items-end justify-center gap-8 BoxFull 
         mt-48 p-4">
 
-               <Link href='/Splash'>
+               <Link href='/'>
                   <div className="SplashLinks xl:ml-36">
                      <AiOutlineHome className=' w-8 h-8 mr-2  xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Homepage</p>
                   </div>
