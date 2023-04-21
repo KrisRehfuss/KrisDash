@@ -88,17 +88,25 @@ export default function Splash() {
                   </div>
                </Link>
 
+               <Link href='https://open.spotify.com/artist/3je0rpoLMnH2doxB43msGn'>
+                  <div className="SplashLinks  ">
+                     <SlSocialSpotify className='w-8 h-8 mr-2  xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Prismatic EP</p>
+                  </div>
+               </Link>
+
                <Link href='/ModernSynth'>
-                  <div className="SplashLinks ">
+                  <div className="SplashLinks xl:mr-36">
                      <MdPiano className='w-8 h-8 mr-2   xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Modern Synth</p>
                   </div>
                </Link>
 
-               <a href='https://open.spotify.com/artist/3je0rpoLMnH2doxB43msGn'>
-                  <div className="SplashLinks xl:mr-36 ">
-                     <SlSocialSpotify className='w-8 h-8 mr-2  xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Prismatic EP</p>
+               {/* <Link href='/Snap'>
+                  <div className="SplashLinks xl:ml-36">
+                     <AiOutlineHome className=' w-8 h-8 mr-2  xl:w-12 xl:h-12' /><p className='ml-2 xl:ml-6'>Snap</p>
                   </div>
-               </a>
+               </Link> */}
+
+
 
 
 

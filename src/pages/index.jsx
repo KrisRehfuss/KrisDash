@@ -99,7 +99,7 @@ export default function Home() {
         <link rel="icon" href="/DNA.svg" />
       </Head>
 
-      <main className="MAIN Smoother">
+      {/* <main className="MAIN Smoother"> */}
 
         {/* Nav */}
         <div className="Nav grid-cols-2 z-10 antialiased shadow-2xl dark:shadow-Ind ">
@@ -126,8 +126,8 @@ export default function Home() {
         <Banner image={BannerImage} />
 
         {/* Container */}
-        <div className="FlexCenterCol mt-4 font-pop BoxFull">
-          <div className="MainCard">
+      <div className="FlexCenterCol    mt-4 font-pop BoxFull">
+        <div className="MainCard  ">
 
             {/* Header */}
             <Header
@@ -143,7 +143,7 @@ export default function Home() {
 
 
             {/* Section */}
-            <div className="BoxFull mx-4 px-4 mt-2 mb-6">
+            <div className=" BoxFull  mx-4 px-4 mt-2 mb-6">
               {/* Live Sites */}
               <LiveSites />
 
@@ -173,7 +173,7 @@ export default function Home() {
             {/* <SearchBar /> */}
           </div>
         </div>
-      </main>
+      {/* </main> */}
     </div>
   );
 }
