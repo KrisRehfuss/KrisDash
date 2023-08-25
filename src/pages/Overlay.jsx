@@ -16,6 +16,9 @@ function Overlay({ timeout }) {
       <p className="mb-12">Press P for next synth</p>
       <p className="mb-12 ">Press C for previous synth</p>
       <p className="mb-12">{'Press [ to skip synths'}</p>
+      <p className="mb-12 ">Press Space to drop octave</p>
+
+
     </div>
   ) : null;
 }
