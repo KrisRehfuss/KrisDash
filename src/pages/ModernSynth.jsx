@@ -8,6 +8,7 @@ import { AiFillQuestionircle } from "react-icons/ai";
 import Link from 'next/link';
 import Art from './Art';
 import Header from "./Header";
+import Overlay from "./Overlay";
 
 import Art1 from "../../public/AI/Modern.png";
 import Art2 from "../../public/AI/ModernPlanet.png";
@@ -219,23 +220,32 @@ export default function ModernSynth() {
             {/* Container */}
             <div className="FlexCenterCol  h-fit  mt-4 font-pop ">
 
+               
+
                <div className="FlexCenterCol h-fit p-2 w-fit md:w-7/12 lg:w-10/12 xl:w-8/12">
 
                   {/* Header */}
 
-                
+  
                   
                   {/* More Containers? */}
                   <div className=" w-full mx-4 px-4 mt-2 md:mb-6 mb-2">
                      <div className="w-full FlexCenter h-fit p-3 mb-4 ">
-
                         {/* Key Picture
                         <div className="hidden dark:hidden lg:block border-2 border-white absolute left-40 h-96 p-8">
                            <Image src={Keys} width={240} alt='Keys'/>
                         </div> */}
 
+    <div>
+      <Overlay timeout={6000} />
+      {/* rest of yo ur page content */}
+    </div>
+
+                        
+
+
                         {/* Grid Container */}
-                        <div 
+                        <div  
                         className="md:-mt-24
                         grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-3 w-full
                            p-6 gap-8 dark:gap-12 dark:pt-16  
@@ -244,6 +254,7 @@ export default function ModernSynth() {
                               xl:p-64 xl:pt-28 xl:gap-16
                                  xl:dark:gap-36 xl:dark:pt-36 xl:dark:px-64
                                     ">
+                                       
 
                            {notes.map((item) => (
                               <Art
