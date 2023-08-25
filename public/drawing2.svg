@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120mm"
+   height="120mm"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="drawing2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1.1826687"
+     inkscape:cx="240.13488"
+     inkscape:cy="311.16069"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5"
+     showguides="false" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5535">
+      <stop
+         style="stop-color:#6366f1;stop-opacity:1"
+         offset="0"
+         id="stop5531" />
+      <stop
+         style="stop-color:#76f9d0;stop-opacity:1;"
+         offset="0.66000003"
+         id="stop5533" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5535"
+       id="linearGradient5537"
+       x1="-69.657204"
+       y1="-10.358614"
+       x2="-69.881248"
+       y2="49.89999"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-0.64608358,-0.08178652)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5535"
+       id="linearGradient7808"
+       gradientUnits="userSpaceOnUse"
+       x1="-69.657204"
+       y1="-10.358614"
+       x2="-69.881248"
+       y2="49.89999"
+       gradientTransform="translate(263.91633,-116.11414)" />
+  </defs>
+  <rect
+     style="fill:#6366f1;fill-opacity:1;stroke-width:0.146352"
+     id="rect158-6-06-2-9-9"
+     width="13.080262"
+     height="38.261715"
+     x="-174.71837"
+     y="110.02875"
+     ry="0"
+     transform="matrix(-0.005247,-0.99998623,0.56984517,-0.82175208,0,0)" />
+  <rect
+     style="fill:#6366f1;fill-opacity:1;stroke-width:0.146352"
+     id="rect158-6-06-2-1-2-2"
+     width="13.080262"
+     height="38.261715"
+     x="-129.21263"
+     y="59.614971"
+     ry="0"
+     transform="matrix(-0.005247,-0.99998623,0.56984517,-0.82175208,0,0)" />
+  <rect
+     style="fill:#6366f1;fill-opacity:1;stroke-width:0.146352"
+     id="rect158-6-06-2-6-3-2"
+     width="13.080262"
+     height="38.261715"
+     x="-111.3819"
+     y="6.9038715"
+     ry="0"
+     transform="matrix(-0.57148341,-0.82061362,0.00325204,-0.99999471,0,0)"
+     inkscape:transform-center-x="13.776501"
+     inkscape:transform-center-y="8.7658707" />
+  <rect
+     style="fill:url(#linearGradient5537);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     id="rect158-6-06-2-6-3-7-8"
+     width="16.511719"
+     height="52.48035"
+     x="-76.829117"
+     y="-11.549321"
+     ry="0"
+     transform="matrix(-0.45271801,-0.89165375,0.00237096,-0.99999719,0,0)"
+     inkscape:transform-center-x="13.776503"
+     inkscape:transform-center-y="12.023436" />
+  <rect
+     style="fill:url(#linearGradient7808);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     id="rect158-6-06-2-6-3-7-8-8"
+     width="16.511719"
+     height="52.48035"
+     x="187.73331"
+     y="-127.58164"
+     ry="0"
+     transform="matrix(0.45271801,0.89165375,-0.00237096,0.99999719,0,0)"
+     inkscape:transform-center-x="-13.776511"
+     inkscape:transform-center-y="-12.023398" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 2" />
+</svg>

@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  @apply  Smoother text-white font-pop bg-whiteish dark:bg-coal  antialiased scrollbar-hide scroll-smooth;
+}
+
+.MAIN {
+  @apply scroll-smooth bg-whiteish dark:bg-coal
+}
+
+
+.MainWrapper {
+  @apply flex flex-col-reverse items-center justify-evenly p-8 w-full MainWrapperDesktop
+}
+
+.SplitWrapper {
+  @apply lg:h-screen xl:h-fit bg-gradient-to-t from-PlanetO via-Pinkk to-PlanetDark dark:bg-none scroll-smooth Smoother
+}
+
+.GridWrapper {
+  @apply lg:h-screen xl:h-fit bg-gradient-to-t from-Treal to-Tann dark:bg-none scroll-smooth Smoother
+}
+
+.KineticWrapper {
+  @apply lg:h-screen  xl:h-fit bg-gradient-to-t from-OrbTan to-OrbTan dark:bg-none scroll-smooth Smoother
+}
+
+.SinWrapper {
+  @apply lg:h-screen xl:h-fit bg-gradient-to-t from-FlowerInd via-FlowerPurple to-FlowerSun dark:bg-none scroll-smooth Smoother
+}
+
+.MainCard {
+  @apply  FlexCenterCol p-2   w-fit md:w-7/12 lg:w-8/12 xl:w-6/12
+}
+
+.Bubble {
+  @apply m-2 flex shadow-md  shadow-CityBlu rounded-full aspect-square  
+}
+
+.SplashLinks {
+  @apply border-whiteish text-3xl FlexCenter text-white 
+  xl:text-4xl xl:px-8 xl:text-white xl:bg-coal xl:hover:bg-none xl:hover:bg-transparent xl:hover:text-coal
+   Pull Smooth rounded-md  p-4
+}
+
+.MainWrapperDesktop {
+  @apply md:p-4 lg:flex-col-reverse xl:flex-row
+}
+
+.ClearDrop {
+  @apply backdrop-blur-sm hover:backdrop-blur-sm;
+}
+
+.Clear {
+  @apply blur-sm;
+}
+
+.GentlePush {
+  @apply hover:scale-95 active:scale-90 transition transform duration-300 ease-in-out
+}
+
+.PinkText {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500
+}
+
+.BlueText {
+  
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-Aero to-Gold
+}
+
+.CardGradient {
+  @apply bg-gradient-to-t from-LiteBlue via-Pinkk to-CityBlu 
+}
+
+.CardText {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-CityBlu via-Pinkk to-CityBlu
+}
+
+
+
+/* Customs */
+
+.ExploreAll {
+  @apply md:w-11/12 md:mx-4 my-0 flex items-center w-full mt-3 p-3 px-4 Shadow rounded-3xl text-left font-extralight text-sm text-gray-400 bg-gray-700 bg-opacity-50 ;
+}
+
+.SkillTree {
+  @apply flex rounded-lg text-gray-400 font-light Shadow items-center w-full mb-2 p-2 hover:bg-Aero hover:text-white hover:font-normal
+
+}
+
+.Icons {
+  @apply text-3xl text-Ind hover:text-Pinkk dark:text-Pinkk dark:hover:text-white Smooth w-fit h-fit p-2
+}
+
+
+
+
+.CaptionBlock {
+  @apply text-xl border-b pb-2 dark:border-gray-700 border-DarkG dark:text-whiteish NameShadow font-normal
+}
+
+.Section {
+  @apply w-full h-fit p-3 mb-4
+}
+
+.Sites {
+  @apply BoxFull flex rounded-2xl shadow-2xl shadow-black dark:shadow-slate-500 dark:shadow-lg dark:hover:shadow-2xl font-light Shadow dark:bg-whiteish/90 bg-coal/90 items-center w-full mb-2 p-3 mt-2 hover:shadow-black hover:shadow-lg hover:scale-95 active:scale-90 transition transform duration-100
+}
+
+.Footer {
+  @apply text-coal dark:text-whiteish bottom-0 w-fit h-fit p-4 font-light xl:text-lg py-4 text-center FlexCenter border-t
+}
+
+.Header {
+  @apply mt-4 xl:text-6xl lg:text-5xl text-5xl  w-fit NameShadow hover:text-Aero cursor-text PinkText font-extrabold text-center Smoother
+}
+
+/* Customs - End */
+
+
+.Focus {
+  @apply Hover transform active:scale-110 Smooth cursor-pointer;
+}
+
+.HoverPush {
+  @apply Hover transform hover:scale-95 Smooth cursor-pointer;
+}
+
+.PushHover {
+  @apply hover:scale-95 active:scale-100 transition transform duration-300 ease-in-out
+}
+
+.Push {
+  @apply active:scale-95 transition transform duration-150 ease-out
+}
+
+.Pull {
+  @apply sm:hover:z-50 sm:hover:shadow-2xl sm:hover:scale-105 sm:transition sm:transform sm:duration-100 sm:ease-in-out
+}
+
+.PullHard {
+  @apply sm:hover:z-50 sm:hover:shadow-2xl hover:scale-150 sm:transition sm:transform sm:duration-100 sm:ease-in-out
+}
+
+.PullMid {
+  @apply sm:hover:z-50 hover:shadow-2xl  sm:transition sm:transform hover:scale-110 sm:ease-in-out
+}
+
+/* Structure */
+
+.MARK {
+  @apply Hover rounded-2xl border-2 border-slate-400;
+}
+
+.Hover {
+  @apply hover:border-x-sky-200 active:border-y-pink-200 Smooth;
+}
+
+.BoxFull {
+  @apply h-full w-full;
+}
+
+.BoxScreen {
+  @apply h-screen w-screen;
+}
+
+.BoxFit {
+  @apply h-fit w-fit;
+}
+
+.Round {
+  @apply rounded-2xl;
+}
+
+.FlexCenter {
+  @apply flex items-center justify-center;
+}
+
+.FlexCenterCol {
+  @apply flex flex-col items-center ;
+}
+
+/* Gradients */
+
+.PeachWall {
+  @apply bg-gradient-to-t from-PlanetO via-Pinkk to-CityBlu
+}
+
+.PrismaticText {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-Pinq to-Q 
+}
+
+.SubversionText {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-Splatter to-Pinq
+}
+
+.KineticText {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-OrbBrown to-OrbTan
+}
+
+.SinText {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-FlowerRed to-FlowerInd  
+}
+
+.TrealText {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-Pinq via-Pinq to-Treal
+}
+
+/* Styles */
+
+.Shade {
+  @apply shadow-white drop-shadow-md;
+}
+
+.Rshade {
+  @apply rounded-3xl shadow-white drop-shadow-xl;
+}
+
+.Shadow {
+  @apply shadow-2xl shadow-black;
+}
+
+.ShadowWhite {
+  @apply shadow-2xl shadow-white;
+}
+
+.ShadowOnyx {
+  @apply shadow-2xl rounded-2xl shadow-Onyx
+}
+
+.wBorder {
+  @apply border-2 border-white;
+}
+
+.Smooth {
+  @apply duration-75 ease-linear;
+}
+
+.Smoother {
+  @apply duration-150  ease-linear;
+}
+
+.Bounce {
+  @apply cursor-pointer hover:animate-bounce Smoother hover:drop-shadow-xl hover:text-white hover:shadow-zinc-900;
+}
+
+.Spin {
+  @apply cursor-none hover:animate-spin Smoother hover:drop-shadow-xl hover:shadow-zinc-900;
+}
+
+.NameShadow {
+  @apply shadow-black drop-shadow-md  ;
+}
+
+.Glass {
+  @apply Shadow GlassMD;
+}
+
+.GlassMD {
+  @apply md:min-h-fit md:max-w-2xl;
+}
+
+/* Nav */
+
+.Nav {
+  @apply flex backdrop-blur-lg lg:border-b-0 sticky top-0 lg:py-0 px-4 z-50 border-Ind dark:border-Redd justify-between items-center h-20 max-h-fit w-screen;
+}
+
+.NavMD {
+  @apply lg:grid grid-cols-3 lg:mx-auto
+}
+
+.NavItem {
+  @apply Round cursor-pointer ;
+}
+
+.NavItemMD {
+  @apply md:p-2 md:mx-auto ;
+}
+
+li {
+  @apply list-none;
+}
+
+.Search {
+  @apply  z-50 
+}
+
+:focus {
+  outline: none;
+}
