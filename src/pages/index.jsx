@@ -19,6 +19,7 @@ import Chord from "../../public/Piano/Chord.mp3";
 import Chord2 from "../../public/Piano/Chord-02.mp3";
 import Chord3 from "../../public/Piano/Chord-03.mp3";
 import M from "../../public/Engine.png";
+import Dropdown from "./Dropdown";
 
 export default function Home() {
 
@@ -90,7 +91,7 @@ export default function Home() {
   return (
     <div className="MAIN Smoother">
       <Head>
-        <title>Kris Dashboard </title>
+        <title>Hyper.ai </title>
         <meta name="description" content="Home" />
         <meta
           name="viewport"
@@ -99,79 +100,24 @@ export default function Home() {
         <link rel="icon" href="/DNA.svg" />
       </Head>
 
-      {/* <main className="MAIN Smoother"> */}
 
-        {/* Nav */}
-        <div className="Nav grid-cols-2 z-10 antialiased shadow-2xl dark:shadow-Ind ">
-
-          {/* Logo */}
-          <Link href="/" alt="home">
-            <div className="NameShadow lg:text-xl text-lg flex items-center justify-center lg:pl-48 ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold ">
-              {/* <Image className=" mr-3 w-12" src={M} alt="M Logo" /> */}
-              Kris<span className="ml-1 text-Sub"> Rehfuss </span>
-            </div>
-          </Link>
-
-
-          {/* Links */}
-          <div className="lg:pr-48 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
-            <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/'> Home </Link> </div>
-            <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/ModernSynth'> Gallery </Link> </div>
-            <div className="NavItem p-2 text-2xl text-Redd" onClick={Themer}>
-              <BsSun className="hover:animate-spin hover:text-yellow-500" />
-            </div>
-          </div>
-        </div>
-
-        <Banner image={BannerImage} />
 
         {/* Container */}
-      <div className="FlexCenterCol  MARK  mt-4 font-pop BoxFull">
-        <div className="MainCard MARK ">
-
-            {/* Header */}
-            <Header
-              style="Header antialiased"
-              text='Welcome to my dashboard'
-            />
-
-            {/* Caption */}
-            <p className="my-5 mb-3 p-4 lg:text-xl lg:px-12 leading-7 text-base dark:text-whiteish text-coal/70 font-semibold text-center">
-              Hello, my name is Kristopher and I&apos;m a passionate software engineer that values creativity and optimization.
-            </p>
-
-
-
-            {/* Section */}
-            <div className=" BoxFull  mx-4 px-4 mt-2 mb-6">
-              {/* Live Sites */}
-              <LiveSites />
-
-
-
-              {/* My Skills */}
-              <div className="Section">
-                <h1 className="CaptionBlock text-coal">My Skills</h1>
-                <div className="BoxFull mt-8 relative text-coal px-1 ">
-                  <SkillTree />
-                </div>
-              </div>
-
-              {/* Current Skill Tree */}
-              <div className="Section mt-4">
-                <h1 className="CaptionBlock text-coal">Personal Works</h1>
-
-                <div className="FlexCenterCol BoxFull pt-4">
-                  <Prismatic />
-                </div>
-                {/* <h1 className="CaptionBlock text-Redd"> Recent Compositions</h1> */}
-              </div>
-
-
-            </div>
-            <Footer text="This site was developed by Kris and is getting regular updates" />
-            {/* <SearchBar /> */}
+      <div className="border-2 flex flex-col font-pop BoxScreen">
+        {/* Name */}
+          <div className="BoxFit m-8 p-8 ">
+            <p className="p-4 text-5xl">Kristopher Rehfuss</p>
+            <p className="px-4">Network Engineer & Developer</p>
           </div>
+          {/* Panels */}
+          <div className="MARK w-screen h-1/3">
+
+          </div>
+
+        
+
+          
+      
         </div>
       {/* </main> */}
     </div>
