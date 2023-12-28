@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Boxes from "./Boxes"
 import Link from 'next/link'
 import { AiOutlineStar } from "react-icons/ai";
 import { BiSearch } from "react-icons/bi";
@@ -19,7 +20,6 @@ import Chord from "../../public/Piano/Chord.mp3";
 import Chord2 from "../../public/Piano/Chord-02.mp3";
 import Chord3 from "../../public/Piano/Chord-03.mp3";
 import M from "../../public/Engine.png";
-import Dropdown from "./Dropdown";
 
 export default function Home() {
 
@@ -105,14 +105,16 @@ export default function Home() {
         {/* Container */}
       <div className="border-2 flex flex-col font-pop BoxScreen">
         {/* Name */}
-          <div className="BoxFit m-8 p-8 ">
-            <p className="p-4 text-5xl">Kristopher Rehfuss</p>
-            <p className="px-4">Network Engineer & Developer</p>
+          <div className="BoxFit border-b m-8 p-8 ">
+            <p className="p-4 text-4xl">Bitwise AND Operation</p>
+            <p className="px-4 text-lg">Networking Practice</p>
           </div>
-          {/* Panels */}
-          <div className="MARK w-screen h-1/3">
 
-          </div>
+          <Boxes />
+          <Boxes />
+          <Boxes />
+          
+
 
         
 
