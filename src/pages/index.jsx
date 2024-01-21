@@ -88,7 +88,7 @@ export default function Home() {
 
 
   return (
-    <div className="MAIN MARK BoxScreen Smoother">
+    <div className="MAIN overflow-hidden  BoxScreen Smoother">
       <Head>
         <title>Kris Dashboard </title>
         <meta name="description" content="Home" />
@@ -126,7 +126,7 @@ export default function Home() {
 
         {/* Container */}
       <div className="FlexCenterCol mt-4 font-pop BoxFull">
-        <div className="MainCard MARK  ">
+        <div className="MainCard  ">
 
             {/* Header */}
             <Header

@@ -120,7 +120,7 @@ body {
 }
 
 .Header {
-  @apply NameShadow hover:text-Aero cursor-text font-extrabold text-center Smoother
+  @apply  dark:text-whiteish text-gray-700 hover:text-Aero cursor-text font-extrabold text-center Smoother
 }
 
 /* Customs - End */
