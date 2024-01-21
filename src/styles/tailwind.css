@@ -97,7 +97,7 @@ body {
 }
 
 .Icons {
-  @apply text-3xl text-Ind hover:text-Pinkk dark:text-Pinkk dark:hover:text-white Smooth w-fit h-fit p-2
+  @apply text-3xl  text-Ind hover:text-Pinkk dark:text-Redd dark:hover:text-white Smooth w-fit h-fit p-2
 }
 
 
@@ -120,7 +120,7 @@ body {
 }
 
 .Header {
-  @apply mt-4 xl:text-6xl lg:text-5xl text-5xl  w-fit NameShadow hover:text-Aero cursor-text PinkText font-extrabold text-center Smoother
+  @apply NameShadow hover:text-Aero cursor-text font-extrabold text-center Smoother
 }
 
 /* Customs - End */

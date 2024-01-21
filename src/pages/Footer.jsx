@@ -29,16 +29,6 @@ function Footer({text}) {
           </a>
         </div>
 
-
-        {/* Insta */}
-        <div className="Icons">
-          <a href="https://www.instagram.com/krismatic__/">
-            <AiOutlineInstagram />
-          </a>
-        </div>
-
-
-
       </div>
       <Top text={text} />
     </div>

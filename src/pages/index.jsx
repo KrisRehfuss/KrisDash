@@ -88,7 +88,7 @@ export default function Home() {
 
 
   return (
-    <div className="MAIN Smoother">
+    <div className="MAIN MARK BoxScreen Smoother">
       <Head>
         <title>Kris Dashboard </title>
         <meta name="description" content="Home" />
@@ -102,13 +102,12 @@ export default function Home() {
       {/* <main className="MAIN Smoother"> */}
 
         {/* Nav */}
-        <div className="Nav grid-cols-2 z-10 antialiased shadow-2xl dark:shadow-Ind ">
+        <div className="Nav grid-cols-2 z-10 antialiased  dark:shadow-Ind ">
 
           {/* Logo */}
           <Link href="/" alt="home">
-            <div className="NameShadow lg:text-xl text-lg flex items-center justify-center lg:pl-48 ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold ">
+            <div className="NameShadow lg:-xl text-lg flex items-center justify-center lg:pl-48 ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold ">
               {/* <Image className=" mr-3 w-12" src={M} alt="M Logo" /> */}
-              Kris<span className="ml-1 text-Sub"> Rehfuss </span>
             </div>
           </Link>
 
@@ -123,21 +122,21 @@ export default function Home() {
           </div>
         </div>
 
-        <Banner image={BannerImage} />
+        {/* <Banner image={BannerImage} /> */}
 
         {/* Container */}
-      <div className="FlexCenterCol    mt-4 font-pop BoxFull">
-        <div className="MainCard  ">
+      <div className="FlexCenterCol mt-4 font-pop BoxFull">
+        <div className="MainCard MARK  ">
 
             {/* Header */}
             <Header
-              style="Header antialiased"
-              text='Welcome to my dashboard'
+              style="Header p-4 lg:text-5xl text-5xl w-fit antialiased"
+              text='Kristopher Rehfuss '
             />
 
             {/* Caption */}
-            <p className="my-5 mb-3 p-4 lg:text-xl lg:px-12 leading-7 text-base dark:text-whiteish text-coal/70 font-semibold text-center">
-              Hello, my name is Kristopher and I&apos;m a passionate software engineer that values creativity and optimization.
+            <p className="p-4 lg:text-3xl lg:px-6 leading-7 text-base dark:text-whiteish text-coal/70 font-semibold text-center">
+              Network & DevOps Engineer
             </p>
 
 
@@ -145,35 +144,27 @@ export default function Home() {
             {/* Section */}
             <div className=" BoxFull  mx-4 px-4 mt-2 mb-6">
               {/* Live Sites */}
-              <LiveSites />
+              {/* <LiveSites /> */}
 
 
 
               {/* My Skills */}
               <div className="Section">
-                <h1 className="CaptionBlock text-coal">My Skills</h1>
+                <h1 className="CaptionBlock text-coal"></h1>
                 <div className="BoxFull mt-8 relative text-coal px-1 ">
-                  <SkillTree />
+                  {/* <SkillTree /> */}
                 </div>
               </div>
 
-              {/* Current Skill Tree */}
-              <div className="Section mt-4">
-                <h1 className="CaptionBlock text-coal">Personal Works</h1>
 
-                <div className="FlexCenterCol BoxFull pt-4">
-                  <Prismatic />
-                </div>
-                {/* <h1 className="CaptionBlock text-Redd"> Recent Compositions</h1> */}
-              </div>
 
 
             </div>
-            <Footer text="This site was developed by Kris and is getting regular updates" />
+            <Footer text="Thanks for visiting, this site is under construction." />
             {/* <SearchBar /> */}
           </div>
+
         </div>
-      {/* </main> */}
     </div>
   );
 }
