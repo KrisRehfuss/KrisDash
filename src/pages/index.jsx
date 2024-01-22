@@ -142,19 +142,14 @@ export default function Home() {
             <p className="p-4 lg:text-3xl lg:px-6 leading-7 text-base text-coal text-coal/70 text-center">
               Network & DevOps Engineer
             </p>
-
-
-
-
           </div>
 
 
           {/* Resume */}
-          <div className="FlexCenterCol MARK Boxfit p-8">
-            <a href="../../public/Resume_KR_2024.pdf"
-              download="Kris_Rehfuss_Resume.pdf"
-              className="FlexCenterCol">
-
+          <div className="FlexCenterCol Boxfit p-8">
+            <a href="/Resume_KR_2024.pdf"
+              download="Kristopher_Rehfuss_Resume.pdf"
+              className="MARK p-8 FlexCenterCol">
               <IoCloudDownloadOutline className="text-3xl text-coal" /> {/* Adjust the size as needed */}
               <span className='text-coal'>Download Resume</span>
             </a>
