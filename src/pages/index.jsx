@@ -118,7 +118,7 @@ export default function Home() {
       <div className="flex flex-col flex-center font-pop BoxFull">
 
         {/* Splash */}
-        <div className="MainCard flex flex-col md:justify-center md:space-y-24 space-y-36 BoxScreen ">
+        <div className="MainCard flex flex-col  md:space-y-24 space-y-36 BoxScreen ">
 
           {/* <Image
             src={Desktop}
@@ -132,7 +132,7 @@ export default function Home() {
 
 
           {/* Name */}
-          <div className="md:-mt-72 p-4">
+          <div className=" p-4">
             <Header
               style="Header mt-24 p-4 lg:text-5xl text-5xl w-fit antialiased"
               text='Kristopher Rehfuss '
@@ -165,7 +165,7 @@ export default function Home() {
         {/* Timeline */}
         <div className="FlexCenter md:BoxScreen">
           <div className="md:w-2/3 ">
-            <p className="pb-16 text-4xl text-slate-700 text-center">My Experience</p>
+            <p className="pt-12 pb-4 md:pb-8 text-4xl text-slate-700 text-center">My Experience</p>
             <Timeline data={timelineData} />
           </div>
         </div>
