@@ -11,9 +11,9 @@ function Footer({text}) {
   return (
 
     // Link Container
-    <div className="FlexCenterCol">
+    <div className="mt-12 border-b FlexCenterCol">
 
-      <div className="flex items-center justify-evenly w-full h-fit p-2">
+      <div className="flex items-center space-x-12 w-full h-fit p-2">
 
         {/* LinkedIn */}
         <div className="Icons">
@@ -30,7 +30,6 @@ function Footer({text}) {
         </div>
 
       </div>
-      <Top text={text} />
     </div>
   );
 }

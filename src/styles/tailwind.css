@@ -8,11 +8,11 @@
 
 
 body {
-  @apply  Smoother text-white font-pop bg-whiteish dark:bg-coal  antialiased scrollbar-hide scroll-smooth;
+  @apply  Smoother text-white font-pop bg-whiteish   antialiased scrollbar-hide scroll-smooth;
 }
 
 .MAIN {
-  @apply scroll-smooth bg-whiteish dark:bg-coal
+  @apply scroll-smooth bg-whiteish 
 }
 
 
@@ -37,7 +37,7 @@ body {
 }
 
 .MainCard {
-  @apply  FlexCenterCol p-2   w-fit md:w-7/12 lg:w-8/12 xl:w-6/12
+  @apply FlexCenterCol p-2 w-fit md:w-7/12 lg:w-8/12 xl:w-6/12
 }
 
 .Bubble {
@@ -97,7 +97,7 @@ body {
 }
 
 .Icons {
-  @apply text-3xl  text-Ind hover:text-Pinkk dark:text-Redd dark:hover:text-white Smooth w-fit h-fit p-2
+  @apply text-3xl text-Ind hover:text-Pinkk  dark:hover:text-white Smooth w-fit h-fit p-2
 }
 
 
@@ -116,11 +116,11 @@ body {
 }
 
 .Footer {
-  @apply text-coal dark:text-whiteish bottom-0 w-fit h-fit p-4 font-light xl:text-lg py-4 text-center FlexCenter border-t
+  @apply text-coal bottom-0 w-fit h-fit p-4 font-light xl:text-lg py-4 text-center FlexCenter border-t
 }
 
 .Header {
-  @apply  dark:text-whiteish text-gray-700 hover:text-Aero cursor-text font-extrabold text-center Smoother
+  @apply  dark:text-slate-700 text-whiteish hover:text-Aero cursor-text text-center Smoother
 }
 
 /* Customs - End */

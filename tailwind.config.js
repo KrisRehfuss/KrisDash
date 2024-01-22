@@ -54,6 +54,11 @@ module.exports = {
         FeatherO: '#f57329',
 
 
+        Pri1: '#E7E5DF',
+        Pri2: '#D3D0CB',
+        Pri3: '#393E41',
+
+
         Redd: "#e74175",
         Smokey: "#090C02",
         Ash: "#BBC5AA",

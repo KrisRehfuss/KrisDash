@@ -1,24 +1,15 @@
 import Head from "next/head";
-import Link from 'next/link'
-import { AiOutlineStar } from "react-icons/ai";
-import { BiSearch } from "react-icons/bi";
+import Timeline from "./Timeline";
+import { IoCloudDownloadOutline } from "react-icons/io5";
 import Image from "next/image";
-import React, { useRef, useState, useEffect } from "react";
-import BannerImage from "../../public/Abstract2.jpg";
-import { useRouter } from 'next/router';
-// import Axis from "./Axis";
-import Banner from "./Banner";
-import Header from "./Header";
-import SkillTree from "./SkillTree";
-import { BsSun } from "react-icons/bs";
+import Desktop from "../../public/Explode.png";
+import Mobile from "../../public/NeonCityII.png";
 
+import Link from 'next/link'
+import React, { useRef, useState, useEffect } from "react";
+import { useRouter } from 'next/router';
+import Header from "./Header";
 import Footer from "./Footer";
-import LiveSites from './LiveSites.jsx'
-import Prismatic from "./Prismatic";
-import Chord from "../../public/Piano/Chord.mp3";
-import Chord2 from "../../public/Piano/Chord-02.mp3";
-import Chord3 from "../../public/Piano/Chord-03.mp3";
-import M from "../../public/Engine.png";
 
 export default function Home() {
 
@@ -84,14 +75,38 @@ export default function Home() {
     };
   });
 
+  const timelineData = [
+    {
+      title: 'LAN/WAN Engineer',
+      company: 'Crozer Health System',
+      time: 'June 2023 - Current',
+      description: 'Enhanced network infrastructure performance by transitioning 200 switches to advanced Cisco Nexus Cores, significantly boosting transmission speeds. Upgraded connectivity for remote sites by transitioning from EVPL to ENS circuits, substantially elevating system reliability and resilience.',
+    },
+
+    {
+      title: 'Network Support Engineer',
+      company: 'Network Connections',
+      time: 'Dec 2020 - May 2023',
+      description: 'Boosted company revenue by 200% by creating a comprehensive training manual, greatly streamlining the induction of 6 new engineers.',
+    },
+
+    {
+      title: 'Service Technician',
+      company: 'DaVita Dialysis',
+      time: 'Dec 2019 - Dec 2020',
+      description: 'Managed the installation of routers, switches, Wi-Fi access points, and security firewalls for brand new clinics. Ran and terminated up to 200 data lines per site, providing robust and reliable data connections to the whole facility.',
+    },
+
+  ];
+
 
 
 
   return (
-    <div className="MAIN overflow-hidden  BoxScreen Smoother">
+    <div className="scroll-smooth bg-white BoxFull Smoother">
       <Head>
-        <title>Kris Dashboard </title>
-        <meta name="description" content="Home" />
+        <title>Kris Rehfuss Portfolio </title>
+        <meta name="Kris Rehfuss" content="Home" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
@@ -99,72 +114,77 @@ export default function Home() {
         <link rel="icon" href="/DNA.svg" />
       </Head>
 
-      {/* <main className="MAIN Smoother"> */}
+      {/* Parent Container */}
+      <div className="flex flex-col flex-center font-pop BoxFull">
 
-        {/* Nav */}
-        <div className="Nav grid-cols-2 z-10 antialiased  dark:shadow-Ind ">
+        {/* Splash */}
+        <div className="MainCard flex flex-col md:justify-center md:space-y-24 space-y-36 BoxScreen ">
 
-          {/* Logo */}
-          <Link href="/" alt="home">
-            <div className="NameShadow lg:-xl text-lg flex items-center justify-center lg:pl-48 ml-4 h-full m-0 text-center text-coal dark:text-whiteish font-bold ">
-              {/* <Image className=" mr-3 w-12" src={M} alt="M Logo" /> */}
-            </div>
-          </Link>
+          {/* <Image
+            src={Desktop}
+            priority={true}
+            className="hidden md:inline-block"
+            layout='fill'
+            objectFit='cover'
+            alt='#'
+          /> */}
 
 
-          {/* Links */}
-          <div className="lg:pr-48 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
-            <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/'> Home </Link> </div>
-            <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/ModernSynth'> Gallery </Link> </div>
-            <div className="NavItem p-2 text-2xl text-Redd" onClick={Themer}>
-              <BsSun className="hover:animate-spin hover:text-yellow-500" />
-            </div>
-          </div>
-        </div>
 
-        {/* <Banner image={BannerImage} /> */}
-
-        {/* Container */}
-      <div className="FlexCenterCol mt-4 font-pop BoxFull">
-        <div className="MainCard  ">
-
-            {/* Header */}
+          {/* Name */}
+          <div className="md:-mt-72 p-4">
             <Header
-              style="Header p-4 lg:text-5xl text-5xl w-fit antialiased"
+              style="Header mt-24 p-4 lg:text-5xl text-5xl w-fit antialiased"
               text='Kristopher Rehfuss '
             />
 
             {/* Caption */}
-            <p className="p-4 lg:text-3xl lg:px-6 leading-7 text-base dark:text-whiteish text-coal/70 font-semibold text-center">
+            <p className="p-4 lg:text-3xl lg:px-6 leading-7 text-base text-coal text-coal/70 text-center">
               Network & DevOps Engineer
             </p>
 
 
 
-            {/* Section */}
-            <div className=" BoxFull  mx-4 px-4 mt-2 mb-6">
-              {/* Live Sites */}
-              {/* <LiveSites /> */}
+
+          </div>
 
 
+          {/* Resume */}
+          <div className="FlexCenterCol MARK Boxfit p-8">
+            <a href="../../public/Resume_KR_2024.pdf"
+              download="Kris_Rehfuss_Resume.pdf"
+              className="FlexCenterCol">
 
-              {/* My Skills */}
-              <div className="Section">
-                <h1 className="CaptionBlock text-coal"></h1>
-                <div className="BoxFull mt-8 relative text-coal px-1 ">
-                  {/* <SkillTree /> */}
-                </div>
-              </div>
+              <IoCloudDownloadOutline className="text-3xl text-coal" /> {/* Adjust the size as needed */}
+              <span className='text-coal'>Download Resume</span>
+            </a>
 
+          </div>
 
-
-
-            </div>
-            <Footer text="Thanks for visiting, this site is under construction." />
-            {/* <SearchBar /> */}
+          <div>
+            <Footer />
           </div>
 
         </div>
+
+        {/* Timeline */}
+        <div className="FlexCenter md:BoxScreen">
+          <div className="md:w-2/3 ">
+            <p className="pb-16 text-4xl text-slate-700 text-center">My Experience</p>
+            <Timeline data={timelineData} />
+          </div>
+        </div>
+
+        {/* Footer */}
+
+        <div className='mt-24 mb-12 text-center text-coal text-sm'>
+          {/* <p className="text-2xl ">contact me!</p> */}
+          <p className="py-4"> Developed by Kristopher Rehfuss</p>
+          <p className="">All rights reserved. @ 2024</p>
+        </div>
+
+
+      </div>
     </div>
   );
 }
