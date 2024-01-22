@@ -103,7 +103,7 @@ export default function Home() {
 
 
   return (
-    <div className="scroll-smooth bg-white BoxFull Smoother">
+    <div className="scroll-smooth overflow-hidden bg-white BoxFull Smoother">
       <Head>
         <title>Kris Rehfuss Portfolio </title>
         <meta name="Kris Rehfuss" content="Home" />
@@ -118,7 +118,7 @@ export default function Home() {
       <div className="flex flex-col flex-center font-pop BoxFull">
 
         {/* Splash */}
-        <div className="MainCard flex flex-col  md:space-y-24 space-y-36 BoxScreen ">
+        <div className="MainCard flex flex-col md:space-y-24 space-y-36 BoxScreen ">
 
           {/* <Image
             src={Desktop}
@@ -146,7 +146,7 @@ export default function Home() {
 
 
           {/* Resume */}
-          <div className="FlexCenterCol Boxfit p-8">
+          <div className="FlexCenterCol Boxfit md:p-8">
             <a href="/Resume_KR_2024.pdf"
               download="Kristopher_Rehfuss_Resume.pdf"
               className="MARK p-8 FlexCenterCol">
