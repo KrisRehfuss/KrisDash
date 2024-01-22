@@ -103,7 +103,7 @@ export default function Home() {
 
 
   return (
-    <div className="scroll-smooth overflow-hidden bg-white BoxFull Smoother">
+    <div className="scroll-smooth bg-white BoxFull Smoother">
       <Head>
         <title>Kris Rehfuss Portfolio </title>
         <meta name="Kris Rehfuss" content="Home" />
