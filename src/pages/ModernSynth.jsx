@@ -237,7 +237,7 @@ export default function ModernSynth() {
                         </div> */}
 
     <div>
-      <Overlay timeout={6000} />
+      <Overlay timeout={3000} />
       {/* rest of yo ur page content */}
     </div>
 
