@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/ModernSynth",
+      "permanent": true
+    }
+  ]
+}
