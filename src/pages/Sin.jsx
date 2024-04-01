@@ -201,7 +201,7 @@ export default function Sin() {
                className="Nav grid-cols-2 z-10 antialiased lg:px-0 shadow-2xl Smoother  dark:shadow-FlowerO/80 ">
 
                {/* Logo */}
-               <a href="https://www.krisrehfuss.com" alt="home">
+               <a href="https://www.SynthArray.com/ModernSynth" alt="home">
                   <div className="NameShadow text-white dark:text-white Smoother text-xl flex items-center justify-center lg:pl-24 ml-4 h-full m-0 text-center font-bold">
                      {/* <Image className=" mr-3 w-12" src={M} alt="M Logo" /> */}
                      Modern<span className="ml-1  text-FlowerPurple"> Synth </span>
@@ -211,7 +211,7 @@ export default function Sin() {
       
                {/* Links */}
                <div className="xl:pr-48 lg:pr-16 flex gap-4 w-fit items-center justify-end text-FlowerPurple dark:text-white h-full">
-                  <div className="Pull md:px-4 active:text-OrbTan BoxFit"> <a href='https://www.krisrehfuss.com'> Home </a> </div>
+                  <div className="Pull md:px-4 active:text-OrbTan BoxFit"> <a href='https://www.SynthArray.com/ModernSynth'> Home </a> </div>
                   <div className="Pull md:px-4 active:text-OrbTan BoxFit"> <Link href='/ModernSynth'> Gallery </Link> </div>
                   <div className="NavItem p-2 text-xl text-coal dark:text-white"  onClick={Darken}>
                      <FaMusic className="hover:text-DarkTeal Smoother" />
