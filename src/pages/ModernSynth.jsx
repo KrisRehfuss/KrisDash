@@ -205,7 +205,7 @@ export default function ModernSynth() {
       
                {/* Links */}
                <div className="xl:pr-48 lg:pr-16 flex gap-4 w-fit items-center justify-end text-coal dark:text-white h-full">
-                  <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/'> Home </Link> </div>
+                  <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/ModernSynth'> Home </Link> </div>
                   <div className="Pull md:px-4 active:text-Redd BoxFit"> <Link href='/ModernSynth'> Gallery </Link> </div>
                   <div className="NavItem p-2 text-xl text-coal dark:text-white" onClick={Darken}>
                      <FaMusic className="hover:text-DarkTeal Smoother" />
