@@ -55,7 +55,7 @@ export default function ModernSynth() {
       }  else if (event.key === '[') {
          router.push('/Sin');
       } else if (event.key === 'h') {
-         router.push('/');
+         router.push('/ModernSynth');
       }
    };
 
